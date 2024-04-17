@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+
+<!-- Mirrored from lawfirm-admin-template.multipurposethemes.com/main/appointments.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Apr 2024 22:31:58 GMT -->
+<head>
+  <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="https://lawfirm-admin-template.multipurposethemes.com/images/favicon.ico">
 
-    <title>Law Firm - Dashboard</title>
-    
+    <title>Law Firm - Dashboard </title>
+  
 	<!-- Vendors Style-->
 	<link rel="stylesheet" href="css/vendors_css.css">
 	  
 	<!-- Style-->  
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/skin_color.css">
-     
-  </head>
+	
+</head>
 
 <body class="hold-transition light-skin sidebar-mini theme-primary fixed">
 	
 <div class="wrapper">
 	<div id="loader"></div>
-	
+
   <header class="main-header">
 	<div class="d-flex align-items-center logo-box justify-content-start">	
 		<!-- Logo -->
@@ -148,6 +150,7 @@
     </nav>
   </header>
   
+  <!-- Left side column. contains the logo and sidebar -->
   <aside class="main-sidebar">
     <!-- sidebar-->
     <section class="sidebar position-relative">
@@ -541,485 +544,47 @@
 		  </div>
 		</div>
     </section>
-  </aside>
-
+  </aside> 
+  
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
 	  <div class="container-full">
+		<!-- Content Header (Page header) -->	  
+		<div class="content-header">
+			<div class="d-flex align-items-center">
+				<div class="me-auto">
+					<h4 class="page-title">Appointments</h4>
+					<div class="d-inline-block align-items-center">
+						<nav>
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
+								<li class="breadcrumb-item active" aria-current="page">Appointments</li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
 		<!-- Main content -->
 		<section class="content">
-			<div class="row">								
-				<div class="col-xl-4 col-12">
-					<div class="box">
-						<div class="box-header no-border">
-							<h3 class="box-title">Total Cases (850)</h3>
-						</div>
-						<div class="box-body py-0 px-0">
-							<div class="chart" id="totalcases"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-4 col-12">
-					<div class="box">
-						<div class="box-header no-border">
-							<h3 class="box-title">Settled Cases (745)</h3>
-						</div>
-						<div class="box-body py-0 px-0">
-							<div class="chart" id="settledcases"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-4 col-12">
-					<div class="box">
-						<div class="box-header no-border">
-							<h3 class="box-title">Settled Cases (745)</h3>
-						</div>
-						<div class="box-body py-0 px-0">
-							<div class="chart" id="settledcases"></div>
-						</div>
-					</div>
-				</div>
-				<!-- <div class="col-xl-4 col-12">
-					<div class="box overflow-h">
-						<div class="box-body p-0 text-center">
-							<div class="d-flex justify-content-around">
-								<div class="bg-primary p-20 w-p100">									
-									<div class="fw-400"><h1 class="mb-2">Won</h1></div>
-									<span class="text-white fs-60 icon-Like"><span class="path1"></span><span class="path2"></span></span>
-									<div class="text-white fw-600 mb-2 mt-5"><h2>170</h2></div>
-									<div class="text-white-50"><h4 class="mb-0">56.7%</h4></div>
-								</div>
-								<div class="bg-danger p-20 w-p100">									
-									<div class="fw-400"><h1 class="mb-2">Lost</h1></div>
-									<span class="text-white fs-60 icon-Dislike rotate-180"><span class="path1"></span><span class="path2"></span></span>
-									<div class="text-white fw-600 mb-2 mt-5"><h2>79</h2></div>
-									<div class="text-white-50"><h4 class="mb-0">26.3%</h4></div>
-								</div>
-							</div>
-						</div>
-					</div>					
-				</div> -->
-				<div class="col-xl-8 col-12">
-					<div class="box">
-						<div class="box-header">
-							<h3 class="box-title">Opportunity Outcome</h3>
-						</div>
-						<div class="box-body py-xl-0">
-							<div class="chart" id="opportunityoutcome"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-4 col-12">
-					<div class="box overflow-h">
-						<div class="box-header">
-							<h3 class="box-title">Earning this month</h3>
-						</div>
-						<div class="box-body pb-0">
-							<h4 class="text-dark">$6,586.40 
-								<small class="text-success">25% 
-								<span class="badge badge-pill badge-success-light"><i class="fa fa-angle-up text-success"></i></span></small>
-							</h4>
-							<div id="statisticschart5"></div>
-						</div>
-					</div>
-					<div class="box bg-info-light">
-						<div class="box-body text-center">
-							<div class="d-flex justify-content-between align-items-center mb-20">
-								<h3 class="fw-400 mb-0">Declined</h3>
-								<span class="text-info fs-36 icon-Warning-2"><span class="path1"></span><span class="path2"></span><span class="path2"></span></span>
-							</div>
-							<div class="d-flex justify-content-between align-items-center">
-								<h4 class="text-info fs-22 mb-0">51</h4>
-								<div class="text-info-50 fs-20">17.0%</div>
-							</div>
-						</div>
-					</div>
-				</div>	
-				<div class="col-xl-6 col-12">
-					<div class="box">
-						<div class="box-header">
-							<h3 class="box-title">Revenue</h3>
-						</div>
-						<div class="box-body py-0">
-							<div id="charts_widget_43_chart"></div>						
-						</div>
-					</div>	
-				</div>			
-				<div class="col-xl-6 col-12">					
-					<div class="box">
-						<div class="box-header">
-							<h3 class="box-title">Outcomes by Opportunity Source</h3>
-						</div>
-						<div class="box-body py-0">
-							<div class="chart" id="opportunityoutcome2"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-12">
-					<div class="box">
-						<div class="box-header">
-							<h3 class="box-title align-items-start flex-column">
-								Ongoing Cases
-							</h3>
-						</div>
-						<div class="box-body py-0">
-							<div class="table-responsive">
-								<table class="table mb-0 no-border">
-									<tbody>
-										<tr>										
-											<td class="ps-0 py-1">
-												<div class="d-flex align-items-center">
-													<div class="flex-shrink-0 me-20">
-														<div class="bg-img h-50 w-50" style="background-image: url(../images/avatar/1.jpg)"></div>
-													</div>
-													<div>
-														<a href="#" class="text-dark hover-primary mb-1 fs-16">Johen Doe</a>
-														<span class="text-fade d-block">johen@dummy.com</span>
-													</div>
-												</div>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-													Case Type
-												</span>
-												<span class="fs-16">
-													Business Litigation
-												</span>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-													Attorney
-												</span>
-												<span class="fs-16">
-													Mical Lobani
-												</span>
-											</td>
-											<td>
-												<span class="badge badge-primary badge-lg">3 hearing</span>
-											</td>
-											<td class="text-end">
-												<a href="#" class="waves-effect waves-light btn btn-xs btn-primary btn-circle mx-5"><span class="icon-Write"><span class="path1"></span><span class="path2"></span></span></a>
-												<a href="#" class="waves-effect waves-light btn btn-xs btn-danger btn-circle mx-5"><span class="icon-Trash1"><span class="path1"></span><span class="path2"></span></span></a>
-											</td>
-										</tr>
-										<tr>										
-											<td class="ps-0 py-1">
-												<div class="d-flex align-items-center">
-													<div class="flex-shrink-0 me-20">
-														<div class="bg-img h-50 w-50" style="background-image: url(../images/avatar/3.jpg)"></div>
-													</div>
-													<div>
-														<a href="#" class="text-dark hover-primary mb-1 fs-16">Hemani Doe</a>
-														<span class="text-fade d-block">hemani@dummy.com</span>
-													</div>
-												</div>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-													Case Type
-												</span>
-												<span class="fs-16">
-													Family Case
-												</span>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-													Attorney
-												</span>
-												<span class="fs-16">
-													Jack Lobani
-												</span>
-											</td>
-											<td>
-												<span class="badge badge-primary badge-lg">1 hearing</span>
-											</td>
-											<td class="text-end">
-												<a href="#" class="waves-effect waves-light btn btn-xs btn-primary btn-circle mx-5"><span class="icon-Write"><span class="path1"></span><span class="path2"></span></span></a>
-												<a href="#" class="waves-effect waves-light btn btn-xs btn-danger btn-circle mx-5"><span class="icon-Trash1"><span class="path1"></span><span class="path2"></span></span></a>
-											</td>
-										</tr>
-										<tr>										
-											<td class="ps-0 py-1">
-												<div class="d-flex align-items-center">
-													<div class="flex-shrink-0 me-20">
-														<div class="bg-img h-50 w-50" style="background-image: url(../images/avatar/2.jpg)"></div>
-													</div>
-													<div>
-														<a href="#" class="text-dark hover-primary mb-1 fs-16">Johen Clark</a>
-														<span class="text-fade d-block">johen@dummy.com</span>
-													</div>
-												</div>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-													Case Type
-												</span>
-												<span class="fs-16">
-													Criminal Case
-												</span>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-													Attorney
-												</span>
-												<span class="fs-16">
-													Johen Panthar
-												</span>
-											</td>
-											<td>
-												<span class="badge badge-primary badge-lg">4 hearing</span>
-											</td>
-											<td class="text-end">
-												<a href="#" class="waves-effect waves-light btn btn-xs btn-primary btn-circle mx-5"><span class="icon-Write"><span class="path1"></span><span class="path2"></span></span></a>
-												<a href="#" class="waves-effect waves-light btn btn-xs btn-danger btn-circle mx-5"><span class="icon-Trash1"><span class="path1"></span><span class="path2"></span></span></a>
-											</td>
-										</tr>
-										<tr>										
-											<td class="ps-0 py-1">
-												<div class="d-flex align-items-center">
-													<div class="flex-shrink-0 me-20">
-														<div class="bg-img h-50 w-50" style="background-image: url(../images/avatar/4.jpg)"></div>
-													</div>
-													<div>
-														<a href="#" class="text-dark hover-primary mb-1 fs-16">Lovish Doe</a>
-														<span class="text-fade d-block">lovish@dummy.com</span>
-													</div>
-												</div>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-													Case Type
-												</span>
-												<span class="fs-16">
-													Driving Case
-												</span>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-													Attorney
-												</span>
-												<span class="fs-16">
-													Mical Clark
-												</span>
-											</td>
-											<td>
-												<span class="badge badge-warning badge-lg">0 hearing</span>
-											</td>
-											<td class="text-end">
-												<a href="#" class="waves-effect waves-light btn btn-xs btn-primary btn-circle mx-5"><span class="icon-Write"><span class="path1"></span><span class="path2"></span></span></a>
-												<a href="#" class="waves-effect waves-light btn btn-xs btn-danger btn-circle mx-5"><span class="icon-Trash1"><span class="path1"></span><span class="path2"></span></span></a>
-											</td>
-										</tr>
-										<tr>										
-											<td class="ps-0 py-1">
-												<div class="d-flex align-items-center">
-													<div class="flex-shrink-0 me-20">
-														<div class="bg-img h-50 w-50" style="background-image: url(../images/avatar/5.jpg)"></div>
-													</div>
-													<div>
-														<a href="#" class="text-dark hover-primary mb-1 fs-16">Johen Paton</a>
-														<span class="text-fade d-block">johen@dummy.com</span>
-													</div>
-												</div>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-													Case Type
-												</span>
-												<span class="fs-16">
-													Financial Case
-												</span>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-													Attorney
-												</span>
-												<span class="fs-16">
-													Mical Lobani
-												</span>
-											</td>
-											<td>
-												<span class="badge badge-primary badge-lg">2 hearing</span>
-											</td>
-											<td class="text-end">
-												<a href="#" class="waves-effect waves-light btn btn-xs btn-primary btn-circle mx-5"><span class="icon-Write"><span class="path1"></span><span class="path2"></span></span></a>
-												<a href="#" class="waves-effect waves-light btn btn-xs btn-danger btn-circle mx-5"><span class="icon-Trash1"><span class="path1"></span><span class="path2"></span></span></a>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>  
-				</div>
-				<div class="col-xl-4 col-12"> 
-					<div class="box">
-						<div class="box-header with-border">
-							<h3 class="box-title">Latest Matters</h3>
-							<ul class="box-controls pull-right">
-							  <li class="dropdown">
-								<a data-bs-toggle="dropdown" href="#" class="px-10 pt-5"><i class="ti-more-alt"></i></a>
-								<div class="dropdown-menu dropdown-menu-end">
-								  <a class="dropdown-item" href="#"><i class="ti-import"></i> Import</a>
-								  <a class="dropdown-item" href="#"><i class="ti-export"></i> Export</a>
-								  <a class="dropdown-item" href="#"><i class="ti-printer"></i> Print</a>
-								</div>
-							  </li>
-							</ul>
-						</div>
-						<div class="box-body">
-							<div class="d-flex align-items-center mb-30">
-								<div class="me-15">
-									<img src="../images/logo/logo-1.jpg" class="avatar avatar-lg rounded10 bg-primary-light" alt="">
-								</div>
-								<div class="d-flex flex-column flex-grow-1 fw-500">
-									<a href="#" class="text-dark hover-primary mb-1 fs-16">Centurion</a>
-									<span class="text-fade">Volkswagen trial</span>
-								</div>								
-							</div>
-							<div class="d-flex align-items-center mb-30">
-								<div class="me-15">
-									<img src="../images/logo/logo-2.jpg" class="avatar avatar-lg rounded10 bg-primary-light" alt="">
-								</div>
-								<div class="d-flex flex-column flex-grow-1 fw-500">
-									<a href="#" class="text-dark hover-danger mb-1 fs-16">Athena</a>
-									<span class="text-fade">HSBC taxation</span>
-								</div>								
-							</div>
-							<div class="d-flex align-items-center">
-								<div class="me-15">
-									<img src="../images/logo/logo-3.jpg" class="avatar avatar-lg rounded10 bg-primary-light" alt="">
-								</div>
-								<div class="d-flex flex-column flex-grow-1 fw-500">
-									<a href="#" class="text-dark hover-success mb-1 fs-16">Gemini</a>
-									<span class="text-fade">BP merger & acquisition</span>
-								</div>								
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-4 col-12"> 
-					<div class="box">
-						<div class="box-header with-border">
-							<h3 class="box-title">Latest task</h3>
-							<ul class="box-controls pull-right">
-							  <li class="dropdown">
-								<a data-bs-toggle="dropdown" href="#" class="px-10 pt-5"><i class="ti-more-alt"></i></a>
-								<div class="dropdown-menu dropdown-menu-end">
-								  <a class="dropdown-item" href="#"><i class="ti-import"></i> Import</a>
-								  <a class="dropdown-item" href="#"><i class="ti-export"></i> Export</a>
-								  <a class="dropdown-item" href="#"><i class="ti-printer"></i> Print</a>
-								</div>
-							  </li>
-							</ul>
-						</div>
-						<div class="box-body">
-							<div class="d-flex align-items-center mb-30">
-								<div class="me-15">
-									<img src="../images/logo/logo-4.jpg" class="avatar avatar-lg rounded10 bg-primary-light" alt="">
-								</div>
-								<div class="d-flex flex-column flex-grow-1 fw-500">
-									<a href="#" class="text-dark hover-primary mb-1 fs-16">Produce DD report</a>
-									<span class="text-fade">Centurion</span>
-								</div>	
-								<div>
-									<input name="group1" type="radio" id="radio_1">
-									<label for="radio_1"></label>
-								</div>
-							</div>
-							<div class="d-flex align-items-center mb-30">
-								<div class="me-15">
-									<img src="../images/logo/logo-5.jpg" class="avatar avatar-lg rounded10 bg-primary-light" alt="">
-								</div>
-								<div class="d-flex flex-column flex-grow-1 fw-500">
-									<a href="#" class="text-dark hover-danger mb-1 fs-16">Closing meeting</a>
-									<span class="text-fade">Bucephale</span>
-								</div>		
-								<div>
-									<input name="group1" type="radio" id="radio_2">
-									<label for="radio_2"></label>
-								</div>							
-							</div>
-							<div class="d-flex align-items-center">
-								<div class="me-15">
-									<img src="../images/logo/logo-2.jpg" class="avatar avatar-lg rounded10 bg-primary-light" alt="">
-								</div>
-								<div class="d-flex flex-column flex-grow-1 fw-500">
-									<a href="#" class="text-dark hover-success mb-1 fs-16">Fly to SanFransisco</a>
-									<span class="text-fade">Lancelot</span>
-								</div>	
-								<div>
-									<input name="group1" type="radio" id="radio_3">
-									<label for="radio_3"></label>
-								</div>								
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- <div class="col-xl-4 col-12"> 
-					<div class="box">
-						<div class="box-header with-border">
-							<h3 class="box-title">New Members</h3>
-							<ul class="box-controls pull-right">
-							  <li class="dropdown">
-								<a data-bs-toggle="dropdown" href="#" class="px-10 pt-5"><i class="ti-more-alt"></i></a>
-								<div class="dropdown-menu dropdown-menu-end">
-								  <a class="dropdown-item" href="#"><i class="ti-import"></i> Import</a>
-								  <a class="dropdown-item" href="#"><i class="ti-export"></i> Export</a>
-								  <a class="dropdown-item" href="#"><i class="ti-printer"></i> Print</a>
-								</div>
-							  </li>
-							</ul>
-						</div>
-						<div class="box-body">
-							<div class="d-flex align-items-center mb-30">
-								<div class="me-15">
-									<img src="../images/avatar/avatar-1.png" class="avatar avatar-lg rounded10 bg-primary-light" alt="">
-								</div>
-								<div class="d-flex flex-column flex-grow-1 fw-500">
-									<a href="#" class="text-dark hover-primary mb-1 fs-16">Fiona Daniels</a>
-									<span class="text-fade">Senior associate</span>
-								</div>	
-								<div class="d-flex align-items-center">
-									<a href="#" class="waves-effect waves-light btn btn-xs btn-warning-light btn-circle mx-5"><i class="mdi mdi-phone"></i></a>
-									<a href="#" class="waves-effect waves-light btn btn-xs btn-success-light btn-circle mx-5"><i class="mdi mdi-comment"></i></a>
-								</div>
-							</div>
-							<div class="d-flex align-items-center mb-30">
-								<div class="me-15">
-									<img src="../images/avatar/avatar-2.png" class="avatar avatar-lg rounded10 bg-primary-light" alt="">
-								</div>
-								<div class="d-flex flex-column flex-grow-1 fw-500">
-									<a href="#" class="text-dark hover-danger mb-1 fs-16">Denise Johnson</a>
-									<span class="text-fade">Partners</span>
-								</div>	
-								<div class="d-flex align-items-center">
-									<a href="#" class="waves-effect waves-light btn btn-xs btn-warning-light btn-circle mx-5"><i class="mdi mdi-phone"></i></a>
-									<a href="#" class="waves-effect waves-light btn btn-xs btn-success-light btn-circle mx-5"><i class="mdi mdi-comment"></i></a>
-								</div>						
-							</div>
-							<div class="d-flex align-items-center">
-								<div class="me-15">
-									<img src="../images/avatar/avatar-3.png" class="avatar avatar-lg rounded10 bg-primary-light" alt="">
-								</div>
-								<div class="d-flex flex-column flex-grow-1 fw-500">
-									<a href="#" class="text-dark hover-success mb-1 fs-16">Charlotte Doe</a>
-									<span class="text-fade">Associate</span>
-								</div>
-								<div class="d-flex align-items-center">
-									<a href="#" class="waves-effect waves-light btn btn-xs btn-warning-light btn-circle mx-5"><i class="mdi mdi-phone"></i></a>
-									<a href="#" class="waves-effect waves-light btn btn-xs btn-success-light btn-circle mx-5"><i class="mdi mdi-comment"></i></a>
-								</div>								
-							</div>
-						</div>
-					</div>
-				</div> -->
-			</div>				
+		  <div class="row">	
+			  <div class="col-12">
+				  <div class="box">
+					  <div class="box-body p-10">
+						  <div id="calendar" class="apt-cal"></div>
+					  </div>
+				  </div> 
+			  </div>			   
+			</div>
 		</section>
 		<!-- /.content -->
-	  </div>
+	  </div>	  
+	
   </div>
-  <!-- /.content-wrapper -->
+  <!-- /.content-wrapper -->	
+ 
   <footer class="main-footer">
     <div class="pull-right d-none d-sm-inline-block">
         <ul class="nav nav-primary nav-dotted nav-dot-separated justify-content-center justify-content-md-end">
@@ -1028,9 +593,8 @@
 		  </li>
 		</ul>
     </div>
-	  &copy; <script>document.write(new Date().getFullYear())</script> <a href="#">Lawfirm Company</a>. All Rights Reserved.
+	  &copy; <script>document.write(new Date().getFullYear())</script> <a href="/">Lawfirm Company</a>. All Rights Reserved.
   </footer>
-
   <!-- Control Sidebar -->
   <aside class="control-sidebar">
 	  
@@ -1297,9 +861,131 @@
   
   <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
   <div class="control-sidebar-bg"></div>
-  
 </div>
 <!-- ./wrapper -->
+	
+	<!-- ./side demo panel -->
+	<div class="sticky-toolbar">	    
+	    <a href="https://themeforest.net/item/lawfirm-responsive-bootstrap-admin-template/32736939" data-bs-toggle="tooltip" data-bs-placement="left" title="Buy Now" class="waves-effect waves-light btn btn-success btn-flat mb-5 btn-sm" target="_blank">
+			<span class="icon-Money"><span class="path1"></span><span class="path2"></span></span>
+		</a>
+	    <a href="https://themeforest.net/user/multipurposethemes/portfolio" data-bs-toggle="tooltip" data-bs-placement="left" title="Portfolio" class="waves-effect waves-light btn btn-danger btn-flat mb-5 btn-sm" target="_blank">
+			<span class="icon-Image"></span>
+		</a>
+	    <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Live Chat" class="waves-effect waves-light btn btn-warning btn-flat btn-sm">
+			<span class="icon-Group-chat"><span class="path1"></span><span class="path2"></span></span>
+		</a>
+	</div>
+	<!-- Sidebar -->
+	
+	<div id="chat-box-body">
+		<div id="chat-circle" class="waves-effect waves-circle btn btn-circle btn-sm btn-warning l-h-50">
+            <div id="chat-overlay"></div>
+            <span class="icon-Group-chat fs-18"><span class="path1"></span><span class="path2"></span></span>
+		</div>
+
+		<div class="chat-box">
+            <div class="chat-box-header p-15 d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button class="waves-effect waves-circle btn btn-circle btn-primary-light h-40 w-40 rounded-circle l-h-45" type="button" data-bs-toggle="dropdown">
+                      <span class="icon-Add-user fs-22"><span class="path1"></span><span class="path2"></span></span>
+                  </button>
+                  <div class="dropdown-menu min-w-200">
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Color me-15"></span>
+                        New Group</a>
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Clipboard me-15"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                        Contacts</a>
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Group me-15"><span class="path1"></span><span class="path2"></span></span>
+                        Groups</a>
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Active-call me-15"><span class="path1"></span><span class="path2"></span></span>
+                        Calls</a>
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Settings1 me-15"><span class="path1"></span><span class="path2"></span></span>
+                        Settings</a>
+                    <div class="dropdown-divider"></div>
+					<a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Question-circle me-15"><span class="path1"></span><span class="path2"></span></span>
+                        Help</a>
+					<a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Notifications me-15"><span class="path1"></span><span class="path2"></span></span> 
+                        Privacy</a>
+                  </div>
+                </div>
+                <div class="text-center flex-grow-1">
+                    <div class="text-dark fs-18">Mayra Sibley</div>
+                    <div>
+                        <span class="badge badge-sm badge-dot badge-primary"></span>
+                        <span class="text-muted fs-12">Active</span>
+                    </div>
+                </div>
+                <div class="chat-box-toggle">
+                    <button id="chat-box-toggle" class="waves-effect waves-circle btn btn-circle btn-danger-light h-40 w-40 rounded-circle l-h-45" type="button">
+                      <span class="icon-Close fs-22"><span class="path1"></span><span class="path2"></span></span>
+                    </button>                    
+                </div>
+            </div>
+            <div class="chat-box-body">
+                <div class="chat-box-overlay">   
+                </div>
+                <div class="chat-logs">
+                    <div class="chat-msg user">
+                        <div class="d-flex align-items-center">
+                            <span class="msg-avatar">
+                                <img src="../images/avatar/2.jpg" class="avatar avatar-lg" alt="">
+                            </span>
+                            <div class="mx-10">
+                                <a href="#" class="text-dark hover-primary fw-bold">Mayra Sibley</a>
+                                <p class="text-muted fs-12 mb-0">2 Hours</p>
+                            </div>
+                        </div>
+                        <div class="cm-msg-text">
+                            Hi there, I'm Jesse and you?
+                        </div>
+                    </div>
+                    <div class="chat-msg self">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="mx-10">
+                                <a href="#" class="text-dark hover-primary fw-bold">You</a>
+                                <p class="text-muted fs-12 mb-0">3 minutes</p>
+                            </div>
+                            <span class="msg-avatar">
+                                <img src="../images/avatar/3.jpg" class="avatar avatar-lg" alt="">
+                            </span>
+                        </div>
+                        <div class="cm-msg-text">
+                           My name is Anne Clarc.         
+                        </div>        
+                    </div>
+                    <div class="chat-msg user">
+                        <div class="d-flex align-items-center">
+                            <span class="msg-avatar">
+                                <img src="../images/avatar/2.jpg" class="avatar avatar-lg" alt="">
+                            </span>
+                            <div class="mx-10">
+                                <a href="#" class="text-dark hover-primary fw-bold">Mayra Sibley</a>
+                                <p class="text-muted fs-12 mb-0">40 seconds</p>
+                            </div>
+                        </div>
+                        <div class="cm-msg-text">
+                            Nice to meet you Anne.<br>How can i help you?
+                        </div>
+                    </div>
+                </div><!--chat-log -->
+            </div>
+            <div class="chat-input">      
+                <form>
+                    <input type="text" id="chat-input" placeholder="Send a message..."/>
+                    <button type="submit" class="chat-submit" id="chat-submit">
+                        <span class="icon-Send fs-22"></span>
+                    </button>
+                </form>      
+            </div>
+		</div>
+	</div>
 	
 	<!-- Page Content overlay -->
 	
@@ -1309,11 +995,16 @@
 	<script src="js/pages/chat-popup.js"></script>
     <script src="../assets/icons/feather-icons/feather.min.js"></script>
 	
-	<script src="../assets/vendor_components/apexcharts-bundle/dist/apexcharts.js"></script>
+	<script src="../assets/vendor_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../assets/vendor_components/perfect-scrollbar-master/perfect-scrollbar.jquery.min.js"></script>
+	<script src="../assets/vendor_components/fullcalendar/lib/moment.min.js"></script>
+	<script src="../assets/vendor_components/fullcalendar/fullcalendar.min.js"></script>
 	
 	<!-- Law Firm App -->
-	<script src="js/template.js"></script>
-	<script src="js/pages/dashboard.js"></script>
+	<script src="js/template.js"></script>	
+	<script src="js/pages/appointments.js"></script>
 	
+
 </body>
+
 </html>
