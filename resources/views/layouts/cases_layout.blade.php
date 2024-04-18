@@ -163,7 +163,7 @@
 				</div>
 			</div>
 			<ul class="list-inline profile-setting mt-20 mb-0 d-flex justify-content-center gap-3">
-				<li><a href="mailbox.html" data-bs-toggle="tooltip" title="Email"><i class="icon-Incoming-mail fs-24"><span class="path1"></span><span class="path2"></span></i></a></li>
+				<li><a href="/mailbox" data-bs-toggle="tooltip" title="Email"><i class="icon-Incoming-mail fs-24"><span class="path1"></span><span class="path2"></span></i></a></li>
 				<li><a href="contact_app_chat.html" data-bs-toggle="tooltip" title="Chat"><i class="icon-Group-chat fs-24"><span class="path1"></span><span class="path2"></span></i></a></li>
 				<li><a href="/login" data-bs-toggle="tooltip" title="Logout"><i class="icon-Lock-overturning fs-24"><span class="path1"></span><span class="path2"></span></i></a></li>
 			</ul>

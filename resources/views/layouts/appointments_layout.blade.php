@@ -164,7 +164,7 @@
 				</div>
 			</div>
 			<ul class="list-inline profile-setting mt-20 mb-0 d-flex justify-content-center gap-3">
-				<li><a href="mailbox.html" data-bs-toggle="tooltip" title="Email"><i class="icon-Incoming-mail fs-24"><span class="path1"></span><span class="path2"></span></i></a></li>
+				<li><a href="/mailbox" data-bs-toggle="tooltip" title="Email"><i class="icon-Incoming-mail fs-24"><span class="path1"></span><span class="path2"></span></i></a></li>
 				<li><a href="contact_app_chat.html" data-bs-toggle="tooltip" title="Chat"><i class="icon-Group-chat fs-24"><span class="path1"></span><span class="path2"></span></i></a></li>
 				<li><a href="/login" data-bs-toggle="tooltip" title="Logout"><i class="icon-Lock-overturning fs-24"><span class="path1"></span><span class="path2"></span></i></a></li>
 			</ul>
@@ -863,19 +863,6 @@
   <div class="control-sidebar-bg"></div>
 </div>
 <!-- ./wrapper -->
-	
-	<!-- ./side demo panel -->
-	<div class="sticky-toolbar">	    
-	    <a href="https://themeforest.net/item/lawfirm-responsive-bootstrap-admin-template/32736939" data-bs-toggle="tooltip" data-bs-placement="left" title="Buy Now" class="waves-effect waves-light btn btn-success btn-flat mb-5 btn-sm" target="_blank">
-			<span class="icon-Money"><span class="path1"></span><span class="path2"></span></span>
-		</a>
-	    <a href="https://themeforest.net/user/multipurposethemes/portfolio" data-bs-toggle="tooltip" data-bs-placement="left" title="Portfolio" class="waves-effect waves-light btn btn-danger btn-flat mb-5 btn-sm" target="_blank">
-			<span class="icon-Image"></span>
-		</a>
-	    <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Live Chat" class="waves-effect waves-light btn btn-warning btn-flat btn-sm">
-			<span class="icon-Group-chat"><span class="path1"></span><span class="path2"></span></span>
-		</a>
-	</div>
 	<!-- Sidebar -->
 	
 	<div id="chat-box-body">

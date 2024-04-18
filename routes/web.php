@@ -7,6 +7,9 @@ use App\Http\Controllers\CasesController;
 use App\Http\Controllers\AttorneysController;
 use App\Http\Controllers\LockScreenController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AttorneyDetailsController;
+use App\Http\Controllers\MailboxController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -41,3 +44,7 @@ Route::get('/attorneys', [AttorneysController::class, 'index']);
 Route::get('/lockscreen', [LockScreenController::class, 'index']);
 
 Route::get('/login', [LoginController::class, 'index']);
+
+Route::get('/attorney_details', [AttorneyDetailsController::class, 'index']);
+
+Route::get('/mailbox', [MailboxController::class, 'index']);
