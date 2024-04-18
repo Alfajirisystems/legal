@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="https://lawfirm-admin-template.multipurposethemes.com/images/favicon.ico">
 
-    <title>Law Firm - Dashboard</title>
+    <title>Company Software</title>
     
 	<!-- Vendors Style-->
 	<link rel="stylesheet" href="css/vendors_css.css">
@@ -94,41 +94,11 @@
 			  <li>
 				<!-- inner menu: contains the actual data -->
 				<ul class="menu sm-scrol">
-				  <li>
+				  <!-- <li>
 					<a href="#">
 					  <i class="fa fa-users text-info"></i> Curabitur id eros quis nunc suscipit blandit.
 					</a>
-				  </li>
-				  <li>
-					<a href="#">
-					  <i class="fa fa-warning text-warning"></i> Duis malesuada justo eu sapien elementum, in semper diam posuere.
-					</a>
-				  </li>
-				  <li>
-					<a href="#">
-					  <i class="fa fa-users text-danger"></i> Donec at nisi sit amet tortor commodo porttitor pretium a erat.
-					</a>
-				  </li>
-				  <li>
-					<a href="#">
-					  <i class="fa fa-shopping-cart text-success"></i> In gravida mauris et nisi
-					</a>
-				  </li>
-				  <li>
-					<a href="#">
-					  <i class="fa fa-user text-danger"></i> Praesent eu lacus in libero dictum fermentum.
-					</a>
-				  </li>
-				  <li>
-					<a href="#">
-					  <i class="fa fa-user text-primary"></i> Nunc fringilla lorem 
-					</a>
-				  </li>
-				  <li>
-					<a href="#">
-					  <i class="fa fa-user text-success"></i> Nullam euismod dolor ut quam interdum, at scelerisque ipsum imperdiet.
-					</a>
-				  </li>
+				  </li> -->
 				</ul>
 			  </li>
 			  <li class="footer">
@@ -162,7 +132,7 @@
 			</div>
 			<ul class="list-inline profile-setting mt-20 mb-0 d-flex justify-content-center gap-3">
 				<li><a href="/mailbox" data-bs-toggle="tooltip" title="Email"><i class="icon-Incoming-mail fs-24"><span class="path1"></span><span class="path2"></span></i></a></li>
-				<li><a href="contact_app_chat.html" data-bs-toggle="tooltip" title="Chat"><i class="icon-Group-chat fs-24"><span class="path1"></span><span class="path2"></span></i></a></li>
+				<!-- <li><a href="contact_app_chat.html" data-bs-toggle="tooltip" title="Chat"><i class="icon-Group-chat fs-24"><span class="path1"></span><span class="path2"></span></i></a></li> -->
 				<li><a href="/login" data-bs-toggle="tooltip" title="Logout"><i class="icon-Lock-overturning fs-24"><span class="path1"></span><span class="path2"></span></i></a></li>
 			</ul>
 	    </div>
@@ -181,21 +151,39 @@
 					<i class="icon-Barcode-read"><span class="path1"></span><span class="path2"></span></i>
 					<span>Appointments</span>
 				  </a>
-				</li>			
-				<li class="treeview">
+				</li>
+				<li>
+				  <a href="/letters">
+					<i class="icon-Library"><span class="path1"></span><span class="path2"></span></i>
+					<span>Letters</span>
+				  </a>
+				</li>	
+				<li>
+				  <a href="/cases">
+					<i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>
+					<span>Matters</span>
+				  </a>
+				</li>		
+				<li>
+				  <a href="/attorneys">
+					<i class="icon-Hummer"><span class="path1"></span><span class="path2"></span></i>
+					<span>Attorney</span>
+				  </a>
+				</li>
+				<!-- <li class="treeview">
 				  <a href="#">
 					<i class="icon-User"><span class="path1"></span><span class="path2"></span></i>
-					<span>Cases</span>
+					<span>Matters</span>
 					<span class="pull-right-container">
 					  <i class="fa fa-angle-right pull-right"></i>
 					</span>
 				  </a>
 				  <ul class="treeview-menu">
-					<li><a href="/cases"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Cases</a></li>
+					<li><a href="/cases"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Matters</a></li>
 					<li><a href="case_details.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Case Details</a></li>
 				  </ul>
-				</li>				
-				<li class="treeview">
+				</li>				 -->
+				<!-- <li class="treeview">
 				  <a href="#">
 					<i class="icon-Hummer"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
 					<span>Attorney</span>
@@ -207,8 +195,8 @@
 					<li><a href="/attorneys"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Attorneys</a></li>
 					<li><a href="attorney_details.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Attorney Details</a></li>
 				  </ul>
-				</li>
-				<li class="header">Components</li>
+				</li> -->
+				<li class="header">Security</li>
 				<!-- <li class="treeview">
 				  <a href="#">
 					<i class="icon-Library"><span class="path1"></span><span class="path2"></span></i>
@@ -502,7 +490,7 @@
 					</span>
 				  </a>
 				  <ul class="treeview-menu">
-					<li><a href="/login"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Login</a></li>
+					<!-- <li><a href="/login"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Login</a></li> -->
 					<li><a href="auth_register.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Register</a></li>
 					<li><a href="/lockscreen"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Lockscreen</a></li>
 					<li><a href="auth_user_pass.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Recover password</a></li>	
@@ -527,15 +515,15 @@
 			  <div class="sidebar-widgets">
 				  <!-- <div class="mx-25 mb-30 pb-20 side-bx bg-primary-light rounded20">
 					<div class="text-center">
-						<img src="https://lawfirm-admin-template.multipurposethemes.com/images/svg-icon/color-svg/custom-17.svg" class="sideimg p-5" alt="">
-						<h4 class="title-bx text-primary">Make an Appointments</h4>
-						<a href="#" class="py-10 fs-14 mb-0 text-primary">
+						<img src="https://lawfirm-admin-template.multipurposethemes.com/images/svg-icon/color-svg/custom-17.svg" class="sideimg p-5" alt=""> -->
+						<!-- <h4 class="title-bx text-primary">Make an Appointments</h4> -->
+						<!-- <a href="#" class="py-10 fs-14 mb-0 text-primary">
 							Best Law Services here <i class="mdi mdi-arrow-right"></i>
-						</a>
-					</div>
-				  </div> -->
+						</a> -->
+					<!-- </div> -->
+				  <!-- </div> -->
 				<div class="copyright text-center m-25">
-					<p><strong class="d-block">Law Firm Services</strong> © <script>document.write(new Date().getFullYear())</script> All Rights Reserved</p>
+					<p><strong class="d-block">Company</strong> © <script>document.write(new Date().getFullYear())</script> All Rights Reserved</p>
 				</div>
 			  </div>
 		  </div>
@@ -552,7 +540,7 @@
 				<div class="col-xl-4 col-12">
 					<div class="box">
 						<div class="box-header no-border">
-							<h3 class="box-title">Total Cases (0)</h3>
+							<h3 class="box-title">Total Matters (0)</h3>
 						</div>
 						<div class="box-body py-0 px-0">
 							<div class="chart" id="totalcases"></div>
@@ -572,7 +560,7 @@
 				<div class="col-xl-4 col-12">
 					<div class="box">
 						<div class="box-header no-border">
-							<h3 class="box-title">Settled Cases (0)</h3>
+							<h3 class="box-title">Settled Matters (0)</h3>
 						</div>
 						<div class="box-body py-0 px-0">
 							<div class="chart" id="settledcases"></div>
@@ -659,14 +647,14 @@
 					<div class="box">
 						<div class="box-header">
 							<h3 class="box-title align-items-start flex-column">
-								Ongoing Cases
+								Ongoing Matters
 							</h3>
 						</div>
 						<div class="box-body py-0">
 							<div class="table-responsive">
 								<table class="table mb-0 no-border">
 									<tbody>
-										<tr>										
+										<!-- <tr>										
 											<td class="ps-0 py-1">
 												<div class="d-flex align-items-center">
 													<div class="flex-shrink-0 me-20">
@@ -697,77 +685,8 @@
 												<a href="#" class=""><span class=""><span class="path1"></span><span class="path2"></span></span></a>
 												<a href="#" class=""><span class=""><span class="path1"></span><span class="path2"></span></span></a>
 											</td>
-										</tr>
-										<tr>										
-											<td class="ps-0 py-1">
-												<div class="d-flex align-items-center">
-													<div class="flex-shrink-0 me-20">
-														<div class="" style=""></div>
-													</div>
-													<div>
-														<a href="#" class="text-dark hover-primary mb-1 fs-16"></a>
-														<span class="text-fade d-block"></span>
-													</div>
-												</div>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-												</span>
-												<span class="fs-16">
-												</span>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-												</span>
-												<span class="fs-16">
-												</span>
-											</td>
-											<td>
-												<span class=""></span>
-											</td>
-											<td class="text-end">
-												<a href="#" class=""><span class=""><span class="path1"></span><span class="path2"></span></span></a>
-												<a href="#" class=""><span class=""><span class="path1"></span><span class="path2"></span></span></a>
-											</td>
-										</tr>
-										<tr>										
-											<td class="ps-0 py-1">
-												<div class="d-flex align-items-center">
-													<div class="flex-shrink-0 me-20">
-														<div class="bg-img h-50 w-50" style="background-image: url(../images/avatar/2.jpg)"></div>
-													</div>
-													<div>
-														<a href="#" class="text-dark hover-primary mb-1 fs-16">Johen Clark</a>
-														<span class="text-fade d-block">johen@dummy.com</span>
-													</div>
-												</div>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-													Case Type
-												</span>
-												<span class="fs-16">
-													Criminal Case
-												</span>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-													Attorney
-												</span>
-												<span class="fs-16">
-													Johen Panthar
-												</span>
-											</td>
-											<td>
-												<span class="badge badge-primary badge-lg">4 hearing</span>
-											</td>
-											<td class="text-end">
-												<a href="#" class="waves-effect waves-light btn btn-xs btn-primary btn-circle mx-5"><span class="icon-Write"><span class="path1"></span><span class="path2"></span></span></a>
-												<a href="#" class="waves-effect waves-light btn btn-xs btn-danger btn-circle mx-5"><span class="icon-Trash1"><span class="path1"></span><span class="path2"></span></span></a>
-											</td>
-										</tr>
-										<tr>										
-											<td class="ps-0 py-1">
+										</tr>										 -->
+											<!-- <td class="ps-0 py-1">
 												<div class="d-flex align-items-center">
 													<div class="flex-shrink-0 me-20">
 														<div class="bg-img h-50 w-50" style="background-image: url(../images/avatar/4.jpg)"></div>
@@ -801,43 +720,8 @@
 												<a href="#" class="waves-effect waves-light btn btn-xs btn-primary btn-circle mx-5"><span class="icon-Write"><span class="path1"></span><span class="path2"></span></span></a>
 												<a href="#" class="waves-effect waves-light btn btn-xs btn-danger btn-circle mx-5"><span class="icon-Trash1"><span class="path1"></span><span class="path2"></span></span></a>
 											</td>
-										</tr>
-										<tr>										
-											<td class="ps-0 py-1">
-												<div class="d-flex align-items-center">
-													<div class="flex-shrink-0 me-20">
-														<div class="bg-img h-50 w-50" style="background-image: url(../images/avatar/5.jpg)"></div>
-													</div>
-													<div>
-														<a href="#" class="text-dark hover-primary mb-1 fs-16">Johen Paton</a>
-														<span class="text-fade d-block">johen@dummy.com</span>
-													</div>
-												</div>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-													Case Type
-												</span>
-												<span class="fs-16">
-													Financial Case
-												</span>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-													Attorney
-												</span>
-												<span class="fs-16">
-													Mical Lobani
-												</span>
-											</td>
-											<td>
-												<span class="badge badge-primary badge-lg">2 hearing</span>
-											</td>
-											<td class="text-end">
-												<a href="#" class="waves-effect waves-light btn btn-xs btn-primary btn-circle mx-5"><span class="icon-Write"><span class="path1"></span><span class="path2"></span></span></a>
-												<a href="#" class="waves-effect waves-light btn btn-xs btn-danger btn-circle mx-5"><span class="icon-Trash1"><span class="path1"></span><span class="path2"></span></span></a>
-											</td>
-										</tr>
+										</tr> -->
+										
 									</tbody>
 								</table>
 							</div>
@@ -1008,7 +892,7 @@
 		  </li>
 		</ul>
     </div>
-	  &copy; <script>document.write(new Date().getFullYear())</script> <a href="#">Lawfirm Company</a>. All Rights Reserved.
+	  &copy; <script>document.write(new Date().getFullYear())</script> <a href="#">Company</a>. All Rights Reserved.
   </footer>
 
   <!-- Control Sidebar -->
@@ -1034,7 +918,7 @@
 			<input type="text" name="s" placeholder="Search" class="w-p100">
 		  </div>
           <div class="media-list media-list-hover mt-20">
-			<div class="media py-10 px-0">
+			<!-- <div class="media py-10 px-0">
 			  <a class="avatar avatar-lg status-success" href="#">
 				<img src="../images/avatar/1.jpg" alt="...">
 			  </a>
@@ -1045,99 +929,7 @@
 				<p>Praesent tristique diam...</p>
 				  <span>Just now</span>
 			  </div>
-			</div>
-
-			<div class="media py-10 px-0">
-			  <a class="avatar avatar-lg status-danger" href="#">
-				<img src="../images/avatar/2.jpg" alt="...">
-			  </a>
-			  <div class="media-body">
-				<p class="fs-16">
-				  <a class="hover-primary" href="#"><strong>Luke</strong></a>
-				</p>
-				<p>Cras tempor diam ...</p>
-				  <span>33 min ago</span>
-			  </div>
-			</div>
-
-			<div class="media py-10 px-0">
-			  <a class="avatar avatar-lg status-warning" href="#">
-				<img src="../images/avatar/3.jpg" alt="...">
-			  </a>
-			  <div class="media-body">
-				<p class="fs-16">
-				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
-				</p>
-				<p>In posuere tortor vel...</p>
-				  <span>42 min ago</span>
-			  </div>
-			</div>
-
-			<div class="media py-10 px-0">
-			  <a class="avatar avatar-lg status-primary" href="#">
-				<img src="../images/avatar/4.jpg" alt="...">
-			  </a>
-			  <div class="media-body">
-				<p class="fs-16">
-				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
-				</p>
-				<p>In posuere tortor vel...</p>
-				  <span>42 min ago</span>
-			  </div>
-			</div>			
-			
-			<div class="media py-10 px-0">
-			  <a class="avatar avatar-lg status-success" href="#">
-				<img src="../images/avatar/1.jpg" alt="...">
-			  </a>
-			  <div class="media-body">
-				<p class="fs-16">
-				  <a class="hover-primary" href="#"><strong>Tyler</strong></a>
-				</p>
-				<p>Praesent tristique diam...</p>
-				  <span>Just now</span>
-			  </div>
-			</div>
-
-			<div class="media py-10 px-0">
-			  <a class="avatar avatar-lg status-danger" href="#">
-				<img src="../images/avatar/2.jpg" alt="...">
-			  </a>
-			  <div class="media-body">
-				<p class="fs-16">
-				  <a class="hover-primary" href="#"><strong>Luke</strong></a>
-				</p>
-				<p>Cras tempor diam ...</p>
-				  <span>33 min ago</span>
-			  </div>
-			</div>
-
-			<div class="media py-10 px-0">
-			  <a class="avatar avatar-lg status-warning" href="#">
-				<img src="../images/avatar/3.jpg" alt="...">
-			  </a>
-			  <div class="media-body">
-				<p class="fs-16">
-				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
-				</p>
-				<p>In posuere tortor vel...</p>
-				  <span>42 min ago</span>
-			  </div>
-			</div>
-
-			<div class="media py-10 px-0">
-			  <a class="avatar avatar-lg status-primary" href="#">
-				<img src="../images/avatar/4.jpg" alt="...">
-			  </a>
-			  <div class="media-body">
-				<p class="fs-16">
-				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
-				</p>
-				<p>In posuere tortor vel...</p>
-				  <span>42 min ago</span>
-			  </div>
-			</div>
-			  
+			</div>			   -->
 		  </div>
 
       </div>
@@ -1152,122 +944,23 @@
 			<a href="javascript:void(0)" class="text-end text-grey"><i class="ti-plus"></i></a>
 		  </div>
         <ul class="todo-list mt-20">
-			<li class="py-15 px-5 by-1">
+			<!-- <li class="py-15 px-5 by-1"> -->
 			  <!-- checkbox -->
-			  <input type="checkbox" id="basic_checkbox_1" class="filled-in">
-			  <label for="basic_checkbox_1" class="mb-0 h-15"></label>
+
+			  <!-- <input type="checkbox" id="basic_checkbox_1" class="filled-in">
+			  <label for="basic_checkbox_1" class="mb-0 h-15"></label> -->
 			  <!-- todo text -->
-			  <span class="text-line">Nulla vitae purus</span>
+
+			  <!-- <span class="text-line">Nulla vitae purus</span> -->
 			  <!-- Emphasis label -->
-			  <small class="badge bg-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
+
+			  <!-- <small class="badge bg-danger"><i class="fa fa-clock-o"></i> 2 mins</small> -->
 			  <!-- General tools such as edit or delete-->
-			  <div class="tools">
+			  <!-- <div class="tools"> -->
 				<i class="fa fa-edit"></i>
 				<i class="fa fa-trash-o"></i>
-			  </div>
-			</li>
-			<li class="py-15 px-5">
-			  <!-- checkbox -->
-			  <input type="checkbox" id="basic_checkbox_2" class="filled-in">
-			  <label for="basic_checkbox_2" class="mb-0 h-15"></label>
-			  <span class="text-line">Phasellus interdum</span>
-			  <small class="badge bg-info"><i class="fa fa-clock-o"></i> 4 hours</small>
-			  <div class="tools">
-				<i class="fa fa-edit"></i>
-				<i class="fa fa-trash-o"></i>
-			  </div>
-			</li>
-			<li class="py-15 px-5 by-1">
-			  <!-- checkbox -->
-			  <input type="checkbox" id="basic_checkbox_3" class="filled-in">
-			  <label for="basic_checkbox_3" class="mb-0 h-15"></label>
-			  <span class="text-line">Quisque sodales</span>
-			  <small class="badge bg-warning"><i class="fa fa-clock-o"></i> 1 day</small>
-			  <div class="tools">
-				<i class="fa fa-edit"></i>
-				<i class="fa fa-trash-o"></i>
-			  </div>
-			</li>
-			<li class="py-15 px-5">
-			  <!-- checkbox -->
-			  <input type="checkbox" id="basic_checkbox_4" class="filled-in">
-			  <label for="basic_checkbox_4" class="mb-0 h-15"></label>
-			  <span class="text-line">Proin nec mi porta</span>
-			  <small class="badge bg-success"><i class="fa fa-clock-o"></i> 3 days</small>
-			  <div class="tools">
-				<i class="fa fa-edit"></i>
-				<i class="fa fa-trash-o"></i>
-			  </div>
-			</li>
-			<li class="py-15 px-5 by-1">
-			  <!-- checkbox -->
-			  <input type="checkbox" id="basic_checkbox_5" class="filled-in">
-			  <label for="basic_checkbox_5" class="mb-0 h-15"></label>
-			  <span class="text-line">Maecenas scelerisque</span>
-			  <small class="badge bg-primary"><i class="fa fa-clock-o"></i> 1 week</small>
-			  <div class="tools">
-				<i class="fa fa-edit"></i>
-				<i class="fa fa-trash-o"></i>
-			  </div>
-			</li>
-			<li class="py-15 px-5">
-			  <!-- checkbox -->
-			  <input type="checkbox" id="basic_checkbox_6" class="filled-in">
-			  <label for="basic_checkbox_6" class="mb-0 h-15"></label>
-			  <span class="text-line">Vivamus nec orci</span>
-			  <small class="badge bg-info"><i class="fa fa-clock-o"></i> 1 month</small>
-			  <div class="tools">
-				<i class="fa fa-edit"></i>
-				<i class="fa fa-trash-o"></i>
-			  </div>
-			</li>
-			<li class="py-15 px-5 by-1">
-			  <!-- checkbox -->
-			  <input type="checkbox" id="basic_checkbox_7" class="filled-in">
-			  <label for="basic_checkbox_7" class="mb-0 h-15"></label>
-			  <!-- todo text -->
-			  <span class="text-line">Nulla vitae purus</span>
-			  <!-- Emphasis label -->
-			  <small class="badge bg-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
-			  <!-- General tools such as edit or delete-->
-			  <div class="tools">
-				<i class="fa fa-edit"></i>
-				<i class="fa fa-trash-o"></i>
-			  </div>
-			</li>
-			<li class="py-15 px-5">
-			  <!-- checkbox -->
-			  <input type="checkbox" id="basic_checkbox_8" class="filled-in">
-			  <label for="basic_checkbox_8" class="mb-0 h-15"></label>
-			  <span class="text-line">Phasellus interdum</span>
-			  <small class="badge bg-info"><i class="fa fa-clock-o"></i> 4 hours</small>
-			  <div class="tools">
-				<i class="fa fa-edit"></i>
-				<i class="fa fa-trash-o"></i>
-			  </div>
-			</li>
-			<li class="py-15 px-5 by-1">
-			  <!-- checkbox -->
-			  <input type="checkbox" id="basic_checkbox_9" class="filled-in">
-			  <label for="basic_checkbox_9" class="mb-0 h-15"></label>
-			  <span class="text-line">Quisque sodales</span>
-			  <small class="badge bg-warning"><i class="fa fa-clock-o"></i> 1 day</small>
-			  <div class="tools">
-				<i class="fa fa-edit"></i>
-				<i class="fa fa-trash-o"></i>
-			  </div>
-			</li>
-			<li class="py-15 px-5">
-			  <!-- checkbox -->
-			  <input type="checkbox" id="basic_checkbox_10" class="filled-in">
-			  <label for="basic_checkbox_10" class="mb-0 h-15"></label>
-			  <span class="text-line">Proin nec mi porta</span>
-			  <small class="badge bg-success"><i class="fa fa-clock-o"></i> 3 days</small>
-			  <div class="tools">
-				<i class="fa fa-edit"></i>
-				<i class="fa fa-trash-o"></i>
-			  </div>
-			</li>
+			  <!-- </div> -->
+			<!-- </li> -->
 		  </ul>
       </div>
       <!-- /.tab-pane -->

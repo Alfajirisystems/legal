@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Mirrored from lawfirm-admin-template.multipurposethemes.com/main/attorney_details.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Apr 2024 22:32:06 GMT -->
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="https://lawfirm-admin-template.multipurposethemes.com/images/favicon.ico">
 
-    <title>Law Firm - Dashboard</title>
-  
+    <title>Company Software</title>
+    
 	<!-- Vendors Style-->
 	<link rel="stylesheet" href="css/vendors_css.css">
 	  
 	<!-- Style-->  
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/skin_color.css">	
+	<link rel="stylesheet" href="css/skin_color.css">
+     
+  </head>
 
-</head>
 <body class="hold-transition light-skin sidebar-mini theme-primary fixed">
 	
 <div class="wrapper">
 	<div id="loader"></div>
-
+	
   <header class="main-header">
 	<div class="d-flex align-items-center logo-box justify-content-start">	
 		<!-- Logo -->
-		<a href="index.html" class="logo">
+		<a href="/" class="logo">
 		  <!-- logo-->
 		  <div class="logo-mini w-50">
 			  <span class="light-logo"><img src="../images/logo-letter.png" alt="logo"></span>
@@ -95,41 +94,11 @@
 			  <li>
 				<!-- inner menu: contains the actual data -->
 				<ul class="menu sm-scrol">
-				  <li>
+				  <!-- <li>
 					<a href="#">
 					  <i class="fa fa-users text-info"></i> Curabitur id eros quis nunc suscipit blandit.
 					</a>
-				  </li>
-				  <li>
-					<a href="#">
-					  <i class="fa fa-warning text-warning"></i> Duis malesuada justo eu sapien elementum, in semper diam posuere.
-					</a>
-				  </li>
-				  <li>
-					<a href="#">
-					  <i class="fa fa-users text-danger"></i> Donec at nisi sit amet tortor commodo porttitor pretium a erat.
-					</a>
-				  </li>
-				  <li>
-					<a href="#">
-					  <i class="fa fa-shopping-cart text-success"></i> In gravida mauris et nisi
-					</a>
-				  </li>
-				  <li>
-					<a href="#">
-					  <i class="fa fa-user text-danger"></i> Praesent eu lacus in libero dictum fermentum.
-					</a>
-				  </li>
-				  <li>
-					<a href="#">
-					  <i class="fa fa-user text-primary"></i> Nunc fringilla lorem 
-					</a>
-				  </li>
-				  <li>
-					<a href="#">
-					  <i class="fa fa-user text-success"></i> Nullam euismod dolor ut quam interdum, at scelerisque ipsum imperdiet.
-					</a>
-				  </li>
+				  </li> -->
 				</ul>
 			  </li>
 			  <li class="footer">
@@ -149,7 +118,6 @@
     </nav>
   </header>
   
-  <!-- Left side column. contains the logo and sidebar -->
   <aside class="main-sidebar">
     <!-- sidebar-->
     <section class="sidebar position-relative">
@@ -164,7 +132,7 @@
 			</div>
 			<ul class="list-inline profile-setting mt-20 mb-0 d-flex justify-content-center gap-3">
 				<li><a href="/mailbox" data-bs-toggle="tooltip" title="Email"><i class="icon-Incoming-mail fs-24"><span class="path1"></span><span class="path2"></span></i></a></li>
-				<li><a href="contact_app_chat.html" data-bs-toggle="tooltip" title="Chat"><i class="icon-Group-chat fs-24"><span class="path1"></span><span class="path2"></span></i></a></li>
+				<!-- <li><a href="contact_app_chat.html" data-bs-toggle="tooltip" title="Chat"><i class="icon-Group-chat fs-24"><span class="path1"></span><span class="path2"></span></i></a></li> -->
 				<li><a href="/login" data-bs-toggle="tooltip" title="Logout"><i class="icon-Lock-overturning fs-24"><span class="path1"></span><span class="path2"></span></i></a></li>
 			</ul>
 	    </div>
@@ -183,21 +151,39 @@
 					<i class="icon-Barcode-read"><span class="path1"></span><span class="path2"></span></i>
 					<span>Appointments</span>
 				  </a>
-				</li>			
-				<li class="treeview">
+				</li>
+				<li>
+				  <a href="/letters">
+					<i class="icon-Library"><span class="path1"></span><span class="path2"></span></i>
+					<span>Letters</span>
+				  </a>
+				</li>	
+				<li>
+				  <a href="/cases">
+					<i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>
+					<span>Matters</span>
+				  </a>
+				</li>		
+				<li>
+				  <a href="/attorneys">
+					<i class="icon-Hummer"><span class="path1"></span><span class="path2"></span></i>
+					<span>Attorney</span>
+				  </a>
+				</li>
+				<!-- <li class="treeview">
 				  <a href="#">
 					<i class="icon-User"><span class="path1"></span><span class="path2"></span></i>
-					<span>Cases</span>
+					<span>Matters</span>
 					<span class="pull-right-container">
 					  <i class="fa fa-angle-right pull-right"></i>
 					</span>
 				  </a>
 				  <ul class="treeview-menu">
-					<li><a href="/cases"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Cases</a></li>
+					<li><a href="/cases"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Matters</a></li>
 					<li><a href="case_details.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Case Details</a></li>
 				  </ul>
-				</li>				
-				<li class="treeview">
+				</li>				 -->
+				<!-- <li class="treeview">
 				  <a href="#">
 					<i class="icon-Hummer"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
 					<span>Attorney</span>
@@ -209,8 +195,8 @@
 					<li><a href="/attorneys"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Attorneys</a></li>
 					<li><a href="attorney_details.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Attorney Details</a></li>
 				  </ul>
-				</li>
-				<li class="header">Components</li>
+				</li> -->
+				<li class="header">Security</li>
 				<!-- <li class="treeview">
 				  <a href="#">
 					<i class="icon-Library"><span class="path1"></span><span class="path2"></span></i>
@@ -504,7 +490,7 @@
 					</span>
 				  </a>
 				  <ul class="treeview-menu">
-					<li><a href="/login"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Login</a></li>
+					<!-- <li><a href="/login"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Login</a></li> -->
 					<li><a href="auth_register.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Register</a></li>
 					<li><a href="/lockscreen"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Lockscreen</a></li>
 					<li><a href="auth_user_pass.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Recover password</a></li>	
@@ -529,21 +515,21 @@
 			  <div class="sidebar-widgets">
 				  <!-- <div class="mx-25 mb-30 pb-20 side-bx bg-primary-light rounded20">
 					<div class="text-center">
-						<img src="https://lawfirm-admin-template.multipurposethemes.com/images/svg-icon/color-svg/custom-17.svg" class="sideimg p-5" alt="">
-						<h4 class="title-bx text-primary">Make an Appointments</h4>
-						<a href="#" class="py-10 fs-14 mb-0 text-primary">
+						<img src="https://lawfirm-admin-template.multipurposethemes.com/images/svg-icon/color-svg/custom-17.svg" class="sideimg p-5" alt=""> -->
+						<!-- <h4 class="title-bx text-primary">Make an Appointments</h4> -->
+						<!-- <a href="#" class="py-10 fs-14 mb-0 text-primary">
 							Best Law Services here <i class="mdi mdi-arrow-right"></i>
-						</a>
-					</div>
-				  </div> -->
+						</a> -->
+					<!-- </div> -->
+				  <!-- </div> -->
 				<div class="copyright text-center m-25">
-					<p><strong class="d-block">Law Firm Services</strong> © <script>document.write(new Date().getFullYear())</script> All Rights Reserved</p>
+					<p><strong class="d-block">Company</strong> © <script>document.write(new Date().getFullYear())</script> All Rights Reserved</p>
 				</div>
 			  </div>
 		  </div>
 		</div>
     </section>
-  </aside> 
+  </aside>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">

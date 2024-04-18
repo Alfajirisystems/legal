@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="https://lawfirm-admin-template.multipurposethemes.com/images/favicon.ico">
 
-    <title>Law Firm - Lockscreen </title>
+    <title>Company - Lockscreen </title>
   
 	<!-- Vendors Style-->
 	<link rel="stylesheet" href="css/vendors_css.css">

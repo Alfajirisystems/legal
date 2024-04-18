@@ -9,6 +9,7 @@ use App\Http\Controllers\LockScreenController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\AttorneyDetailsController;
 use App\Http\Controllers\MailboxController;
+use App\Http\Controllers\LettersController;
 
 
 /*
@@ -48,3 +49,5 @@ Route::get('/login', [LoginController::class, 'index']);
 Route::get('/attorney_details', [AttorneyDetailsController::class, 'index']);
 
 Route::get('/mailbox', [MailboxController::class, 'index']);
+
+Route::get('/letters', [LettersController::class, 'index']);
