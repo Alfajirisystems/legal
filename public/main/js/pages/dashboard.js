@@ -11,7 +11,8 @@ $(function () {
 		 var options = {
           series: [{
             name: "Ongoing",
-            data: [45, 52, 38, 24, 33, 26, 41, 20, 31, 45, 25, 20]
+            // data: [45, 52, 38, 24, 33, 26, 41, 20, 31, 45, 25, 20],
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
           },
           {
             name: "Settled",
@@ -177,12 +178,13 @@ $(function () {
 	var options = {
           series: [{
           name: 'Won',
-          data: [44, 55, 41, 37, 22, 43, 21]
+          // data: [44, 55, 41, 37, 22, 43, 21]
+          data: [0, 0, 0, 0, 0, 0, 0]
         }, {
           name: 'Lost',
           data: [13, 12, 13, 12, 13, 13, 12]
         }, {
-          name: 'Decillned',
+          name: 'Decillined',
           data: [12, 17, 11, 9, 15, 11, 20]
         }],
           chart: {

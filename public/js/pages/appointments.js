@@ -135,57 +135,18 @@
         var form = '';
         var today = new Date($.now());
 
-        var defaultEvents =  [{
-                title: 'Criminal Law Case',                
-                start: '2021-06-11T10:30:00',
-                className: 'bg-info'
-            }, 
-			{
-                title: 'Family Law',
-                start: 'today',
-                end: 'today',
-                className: 'bg-danger'
-            }, 
-			{
-                title: 'Personal Injury',                
-                start: '2021-06-11T10:30:00',
-                className: 'bg-success'
-            },
-            {
-                title: 'Identity Theft',                
-                start: '2021-06-13T10:30:00',
-                className: 'bg-primary'
-            },
-            {
-                title: 'Travel Accident',                
-                start: '2021-06-14T10:30:00',
-                className: 'bg-info'
-            },
-            {
-                title: 'Legal Advice',                
-                start: '2021-06-14T11:30:00',
-                className: 'bg-success'
-            },
-            {
-                title: 'Business Litigation',                
-                start: '2021-06-15T10:30:00',
-                className: 'bg-danger'
-            },
-            {
-                title: 'Family Law',                
-                start: '2021-06-17T10:30:00',
-                className: 'bg-warring'
-            },
-            {
-                title: 'Civil Litigation',                
-                start: '2021-06-20T10:30:00',
-                className: 'bg-info'
-            },
-			{
-                title: 'Insurance Defence',
-                start: new Date($.now() + 784800000),
-                className: 'bg-success'
-            }];
+        var defaultEvents =  [
+            // {
+            //     title: 'Criminal Law Case',                
+            //     start: '2021-06-11T10:30:00',
+            //     className: 'bg-info'
+            // },
+			// {
+            //     title: 'Insurance Defence',
+            //     start: new Date($.now() + 784800000),
+            //     className: 'bg-success'
+            // }
+        ];
 
         var $this = this;
         $this.$calendarObj = $this.$calendar.fullCalendar({

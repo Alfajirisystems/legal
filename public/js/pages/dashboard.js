@@ -11,15 +11,17 @@ $(function () {
 		 var options = {
           series: [{
             name: "Ongoing",
-            data: [45, 52, 38, 24, 33, 26, 41, 20, 31, 45, 25, 20]
+            // data: [45, 52, 38, 24, 33, 26, 41, 20, 31, 45, 25, 20]
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
           },
           {
             name: "Settled",
-            data: [35, 41, 62, 42, 25, 48, 29, 37, 36, 40, 32, 35]
+            // data: [35, 41, 62, 42, 25, 48, 29, 37, 36, 40, 32, 35]
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
           }
         ],
           chart: {
-          height: 168,
+          height: 150,
           type: 'line',
           zoom: {
             enabled: false
@@ -100,11 +102,12 @@ $(function () {
 	var options = {
           series: [{
             name: "Settled",
-            data: [25, 15, 22, 18, 28, 25, 35, 40, 25, 22, 28, 30]
+            // data: [25, 15, 22, 18, 28, 25, 35, 40, 25, 22, 28, 30]
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
           }
         ],
           chart: {
-          height: 168,
+          height: 150,
           type: 'area',
           zoom: {
             enabled: false
@@ -177,17 +180,20 @@ $(function () {
 	var options = {
           series: [{
           name: 'Won',
-          data: [44, 55, 41, 37, 22, 43, 21]
+          data: [0, 0, 0, 0, 0, 0, 0]
+          // data: [44, 55, 41, 37, 22, 43, 21]
         }, {
           name: 'Lost',
-          data: [13, 12, 13, 12, 13, 13, 12]
+          data: [0, 0, 0, 0, 0, 0, 0]
+          // data: [13, 12, 13, 12, 13, 13, 12]
         }, {
-          name: 'Decillned',
-          data: [12, 17, 11, 9, 15, 11, 20]
+          name: 'Declined',
+          data: [0, 0, 0, 0, 0, 0, 0]
+          // data: [12, 17, 11, 9, 15, 11, 20]
         }],
           chart: {
           type: 'bar',
-          height: 406,
+          height: 300,
           stacked: true,
           zoom: {
             enabled: false
@@ -264,10 +270,12 @@ $(function () {
 		var options = {
           series: [{
           name: 'Won',
-          data: [4, 8, 12, 10, 11, 10, 8]
+          // data: [4, 8, 12, 10, 11, 10, 8]
+          data: [0, 0, 0, 0, 0, 0, 0]
         }, {
           name: 'Lost',
-          data: [8, 2, 9, 8, 10, 5, 2]
+          data: [0, 0, 0, 0, 0, 0, 0]
+          // data: [8, 2, 9, 8, 10, 5, 2]
         }],
           chart: {
           type: 'bar',
@@ -339,7 +347,8 @@ $(function () {
 		var options = {
         series: [{
             name: "Profit",
-            data: [0, 40, 110, 70, 100, 60, 130, 55, 140, 125]
+            // data: [0, 40, 110, 70, 100, 60, 130, 55, 140, 125]
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         }],
         chart: {
 			foreColor:"#bac0c7",
@@ -426,10 +435,11 @@ $(function () {
 		var options = {
         series: [{
           name: 'series1',
-          data: [178, 223, 195, 201, 143, 189, 156, 155, 118, 167, 159]
+          data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+          // data: [178, 223, 195, 201, 143, 189, 156, 155, 118, 167, 159]
         }],
         chart: {
-          height: 200,
+          height: 87,
 		  width: 600,
           type: 'area',
 			toolbar: {

@@ -11,13 +11,11 @@
     <title>Company Software</title>
     
 	<!-- Vendors Style-->
-	<link rel="stylesheet" href="{{url('css/vendors_css.css')}}">
+	<link rel="stylesheet" href="css/vendors_css.css">
 	  
 	<!-- Style-->  
-	<link rel="stylesheet" href="{{url('css/style.css')}}">
-	<link rel="stylesheet" href="{{url('css/skin_color.css')}}">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/skin_color.css">
      
   </head>
 
@@ -538,473 +536,462 @@
 		</div>
     </section>
   </aside>
-
+  
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
 	  <div class="container-full">
 		<!-- Main content -->
 		<section class="content">
-			<div class="row">								
+			<div class="row">
+				<div class="col-xl-2 col-lg-4 col-12">
+				  <button class="btn btn-danger w-p100 mb-30" type="button" alt="default" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg">Compose</button>
+
+				  <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title" id="myLargeModalLabel">Compose New Message</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<div class="form-group">
+									<input class="form-control" placeholder="To:">
+								  </div>
+								  <div class="form-group">
+									<input class="form-control" placeholder="Subject:">
+								  </div>
+								  <div class="form-group">
+										<textarea id="compose-textarea" class="form-control" style="height: 300px">
+										  <p>Your Message Here....</p>
+										</textarea>
+								  </div>
+								  <div class="form-group">
+									<div class="btn btn-info btn-file">
+									  <i class="fa fa-paperclip"></i> Attachment
+									  <input type="file" name="attachment">
+									</div>
+									<p class="help-block">Max. 32MB</p>
+								  </div>
+							</div>
+							<div class="modal-footer">
+								<div class="pull-right">
+									<button type="button" class="btn btn-default"><i class="fa fa-pencil"></i> Draft</button>
+									<button type="submit" class="btn btn-success"><i class="fa fa-envelope-o"></i> Send</button>
+								</div>
+								<button type="reset" class="btn btn-danger"><i class="fa fa-times"></i> Discard</button>
+								<button type="button" class="btn btn-danger text-start" data-bs-dismiss="modal">Close</button>
+							</div>
+						</div>
+						<!-- /.modal-content -->
+					</div>
+					<!-- /.modal-dialog -->
+				</div>
+				<!-- /.modal -->
+
+				  <div class="box">
+					<div class="box-header with-border">
+					  <h4 class="box-title">Folders</h4>
+					  <ul class="box-controls pull-right">
+						<li><a class="box-btn-slide" href="#"></a></li>	
+					  </ul>
+					</div>
+					<div class="box-body no-padding mailbox-nav">
+					  <ul class="nav nav-pills flex-column">
+						<li class="nav-item"><a class="nav-link active" href="javascript:void(0)"><i class="ion ion-ios-email-outline"></i> Inbox
+						  <span class="label label-success pull-right">12</span></a></li>
+						<li class="nav-item"><a class="nav-link" href="javascript:void(0)"><i class="ion ion-paper-airplane"></i> Sent</a></li>
+						<li class="nav-item"><a class="nav-link" href="javascript:void(0)"><i class="ion ion-email-unread"></i> Drafts</a></li>
+						<li class="nav-item"><a class="nav-link" href="javascript:void(0)"><i class="ion ion-star"></i>  Starred <span class="label label-warning pull-right">14</span></a>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="javascript:void(0)"><i class="ion ion-trash-a"></i> Trash</a></li>
+					  </ul>
+					</div>
+					<!-- /.box-body -->
+				  </div>
+				  <!-- /. box -->
+				  <div class="box">
+					<div class="box-header with-border">
+					  <h4 class="box-title">Labels</h4>
+					  <ul class="box-controls pull-right">
+						<li><a class="box-btn-slide" href="#"></a></li>	
+					  </ul>
+					</div>
+					<div class="box-body no-padding mailbox-nav">
+					  <ul class="nav nav-pills flex-column">
+						<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-circle-o text-danger"></i> Important</a></li>
+						<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-circle-o text-warning"></i> Promotions</a></li>
+						<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-circle-o text-info"></i> Social</a></li>
+					  </ul>
+					</div>
+					<!-- /.box-body -->
+				  </div>
+				  <!-- /.box -->
+					
+					<!-- <div class="contact-bx">
+						<div class="media-list media-list-hover">
+							<div class="media py-10 px-0 align-items-center">
+							  <a class="avatar avatar-lg status-success" href="#">
+								<img src="../images/avatar/1.jpg" alt="...">
+							  </a>
+							  <div class="media-body">
+								<p class="fs-16">
+								  <a href="#">Sarah Kortney</a>
+								</p>
+							  </div>
+							</div>
+
+							<div class="media py-10 px-0 align-items-center">
+							  <a class="avatar avatar-lg status-danger" href="#">
+								<img src="../images/avatar/2.jpg" alt="...">
+							  </a>
+							  <div class="media-body">
+								<p class="fs-16">
+								  <a href="#">Tommy Nash</a>
+								</p>
+							  </div>
+							</div>
+
+							<div class="media py-10 px-0 align-items-center">
+							  <a class="avatar avatar-lg status-warning" href="#">
+								<img src="../images/avatar/3.jpg" alt="...">
+							  </a>
+							  <div class="media-body">
+								<p class="fs-16">
+								  <a href="#">Kathryn Mengel</a>
+								</p>
+							  </div>
+							</div>
+
+							<div class="media py-10 px-0 align-items-center">
+							  <a class="avatar avatar-lg status-primary" href="#">
+								<img src="../images/avatar/4.jpg" alt="...">
+							  </a>
+							  <div class="media-body">
+								<p class="fs-16">
+								  <a href="#">Mayra Sibley</a>
+								</p>
+							  </div>
+							</div>			
+
+							<div class="media py-10 px-0 align-items-center">
+							  <a class="avatar avatar-lg status-success" href="#">
+								<img src="../images/avatar/1.jpg" alt="...">
+							  </a>
+							  <div class="media-body">
+								<p class="fs-16">
+								  <a href="#">Tommy Nash</a>
+								</p>
+							  </div>
+							</div>
+
+							<div class="media py-10 px-0 align-items-center">
+							  <a class="avatar avatar-lg status-danger" href="#">
+								<img src="../images/avatar/2.jpg" alt="...">
+							  </a>
+							  <div class="media-body">
+								<p class="fs-16">
+								  <a href="#">Williemae Lagasse</a>
+								</p>
+							  </div>
+							</div>
+						  </div>
+					</div> -->
+				</div>
+				<!-- /.col -->
+				<div class="col-xl-6 col-lg-8 col-12">
+				  <div class="box">
+					<div class="box-header with-border">
+					  <h4 class="box-title">Inbox</h4>
+						<div class="box-controls pull-right">
+						<div class="box-header-actions">
+						  <div class="lookup lookup-sm lookup-right d-none d-lg-block">
+							<input type="text" name="s" placeholder="Search">
+						  </div>
+						</div>
+					  </div>
+					</div>
+					<!-- /.box-header -->
+					<div class="box-body">
+					  <div class="mailbox-controls">
+						<!-- Check all button -->
+						<button type="button" class="btn btn-primary btn-sm checkbox-toggle"><i class="ion ion-android-checkbox-outline-blank"></i>
+						</button>
+						<div class="btn-group">
+						  <!-- <button type="button" class="btn btn-primary btn-sm"><i class="ion ion-trash-a"></i></button> -->
+						  <button type="button" class="btn btn-primary btn-sm"><i class="ionicon ion-trash-a"></i></button>
+						  <button type="button" class="btn btn-primary btn-sm"><i class="ion ion-reply"></i></button>
+						  <button type="button" class="btn btn-primary btn-sm"><i class="ion ion-share"></i></button>
+						</div>
+						<!-- /.btn-group -->
+						<div class="btn-group">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+							  <i class="ion ion-flag margin-r-5"></i>
+							  <span class="caret"></span>
+							</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						  </div>
+						  <div class="btn-group">
+							<button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+							  <i class="ion ion-folder margin-r-5"></i>
+							  <span class="caret"></span>
+							</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						  </div>
+						</div>
+						<!-- /.btn-group -->
+						<button type="button" class="btn btn-primary btn-sm"><i class="fa fa-refresh"></i></button>
+						<div class="pull-right">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-primary btn-sm"><i class="fa fa-chevron-left"></i></button>
+							<button type="button" class="btn btn-primary btn-sm"><i class="fa fa-chevron-right"></i></button>
+						  </div>
+						  <!-- /.btn-group -->
+						</div>
+						<!-- /.pull-right -->
+					  </div>
+					  <div class="mailbox-messages inbox-bx">
+						  <div class="table-responsive">
+							<table class="table table-hover table-striped">
+							  <tbody>
+							  <tr>
+								<td><input type="checkbox"></td>
+								<td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+								<td>
+									<p class="mailbox-name mb-0 fs-16 fw-600">Johen Doe</p>
+									<a class="mailbox-subject" href="#"><b>Lorem Ipsum</b> - There are many variations of Ipsum available...</a>
+								</td>
+								<td class="mailbox-attachment"></td>
+								<td class="mailbox-date">2:45 PM</td>
+							  </tr>
+							  <tr>
+								<td><input type="checkbox"></td>
+								<td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+								<td>
+									<p class="mailbox-name mb-0 fs-16 fw-600">Johen Doe</p>
+									<a class="mailbox-subject" href="#"><b>Lorem Ipsum</b> - There are many variations of Ipsum available...</a>
+								</td>
+								<td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
+								<td class="mailbox-date">2:45 PM</td>
+							  </tr>
+							  <tr>
+								<td><input type="checkbox"></td>
+								<td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+								<td>
+									<p class="mailbox-name mb-0 fs-16 fw-600">Johen Doe</p>
+									<a class="mailbox-subject" href="#"><b>Lorem Ipsum</b> - There are many variations of Ipsum available...</a>
+								</td>
+								<td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
+								<td class="mailbox-date">2:45 PM</td>
+
+							  </tr>
+							  <tr>
+								<td><input type="checkbox"></td>
+								<td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+								<td>
+									<p class="mailbox-name mb-0 fs-16 fw-600">Johen Doe</p>
+									<a class="mailbox-subject" href="#"><b>Lorem Ipsum</b> - There are many variations of Ipsum available...</a>
+								</td>
+								<td class="mailbox-attachment"></td>
+								<td class="mailbox-date">2:45 PM</td>
+							  </tr>
+							 <tr>
+								<td><input type="checkbox"></td>
+								<td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+								<td>
+									<p class="mailbox-name mb-0 fs-16 fw-600">Johen Doe</p>
+									<a class="mailbox-subject" href="#"><b>Lorem Ipsum</b> - There are many variations of Ipsum available...</a>
+								</td>
+								<td class="mailbox-attachment"></td>
+								<td class="mailbox-date">2:45 PM</td>
+							  </tr>
+							  <tr>
+								<td><input type="checkbox"></td>
+								<td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+								<td>
+									<p class="mailbox-name mb-0 fs-16 fw-600">Johen Doe</p>
+									<a class="mailbox-subject" href="#"><b>Lorem Ipsum</b> - There are many variations of Ipsum available...</a>
+								</td>
+								<td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
+								<td class="mailbox-date">2:45 PM</td>
+							  </tr>
+							  <tr>
+								<td><input type="checkbox"></td>
+								<td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+								<td>
+									<p class="mailbox-name mb-0 fs-16 fw-600">Johen Doe</p>
+									<a class="mailbox-subject" href="#"><b>Lorem Ipsum</b> - There are many variations of Ipsum available...</a>
+								</td>
+								<td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
+
+								<td class="mailbox-date">2:45 PM</td>
+							  </tr>
+							  <tr>
+								<td><input type="checkbox"></td>
+								<td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+								<td>
+									<p class="mailbox-name mb-0 fs-16 fw-600">Johen Doe</p>
+									<a class="mailbox-subject" href="#"><b>Lorem Ipsum</b> - There are many variations of Ipsum available...</a>
+								</td>
+								<td class="mailbox-attachment"></td>
+								<td class="mailbox-date">2:45 PM</td>
+							  </tr>
+							  </tbody>
+							</table>
+						  </div>                
+						<!-- /.table -->
+					  </div>
+					  <!-- /.mail-box-messages -->
+					</div>
+					<!-- /.box-body -->
+					<div class="box-footer">
+					  <div class="mailbox-controls">
+						<!-- Check all button -->
+						<button type="button" class="btn btn-primary btn-sm checkbox-toggle"><i class="ion ion-android-checkbox-outline-blank"></i>
+						</button>
+						<div class="btn-group">
+						  <button type="button" class="btn btn-primary btn-sm"><i class="ion ion-trash-a"></i></button>
+						  <button type="button" class="btn btn-primary btn-sm"><i class="ion ion-reply"></i></button>
+						  <button type="button" class="btn btn-primary btn-sm"><i class="ion ion-share"></i></button>
+						</div>
+						<!-- /.btn-group -->
+						<div class="btn-group">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+							  <i class="ion ion-flag margin-r-5"></i>
+							  <span class="caret"></span>
+							</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						  </div>
+						  <div class="btn-group">
+							<button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+							  <i class="ion ion-folder margin-r-5"></i>
+							  <span class="caret"></span>
+							</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						  </div>
+						</div>
+						<!-- /.btn-group -->
+						<button type="button" class="btn btn-primary btn-sm"><i class="fa fa-refresh"></i></button>
+						<div class="pull-right">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-primary btn-sm"><i class="fa fa-chevron-left"></i></button>
+							<button type="button" class="btn btn-primary btn-sm"><i class="fa fa-chevron-right"></i></button>
+						  </div>
+						  <!-- /.btn-group -->
+						</div>
+						<!-- /.pull-right -->
+					  </div>
+					</div>
+				  </div>
+				  <!-- /. box -->
+				</div>
+				<!-- /.col -->
 				<div class="col-xl-4 col-12">
-					<div class="box">
-						<div class="box-header no-border">
-							<h3 class="box-title">Total Matters (0)</h3>
+				  <div class="box">
+					<div class="box-body pt-10">
+					  <div class="mailbox-read-info">
+						<h4>Your message title goes here</h4>
+					  </div>
+					  <div class="mailbox-read-info clearfix mb-20">
+						<div class="float-start me-10"><a href="#"><img src="../images/1.jpg" alt="user" width="40" class="rounded-circle"></a></div>
+						<h5 class="no-margin"> Pavan kumar<br>
+							 <small>From: jonathan@domain.com</small>
+						  <span class="mailbox-read-time pull-right">22 JUL. 2019 08:03 PM</span></h5>
+					  </div>
+					  <!-- /.mailbox-read-info -->
+					  <div class="mailbox-controls with-border clearfix">                
+						<div class="float-start">
+						  <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" title="Print">
+						  <i class="fa fa-print"></i></button>
 						</div>
-						<div class="box-body py-0 px-0">
-							<div class="chart" id="totalcases"></div>
+						<div class="float-end">
+						<div class="btn-group">
+						  <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-container="body" title="Delete">
+							<i class="fa fa-trash-o"></i></button>
+						  <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-container="body" title="Reply">
+							<i class="fa fa-reply"></i></button>
+						  <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-container="body" title="Forward">
+							<i class="fa fa-share"></i></button>
 						</div>
+						</div>
+						<!-- /.btn-group -->
+
+					  </div>
+					  <!-- /.mailbox-controls -->
+					  <div class="mailbox-read-message read-mail-bx">
+						<p>Dear USer,</p>
+
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+
+						<p>enean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar.</p>
+
+						<p>Thanks,<br>Jane</p>
+					  </div>
+					  <!-- /.mailbox-read-message -->
 					</div>
+					<!-- /.box-body -->
+					<div class="box-footer">
+						<h5><i class="fa fa-paperclip m-r-10 m-b-10"></i> Attachments <span>(3)</span></h5>
+					  <ul class="mailbox-attachments clearfix">
+						<li>
+						  <div class="mailbox-attachment-info">
+							<a href="#" class="mailbox-attachment-name"><i class="fa fa-paperclip"></i> Mag.pdf</a>
+								<span class="mailbox-attachment-size">
+								  5,215 KB
+								  <a href="#" class="btn btn-primary btn-xs pull-right"><i class="fa fa-cloud-download"></i></a>
+								</span>
+						  </div>
+						</li>
+						<li>
+						  <div class="mailbox-attachment-info">
+							<a href="#" class="mailbox-attachment-name"><i class="fa fa-paperclip"></i> Documents.docx</a>
+								<span class="mailbox-attachment-size">
+								  2,145 KB
+								  <a href="#" class="btn btn-primary btn-xs pull-right"><i class="fa fa-cloud-download"></i></a>
+								</span>
+						  </div>
+						</li>
+					  </ul>
+					</div>
+					<!-- /.box-footer -->
+					<div class="box-footer">
+					  <div class="pull-right">
+						<button type="button" class="btn btn-success"><i class="fa fa-reply"></i> Reply</button>
+						<button type="button" class="btn btn-info"><i class="fa fa-share"></i> Forward</button>
+					  </div>
+					  <button type="button" class="btn btn-danger"><i class="fa fa-trash-o"></i></button>
+					  <button type="button" class="btn btn-warning"><i class="fa fa-print"></i></button>
+					</div>
+					<!-- /.box-footer -->
+				  </div>
+				  <!-- /. box -->
 				</div>
-				<!-- <div class="col-xl-4 col-12">
-					<div class="box">
-						<div class="box-header no-border">
-							<h3 class="box-title">Settled Cases (745)</h3>
-						</div>
-						<div class="box-body py-0 px-0">
-							<div class="chart" id="settledcases"></div>
-						</div>
-					</div>
-				</div> -->
-				<div class="col-xl-4 col-12">
-					<div class="box">
-						<div class="box-header no-border">
-							<h3 class="box-title">Settled Matters (Monthly) (0)</h3>
-						</div>
-						<div class="box-body py-0 px-0">
-							<div class="chart" id="settledcases"></div>
-						</div>
-					</div>
-				</div>
-				<!-- <div class="col-xl-4 col-12">
-					<div class="box overflow-h">
-						<div class="box-body p-0 text-center">
-							<div class="d-flex justify-content-around">
-								<div class="bg-primary p-20 w-p100">									
-									<div class="fw-400"><h1 class="mb-2">Won</h1></div>
-									<span class="text-white fs-60 icon-Like"><span class="path1"></span><span class="path2"></span></span>
-									<div class="text-white fw-600 mb-2 mt-5"><h2>170</h2></div>
-									<div class="text-white-50"><h4 class="mb-0">56.7%</h4></div>
-								</div>
-								<div class="bg-danger p-20 w-p100">									
-									<div class="fw-400"><h1 class="mb-2">Lost</h1></div>
-									<span class="text-white fs-60 icon-Dislike rotate-180"><span class="path1"></span><span class="path2"></span></span>
-									<div class="text-white fw-600 mb-2 mt-5"><h2>79</h2></div>
-									<div class="text-white-50"><h4 class="mb-0">26.3%</h4></div>
-								</div>
-							</div>
-						</div>
-					</div>					
-				</div> -->
-				<div class="col-12">
-					<div class="box">
-						<div class="box-header">
-							<h3 class="box-title align-items-start flex-column">
-								New Summons & Plaints
-							</h3>
-						</div>
-						<div class="box-body py-0">
-							<div class="table-responsive">
-								<table class="table mb-0 no-border">
-									<tbody>
-										<tr>										
-											<td class="ps-0 py-1">
-												<div class="d-flex align-items-center">
-													<div class="flex-shrink-0 me-20">
-														<div class="" style=""></div>
-													</div>
-													<div>
-														<a href="#" class="text-dark hover-primary mb-1 fs-16"></a>
-														<span class="text-fade d-block"></span>
-													</div>
-												</div>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-												</span>
-												<span class="fs-16">
-												</span>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-												</span>
-												<span class="fs-16">
-												</span>
-											</td>
-											<td>
-												<span class=""></span>
-											</td>
-											<td class="text-end">
-												<a href="#" class=""><span class=""><span class="path1"></span><span class="path2"></span></span></a>
-												<a href="#" class=""><span class=""><span class="path1"></span><span class="path2"></span></span></a>
-											</td>
-										</tr>										
-											<td class="ps-0 py-1">
-												<div class="d-flex align-items-center">
-													<div class="flex-shrink-0 me-20">
-														<div class="bg-img h-50 w-50" style="background-image: url(../images/avatar/4.jpg)"></div>
-													</div>
-													<div>
-														<a href="#" class="text-dark hover-primary mb-1 fs-16">Firm Name</a>
-														<span class="text-fade d-block">company@dummy.com</span>
-													</div>
-												</div>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-													Nature of Claim
-												</span>
-												<span class="fs-16">
-													Claim abc
-												</span>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-													Advocate
-												</span>
-												<span class="fs-16">
-													Lawyer Oscar Matata
-												</span>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-													Deadline
-												</span>
-												<span class="fs-16">
-													23/05/2024
-												</span>
-											</td>
-											<td>
-												<span class="badge badge-warning badge-lg">A1040</span>
-											</td>
-											<td class="text-end">
-												<a href="/summons_plaints" class="waves-effect waves-light btn btn-xs btn-primary btn-circle mx-5"><span class="icon-Write"><span class="path1"></span><span class="path2"></span></span></a>
-												<!-- <a href="#" class="waves-effect waves-light btn btn-xs btn-danger btn-circle mx-5"><span class="icon-Trash1"><span class="path1"></span><span class="path2"></span></span></a> -->
-											</td>
-										</tr>
-										
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>  
-				</div>
-				<div class="col-12">
-					<div class="box">
-						<div class="box-header">
-							<h3 class="box-title align-items-start flex-column">
-								Ongoing Matters
-							</h3>
-						</div>
-						<div class="box-body py-0">
-							<div class="table-responsive">
-								<table class="table mb-0 no-border">
-									<tbody>
-										<tr>										
-											<td class="ps-0 py-1">
-												<div class="d-flex align-items-center">
-													<div class="flex-shrink-0 me-20">
-														<div class="" style=""></div>
-													</div>
-													<div>
-														<a href="#" class="text-dark hover-primary mb-1 fs-16"></a>
-														<span class="text-fade d-block"></span>
-													</div>
-												</div>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-												</span>
-												<span class="fs-16">
-												</span>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-												</span>
-												<span class="fs-16">
-												</span>
-											</td>
-											<td>
-												<span class=""></span>
-											</td>
-											<td class="text-end">
-												<a href="#" class=""><span class=""><span class="path1"></span><span class="path2"></span></span></a>
-												<a href="#" class=""><span class=""><span class="path1"></span><span class="path2"></span></span></a>
-											</td>
-										</tr>										
-											<td class="ps-0 py-1">
-												<div class="d-flex align-items-center">
-													<div class="flex-shrink-0 me-20">
-														<div class="bg-img h-50 w-50" style="background-image: url(../images/avatar/4.jpg)"></div>
-													</div>
-													<div>
-														<a href="#" class="text-dark hover-primary mb-1 fs-16">Firm Name</a>
-														<span class="text-fade d-block">firm@dummy.com</span>
-													</div>
-												</div>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-													Case Type
-												</span>
-												<span class="fs-16">
-													Driving Case
-												</span>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-													Court
-												</span>
-												<span class="fs-16">
-													Nairobi Law Courts
-												</span>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-													Advocate
-												</span>
-												<span class="fs-16">
-													Lawyer Oscar Matata
-												</span>
-											</td>
-											<td>
-												<span class="badge badge-warning badge-lg">2 hearing</span>
-											</td>
-											<td>
-												<span class="badge badge-warning badge-lg">A0500</span>
-											</td>
-											<td class="text-end">
-												<a href="/cases" class="waves-effect waves-light btn btn-xs btn-primary btn-circle mx-5"><span class="icon-Write"><span class="path1"></span><span class="path2"></span></span></a>
-												<!-- <a href="#" class="waves-effect waves-light btn btn-xs btn-danger btn-circle mx-5"><span class="icon-Trash1"><span class="path1"></span><span class="path2"></span></span></a> -->
-											</td>
-										</tr>
-										
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>  
-				</div>
-				<div class="col-xl-8 col-12">
-					<div class="box">
-						<div class="box-header">
-							<h3 class="box-title">Opportunity Outcome</h3>
-						</div>
-						<div class="box-body py-xl-0">
-							<div class="chart" id="opportunityoutcome"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-4 col-12">
-					<div class="box overflow-h">
-						<div class="box-header">
-							<h3 class="box-title">Earnings this month</h3>
-						</div>
-						<div class="box-body pb-0">
-							<h4 class="text-dark">$0 
-								<small class="text-success">0% 
-								<span class="badge badge-pill badge-success-light"><i class="fa fa-angle-up text-success"></i></span></small>
-							</h4>
-							<div id="statisticschart5"></div>
-						</div>
-					</div>
-					<div class="box bg-info-light">
-						<div class="box-body text-center">
-							<div class="d-flex justify-content-between align-items-center mb-20">
-								<h3 class="fw-400 mb-0">Declined</h3>
-								<span class="text-info fs-36 icon-Warning-2"><span class="path1"></span><span class="path2"></span><span class="path2"></span></span>
-							</div>
-							<div class="d-flex justify-content-between align-items-center">
-								<h4 class="text-info fs-22 mb-0">0</h4>
-								<div class="text-info-50 fs-20">0%</div>
-							</div>
-						</div>
-					</div>
-				</div>	
-				<div class="col-xl-6 col-12">
-					<div class="box">
-						<div class="box-header">
-							<h3 class="box-title">Revenue</h3>
-						</div>
-						<div class="box-body py-0">
-							<div id="charts_widget_43_chart"></div>						
-						</div>
-					</div>	
-				</div>			
-				<div class="col-xl-6 col-12">					
-					<div class="box">
-						<div class="box-header">
-							<h3 class="box-title">Outcomes by Opportunity Source</h3>
-						</div>
-						<div class="box-body py-0">
-							<div class="chart" id="opportunityoutcome2"></div>
-						</div>
-					</div>
-				</div>
-				
-				<!-- <div class="col-xl-4 col-12"> 
-					<div class="box">
-						<div class="box-header with-border">
-							<h3 class="box-title">Latest Matters</h3>
-							<ul class="box-controls pull-right">
-							  <li class="dropdown">
-								<a data-bs-toggle="dropdown" href="#" class="px-10 pt-5"><i class="ti-more-alt"></i></a>
-								<div class="dropdown-menu dropdown-menu-end">
-								  <a class="dropdown-item" href="#"><i class="ti-import"></i> Import</a>
-								  <a class="dropdown-item" href="#"><i class="ti-export"></i> Export</a>
-								  <a class="dropdown-item" href="#"><i class="ti-printer"></i> Print</a>
-								</div>
-							  </li>
-							</ul>
-						</div>
-						<div class="box-body">
-							<div class="d-flex align-items-center mb-30">
-								<div class="me-15">
-									<img src="" class="" alt="">
-								</div>
-								<div class="d-flex flex-column flex-grow-1 fw-500">
-									<a href="#" class="text-dark hover-primary mb-1 fs-16"></a>
-									<span class="text-fade"></span>
-								</div>								
-							</div>
-							<div class="d-flex align-items-center mb-30">
-								<div class="me-15">
-									<img src="" class="" alt="">
-								</div>
-								<div class="d-flex flex-column flex-grow-1 fw-500">
-									<a href="#" class="text-dark hover-danger mb-1 fs-16"></a>
-									<span class="text-fade"></span>
-								</div>								
-							</div>
-							<div class="d-flex align-items-center">
-								<div class="me-15">
-									<img src="" class="" alt="">
-								</div>
-								<div class="d-flex flex-column flex-grow-1 fw-500">
-									<a href="#" class="text-dark hover-success mb-1 fs-16"></a>
-									<span class="text-fade"></span>
-								</div>								
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-4 col-12"> 
-					<div class="box">
-						<div class="box-header with-border">
-							<h3 class="box-title">Latest Task</h3>
-							<ul class="box-controls pull-right">
-							  <li class="dropdown">
-								<a data-bs-toggle="dropdown" href="#" class="px-10 pt-5"><i class="ti-more-alt"></i></a>
-								<div class="dropdown-menu dropdown-menu-end">
-								  <a class="dropdown-item" href="#"><i class="ti-import"></i> Import</a>
-								  <a class="dropdown-item" href="#"><i class="ti-export"></i> Export</a>
-								  <a class="dropdown-item" href="#"><i class="ti-printer"></i> Print</a>
-								</div>
-							  </li>
-							</ul>
-						</div>
-						<div class="box-body">
-							<div class="d-flex align-items-center mb-30">
-								<div class="me-15">
-									<img src="" class="" alt="">
-								</div>
-								<div class="d-flex flex-column flex-grow-1 fw-500">
-									<a href="#" class="text-dark hover-primary mb-1 fs-16"></a>
-									<span class="text-fade"></span>
-								</div>								
-							</div>
-							<div class="d-flex align-items-center mb-30">
-								<div class="me-15">
-									<img src="" class="" alt="">
-								</div>
-								<div class="d-flex flex-column flex-grow-1 fw-500">
-									<a href="#" class="text-dark hover-danger mb-1 fs-16"></a>
-									<span class="text-fade"></span>
-								</div>								
-							</div>
-							<div class="d-flex align-items-center">
-								<div class="me-15">
-									<img src="" class="" alt="">
-								</div>
-								<div class="d-flex flex-column flex-grow-1 fw-500">
-									<a href="#" class="text-dark hover-success mb-1 fs-16"></a>
-									<span class="text-fade"></span>
-								</div>								
-							</div>
-						</div>
-					</div>
-				</div> -->
-				<!-- <div class="col-xl-4 col-12"> 
-					<div class="box">
-						<div class="box-header with-border">
-							<h3 class="box-title">New Members</h3>
-							<ul class="box-controls pull-right">
-							  <li class="dropdown">
-								<a data-bs-toggle="dropdown" href="#" class="px-10 pt-5"><i class="ti-more-alt"></i></a>
-								<div class="dropdown-menu dropdown-menu-end">
-								  <a class="dropdown-item" href="#"><i class="ti-import"></i> Import</a>
-								  <a class="dropdown-item" href="#"><i class="ti-export"></i> Export</a>
-								  <a class="dropdown-item" href="#"><i class="ti-printer"></i> Print</a>
-								</div>
-							  </li>
-							</ul>
-						</div>
-						<div class="box-body">
-							<div class="d-flex align-items-center mb-30">
-								<div class="me-15">
-									<img src="../images/avatar/avatar-1.png" class="avatar avatar-lg rounded10 bg-primary-light" alt="">
-								</div>
-								<div class="d-flex flex-column flex-grow-1 fw-500">
-									<a href="#" class="text-dark hover-primary mb-1 fs-16">Fiona Daniels</a>
-									<span class="text-fade">Senior associate</span>
-								</div>	
-								<div class="d-flex align-items-center">
-									<a href="#" class="waves-effect waves-light btn btn-xs btn-warning-light btn-circle mx-5"><i class="mdi mdi-phone"></i></a>
-									<a href="#" class="waves-effect waves-light btn btn-xs btn-success-light btn-circle mx-5"><i class="mdi mdi-comment"></i></a>
-								</div>
-							</div>
-							<div class="d-flex align-items-center mb-30">
-								<div class="me-15">
-									<img src="../images/avatar/avatar-2.png" class="avatar avatar-lg rounded10 bg-primary-light" alt="">
-								</div>
-								<div class="d-flex flex-column flex-grow-1 fw-500">
-									<a href="#" class="text-dark hover-danger mb-1 fs-16">Denise Johnson</a>
-									<span class="text-fade">Partners</span>
-								</div>	
-								<div class="d-flex align-items-center">
-									<a href="#" class="waves-effect waves-light btn btn-xs btn-warning-light btn-circle mx-5"><i class="mdi mdi-phone"></i></a>
-									<a href="#" class="waves-effect waves-light btn btn-xs btn-success-light btn-circle mx-5"><i class="mdi mdi-comment"></i></a>
-								</div>						
-							</div>
-							<div class="d-flex align-items-center">
-								<div class="me-15">
-									<img src="../images/avatar/avatar-3.png" class="avatar avatar-lg rounded10 bg-primary-light" alt="">
-								</div>
-								<div class="d-flex flex-column flex-grow-1 fw-500">
-									<a href="#" class="text-dark hover-success mb-1 fs-16">Charlotte Doe</a>
-									<span class="text-fade">Associate</span>
-								</div>
-								<div class="d-flex align-items-center">
-									<a href="#" class="waves-effect waves-light btn btn-xs btn-warning-light btn-circle mx-5"><i class="mdi mdi-phone"></i></a>
-									<a href="#" class="waves-effect waves-light btn btn-xs btn-success-light btn-circle mx-5"><i class="mdi mdi-comment"></i></a>
-								</div>								
-							</div>
-						</div>
-					</div>
-				</div> -->
-			</div>				
+				<!-- /.col -->
+			  </div>
 		</section>
 		<!-- /.content -->
 	  </div>
   </div>
-    <div class="container-full">
-        <section class="content">
- @yield('content');
-
- </section>
-	</div>
-</div>
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
+  
+   <footer class="main-footer">
     <div class="pull-right d-none d-sm-inline-block">
         <ul class="nav nav-primary nav-dotted nav-dot-separated justify-content-center justify-content-md-end">
 		  <li class="nav-item">
@@ -1012,9 +999,8 @@
 		  </li>
 		</ul>
     </div>
-	  &copy; <script>document.write(new Date().getFullYear())</script> <a href="#">Company</a>. All Rights Reserved.
+	  &copy; <script>document.write(new Date().getFullYear())</script> <a href="/">Lawfirm Company</a>. All Rights Reserved.
   </footer>
-
   <!-- Control Sidebar -->
   <aside class="control-sidebar">
 	  
@@ -1038,7 +1024,7 @@
 			<input type="text" name="s" placeholder="Search" class="w-p100">
 		  </div>
           <div class="media-list media-list-hover mt-20">
-			<!-- <div class="media py-10 px-0">
+			<div class="media py-10 px-0">
 			  <a class="avatar avatar-lg status-success" href="#">
 				<img src="../images/avatar/1.jpg" alt="...">
 			  </a>
@@ -1049,7 +1035,99 @@
 				<p>Praesent tristique diam...</p>
 				  <span>Just now</span>
 			  </div>
-			</div>			   -->
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-danger" href="#">
+				<img src="../images/avatar/2.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="fs-16">
+				  <a class="hover-primary" href="#"><strong>Luke</strong></a>
+				</p>
+				<p>Cras tempor diam ...</p>
+				  <span>33 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-warning" href="#">
+				<img src="../images/avatar/3.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="fs-16">
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-primary" href="#">
+				<img src="../images/avatar/4.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="fs-16">
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>			
+			
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-success" href="#">
+				<img src="../images/avatar/1.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="fs-16">
+				  <a class="hover-primary" href="#"><strong>Tyler</strong></a>
+				</p>
+				<p>Praesent tristique diam...</p>
+				  <span>Just now</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-danger" href="#">
+				<img src="../images/avatar/2.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="fs-16">
+				  <a class="hover-primary" href="#"><strong>Luke</strong></a>
+				</p>
+				<p>Cras tempor diam ...</p>
+				  <span>33 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-warning" href="#">
+				<img src="../images/avatar/3.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="fs-16">
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-primary" href="#">
+				<img src="../images/avatar/4.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="fs-16">
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>
+			  
 		  </div>
 
       </div>
@@ -1064,23 +1142,122 @@
 			<a href="javascript:void(0)" class="text-end text-grey"><i class="ti-plus"></i></a>
 		  </div>
         <ul class="todo-list mt-20">
-			<!-- <li class="py-15 px-5 by-1"> -->
+			<li class="py-15 px-5 by-1">
 			  <!-- checkbox -->
-
-			  <!-- <input type="checkbox" id="basic_checkbox_1" class="filled-in">
-			  <label for="basic_checkbox_1" class="mb-0 h-15"></label> -->
+			  <input type="checkbox" id="basic_checkbox_1" class="filled-in">
+			  <label for="basic_checkbox_1" class="mb-0 h-15"></label>
 			  <!-- todo text -->
-
-			  <!-- <span class="text-line">Nulla vitae purus</span> -->
+			  <span class="text-line">Nulla vitae purus</span>
 			  <!-- Emphasis label -->
-
-			  <!-- <small class="badge bg-danger"><i class="fa fa-clock-o"></i> 2 mins</small> -->
+			  <small class="badge bg-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
 			  <!-- General tools such as edit or delete-->
-			  <!-- <div class="tools"> -->
+			  <div class="tools">
 				<i class="fa fa-edit"></i>
 				<i class="fa fa-trash-o"></i>
-			  <!-- </div> -->
-			<!-- </li> -->
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_2" class="filled-in">
+			  <label for="basic_checkbox_2" class="mb-0 h-15"></label>
+			  <span class="text-line">Phasellus interdum</span>
+			  <small class="badge bg-info"><i class="fa fa-clock-o"></i> 4 hours</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_3" class="filled-in">
+			  <label for="basic_checkbox_3" class="mb-0 h-15"></label>
+			  <span class="text-line">Quisque sodales</span>
+			  <small class="badge bg-warning"><i class="fa fa-clock-o"></i> 1 day</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_4" class="filled-in">
+			  <label for="basic_checkbox_4" class="mb-0 h-15"></label>
+			  <span class="text-line">Proin nec mi porta</span>
+			  <small class="badge bg-success"><i class="fa fa-clock-o"></i> 3 days</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_5" class="filled-in">
+			  <label for="basic_checkbox_5" class="mb-0 h-15"></label>
+			  <span class="text-line">Maecenas scelerisque</span>
+			  <small class="badge bg-primary"><i class="fa fa-clock-o"></i> 1 week</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_6" class="filled-in">
+			  <label for="basic_checkbox_6" class="mb-0 h-15"></label>
+			  <span class="text-line">Vivamus nec orci</span>
+			  <small class="badge bg-info"><i class="fa fa-clock-o"></i> 1 month</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_7" class="filled-in">
+			  <label for="basic_checkbox_7" class="mb-0 h-15"></label>
+			  <!-- todo text -->
+			  <span class="text-line">Nulla vitae purus</span>
+			  <!-- Emphasis label -->
+			  <small class="badge bg-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
+			  <!-- General tools such as edit or delete-->
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_8" class="filled-in">
+			  <label for="basic_checkbox_8" class="mb-0 h-15"></label>
+			  <span class="text-line">Phasellus interdum</span>
+			  <small class="badge bg-info"><i class="fa fa-clock-o"></i> 4 hours</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_9" class="filled-in">
+			  <label for="basic_checkbox_9" class="mb-0 h-15"></label>
+			  <span class="text-line">Quisque sodales</span>
+			  <small class="badge bg-warning"><i class="fa fa-clock-o"></i> 1 day</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_10" class="filled-in">
+			  <label for="basic_checkbox_10" class="mb-0 h-15"></label>
+			  <span class="text-line">Proin nec mi porta</span>
+			  <small class="badge bg-success"><i class="fa fa-clock-o"></i> 3 days</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
 		  </ul>
       </div>
       <!-- /.tab-pane -->
@@ -1090,26 +1267,139 @@
   
   <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
   <div class="control-sidebar-bg"></div>
-  
 </div>
 <!-- ./wrapper -->
+	
+	<!-- ./side demo panel -->
+	<!-- Sidebar -->
+	
+	<div id="chat-box-body">
+		<div id="chat-circle" class="waves-effect waves-circle btn btn-circle btn-sm btn-warning l-h-50">
+            <div id="chat-overlay"></div>
+            <span class="icon-Group-chat fs-18"><span class="path1"></span><span class="path2"></span></span>
+		</div>
+
+		<div class="chat-box">
+            <div class="chat-box-header p-15 d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button class="waves-effect waves-circle btn btn-circle btn-primary-light h-40 w-40 rounded-circle l-h-45" type="button" data-bs-toggle="dropdown">
+                      <span class="icon-Add-user fs-22"><span class="path1"></span><span class="path2"></span></span>
+                  </button>
+                  <div class="dropdown-menu min-w-200">
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Color me-15"></span>
+                        New Group</a>
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Clipboard me-15"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                        Contacts</a>
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Group me-15"><span class="path1"></span><span class="path2"></span></span>
+                        Groups</a>
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Active-call me-15"><span class="path1"></span><span class="path2"></span></span>
+                        Calls</a>
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Settings1 me-15"><span class="path1"></span><span class="path2"></span></span>
+                        Settings</a>
+                    <div class="dropdown-divider"></div>
+					<a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Question-circle me-15"><span class="path1"></span><span class="path2"></span></span>
+                        Help</a>
+					<a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Notifications me-15"><span class="path1"></span><span class="path2"></span></span> 
+                        Privacy</a>
+                  </div>
+                </div>
+                <div class="text-center flex-grow-1">
+                    <div class="text-dark fs-18">Mayra Sibley</div>
+                    <div>
+                        <span class="badge badge-sm badge-dot badge-primary"></span>
+                        <span class="text-muted fs-12">Active</span>
+                    </div>
+                </div>
+                <div class="chat-box-toggle">
+                    <button id="chat-box-toggle" class="waves-effect waves-circle btn btn-circle btn-danger-light h-40 w-40 rounded-circle l-h-45" type="button">
+                      <span class="icon-Close fs-22"><span class="path1"></span><span class="path2"></span></span>
+                    </button>                    
+                </div>
+            </div>
+            <div class="chat-box-body">
+                <div class="chat-box-overlay">   
+                </div>
+                <div class="chat-logs">
+                    <div class="chat-msg user">
+                        <div class="d-flex align-items-center">
+                            <span class="msg-avatar">
+                                <img src="../images/avatar/2.jpg" class="avatar avatar-lg" alt="">
+                            </span>
+                            <div class="mx-10">
+                                <a href="#" class="text-dark hover-primary fw-bold">Mayra Sibley</a>
+                                <p class="text-muted fs-12 mb-0">2 Hours</p>
+                            </div>
+                        </div>
+                        <div class="cm-msg-text">
+                            Hi there, I'm Jesse and you?
+                        </div>
+                    </div>
+                    <div class="chat-msg self">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="mx-10">
+                                <a href="#" class="text-dark hover-primary fw-bold">You</a>
+                                <p class="text-muted fs-12 mb-0">3 minutes</p>
+                            </div>
+                            <span class="msg-avatar">
+                                <img src="../images/avatar/3.jpg" class="avatar avatar-lg" alt="">
+                            </span>
+                        </div>
+                        <div class="cm-msg-text">
+                           My name is Anne Clarc.         
+                        </div>        
+                    </div>
+                    <div class="chat-msg user">
+                        <div class="d-flex align-items-center">
+                            <span class="msg-avatar">
+                                <img src="../images/avatar/2.jpg" class="avatar avatar-lg" alt="">
+                            </span>
+                            <div class="mx-10">
+                                <a href="#" class="text-dark hover-primary fw-bold">Mayra Sibley</a>
+                                <p class="text-muted fs-12 mb-0">40 seconds</p>
+                            </div>
+                        </div>
+                        <div class="cm-msg-text">
+                            Nice to meet you Anne.<br>How can i help you?
+                        </div>
+                    </div>
+                </div><!--chat-log -->
+            </div>
+            <div class="chat-input">      
+                <form>
+                    <input type="text" id="chat-input" placeholder="Send a message..."/>
+                    <button type="submit" class="chat-submit" id="chat-submit">
+                        <span class="icon-Send fs-22"></span>
+                    </button>
+                </form>      
+            </div>
+		</div>
+	</div>
 	
 	<!-- Page Content overlay -->
 	
 	
 	<!-- Vendor JS -->
-	<script src="{{url('js/vendors.min.js')}}"></script>
-	<script src="{{url('js/pages/chat-popup.js')}}"></script>
-    <script src="{{url('assets/icons/feather-icons/feather.min.js')}}"></script>
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
-	
-	<script src="{{url('assets/vendor_components/apexcharts-bundle/dist/apexcharts.js')}}"></script>
+	<script src="js/vendors.min.js"></script>
+	<script src="js/pages/chat-popup.js"></script>
+    <script src="../assets/icons/feather-icons/feather.min.js"></script>
+	<script src="../assets/vendor_plugins/iCheck/icheck.js"></script>
+	<script src="../assets/vendor_plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+	<script src="js/pages/mailbox.js"></script>
+	<script src="js/pages/form-compose.js"></script>
 	
 	<!-- Law Firm App -->
-	<script src="{{url('js/template.js')}}"></script>
-	<script src="{{url('js/pages/dashboard.js')}}"></script>
-	<script src="{{url('js/pages/data-table.js')}}"></script>
-	<script src="{{url('assets/vendor_components/datatable/datatables.min.js')}}"></script>
+	<script src="js/template.js"></script>
+	
+
 	
 </body>
+
+<!-- Mirrored from lawfirm-admin-template.multipurposethemes.com/main/mailbox.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Apr 2024 22:31:55 GMT -->
 </html>

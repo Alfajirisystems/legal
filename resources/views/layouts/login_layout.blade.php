@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="https://lawfirm-admin-template.multipurposethemes.com/images/favicon.ico">
 
-    <title>Law Firm - Log in </title>
+    <title>Company - Log in </title>
   
 	<!-- Vendors Style-->
 	<link rel="stylesheet" href="css/vendors_css.css">
@@ -32,7 +32,7 @@
 						<div class="bg-white rounded10 shadow-lg">
 							<div class="content-top-agile p-20 pb-0">
 								<h2 class="text-primary">Let's Get Started</h2>
-								<p class="mb-0">Sign in to continue to Law Firm.</p>							
+								<p class="mb-0">Sign in to continue to Company.</p>							
 							</div>
 							<div class="p-40">
 								<form action="/" method="post">
