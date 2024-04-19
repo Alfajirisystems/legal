@@ -159,6 +159,12 @@
 				  </a>
 				</li>	
 				<li>
+				  <a href="/summons_plaints">
+					<i class="icon-Box2"><span class="path1"></span><span class="path2"></span></i>
+					<span>Summons & Plaints</span>
+				  </a>
+				</li>
+				<li>
 				  <a href="/cases">
 					<i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>
 					<span>Matters</span>
@@ -167,7 +173,7 @@
 				<li>
 				  <a href="/attorneys">
 					<i class="icon-Hummer"><span class="path1"></span><span class="path2"></span></i>
-					<span>Attorney</span>
+					<span>Advocates</span>
 				  </a>
 				</li>
 				<!-- <li class="treeview">
@@ -560,7 +566,7 @@
 				<div class="col-xl-4 col-12">
 					<div class="box">
 						<div class="box-header no-border">
-							<h3 class="box-title">Settled Matters (0)</h3>
+							<h3 class="box-title">Settled Matters (Monthly) (0)</h3>
 						</div>
 						<div class="box-body py-0 px-0">
 							<div class="chart" id="settledcases"></div>
@@ -587,6 +593,195 @@
 						</div>
 					</div>					
 				</div> -->
+				<div class="col-12">
+					<div class="box">
+						<div class="box-header">
+							<h3 class="box-title align-items-start flex-column">
+								New Summons & Plaints
+							</h3>
+						</div>
+						<div class="box-body py-0">
+							<div class="table-responsive">
+								<table class="table mb-0 no-border">
+									<tbody>
+										<tr>										
+											<td class="ps-0 py-1">
+												<div class="d-flex align-items-center">
+													<div class="flex-shrink-0 me-20">
+														<div class="" style=""></div>
+													</div>
+													<div>
+														<a href="#" class="text-dark hover-primary mb-1 fs-16"></a>
+														<span class="text-fade d-block"></span>
+													</div>
+												</div>
+											</td>
+											<td>
+												<span class="text-fade d-block">
+												</span>
+												<span class="fs-16">
+												</span>
+											</td>
+											<td>
+												<span class="text-fade d-block">
+												</span>
+												<span class="fs-16">
+												</span>
+											</td>
+											<td>
+												<span class=""></span>
+											</td>
+											<td class="text-end">
+												<a href="#" class=""><span class=""><span class="path1"></span><span class="path2"></span></span></a>
+												<a href="#" class=""><span class=""><span class="path1"></span><span class="path2"></span></span></a>
+											</td>
+										</tr>										
+											<td class="ps-0 py-1">
+												<div class="d-flex align-items-center">
+													<div class="flex-shrink-0 me-20">
+														<div class="bg-img h-50 w-50" style="background-image: url(../images/avatar/4.jpg)"></div>
+													</div>
+													<div>
+														<a href="#" class="text-dark hover-primary mb-1 fs-16">Firm Name</a>
+														<span class="text-fade d-block">company@dummy.com</span>
+													</div>
+												</div>
+											</td>
+											<td>
+												<span class="text-fade d-block">
+													Nature of Claim
+												</span>
+												<span class="fs-16">
+													Claim abc
+												</span>
+											</td>
+											<td>
+												<span class="text-fade d-block">
+													Advocate
+												</span>
+												<span class="fs-16">
+													Lawyer Oscar Matata
+												</span>
+											</td>
+											<td>
+												<span class="text-fade d-block">
+													Deadline
+												</span>
+												<span class="fs-16">
+													23/05/2024
+												</span>
+											</td>
+											<td>
+												<span class="badge badge-warning badge-lg">A1040</span>
+											</td>
+											<td class="text-end">
+												<a href="/summons_plaints" class="waves-effect waves-light btn btn-xs btn-primary btn-circle mx-5"><span class="icon-Write"><span class="path1"></span><span class="path2"></span></span></a>
+												<!-- <a href="#" class="waves-effect waves-light btn btn-xs btn-danger btn-circle mx-5"><span class="icon-Trash1"><span class="path1"></span><span class="path2"></span></span></a> -->
+											</td>
+										</tr>
+										
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>  
+				</div>
+				<div class="col-12">
+					<div class="box">
+						<div class="box-header">
+							<h3 class="box-title align-items-start flex-column">
+								Ongoing Matters
+							</h3>
+						</div>
+						<div class="box-body py-0">
+							<div class="table-responsive">
+								<table class="table mb-0 no-border">
+									<tbody>
+										<tr>										
+											<td class="ps-0 py-1">
+												<div class="d-flex align-items-center">
+													<div class="flex-shrink-0 me-20">
+														<div class="" style=""></div>
+													</div>
+													<div>
+														<a href="#" class="text-dark hover-primary mb-1 fs-16"></a>
+														<span class="text-fade d-block"></span>
+													</div>
+												</div>
+											</td>
+											<td>
+												<span class="text-fade d-block">
+												</span>
+												<span class="fs-16">
+												</span>
+											</td>
+											<td>
+												<span class="text-fade d-block">
+												</span>
+												<span class="fs-16">
+												</span>
+											</td>
+											<td>
+												<span class=""></span>
+											</td>
+											<td class="text-end">
+												<a href="#" class=""><span class=""><span class="path1"></span><span class="path2"></span></span></a>
+												<a href="#" class=""><span class=""><span class="path1"></span><span class="path2"></span></span></a>
+											</td>
+										</tr>										
+											<td class="ps-0 py-1">
+												<div class="d-flex align-items-center">
+													<div class="flex-shrink-0 me-20">
+														<div class="bg-img h-50 w-50" style="background-image: url(../images/avatar/4.jpg)"></div>
+													</div>
+													<div>
+														<a href="#" class="text-dark hover-primary mb-1 fs-16">Firm Name</a>
+														<span class="text-fade d-block">firm@dummy.com</span>
+													</div>
+												</div>
+											</td>
+											<td>
+												<span class="text-fade d-block">
+													Case Type
+												</span>
+												<span class="fs-16">
+													Driving Case
+												</span>
+											</td>
+											<td>
+												<span class="text-fade d-block">
+													Court
+												</span>
+												<span class="fs-16">
+													Nairobi Law Courts
+												</span>
+											</td>
+											<td>
+												<span class="text-fade d-block">
+													Advocate
+												</span>
+												<span class="fs-16">
+													Lawyer Oscar Matata
+												</span>
+											</td>
+											<td>
+												<span class="badge badge-warning badge-lg">2 hearing</span>
+											</td>
+											<td>
+												<span class="badge badge-warning badge-lg">A0500</span>
+											</td>
+											<td class="text-end">
+												<a href="/cases" class="waves-effect waves-light btn btn-xs btn-primary btn-circle mx-5"><span class="icon-Write"><span class="path1"></span><span class="path2"></span></span></a>
+												<!-- <a href="#" class="waves-effect waves-light btn btn-xs btn-danger btn-circle mx-5"><span class="icon-Trash1"><span class="path1"></span><span class="path2"></span></span></a> -->
+											</td>
+										</tr>
+										
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>  
+				</div>
 				<div class="col-xl-8 col-12">
 					<div class="box">
 						<div class="box-header">
@@ -643,92 +838,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12">
-					<div class="box">
-						<div class="box-header">
-							<h3 class="box-title align-items-start flex-column">
-								Ongoing Matters
-							</h3>
-						</div>
-						<div class="box-body py-0">
-							<div class="table-responsive">
-								<table class="table mb-0 no-border">
-									<tbody>
-										<!-- <tr>										
-											<td class="ps-0 py-1">
-												<div class="d-flex align-items-center">
-													<div class="flex-shrink-0 me-20">
-														<div class="" style=""></div>
-													</div>
-													<div>
-														<a href="#" class="text-dark hover-primary mb-1 fs-16"></a>
-														<span class="text-fade d-block"></span>
-													</div>
-												</div>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-												</span>
-												<span class="fs-16">
-												</span>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-												</span>
-												<span class="fs-16">
-												</span>
-											</td>
-											<td>
-												<span class=""></span>
-											</td>
-											<td class="text-end">
-												<a href="#" class=""><span class=""><span class="path1"></span><span class="path2"></span></span></a>
-												<a href="#" class=""><span class=""><span class="path1"></span><span class="path2"></span></span></a>
-											</td>
-										</tr>										 -->
-											<!-- <td class="ps-0 py-1">
-												<div class="d-flex align-items-center">
-													<div class="flex-shrink-0 me-20">
-														<div class="bg-img h-50 w-50" style="background-image: url(../images/avatar/4.jpg)"></div>
-													</div>
-													<div>
-														<a href="#" class="text-dark hover-primary mb-1 fs-16">Lovish Doe</a>
-														<span class="text-fade d-block">lovish@dummy.com</span>
-													</div>
-												</div>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-													Case Type
-												</span>
-												<span class="fs-16">
-													Driving Case
-												</span>
-											</td>
-											<td>
-												<span class="text-fade d-block">
-													Attorney
-												</span>
-												<span class="fs-16">
-													Mical Clark
-												</span>
-											</td>
-											<td>
-												<span class="badge badge-warning badge-lg">0 hearing</span>
-											</td>
-											<td class="text-end">
-												<a href="#" class="waves-effect waves-light btn btn-xs btn-primary btn-circle mx-5"><span class="icon-Write"><span class="path1"></span><span class="path2"></span></span></a>
-												<a href="#" class="waves-effect waves-light btn btn-xs btn-danger btn-circle mx-5"><span class="icon-Trash1"><span class="path1"></span><span class="path2"></span></span></a>
-											</td>
-										</tr> -->
-										
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>  
-				</div>
-				<div class="col-xl-4 col-12"> 
+				
+				<!-- <div class="col-xl-4 col-12"> 
 					<div class="box">
 						<div class="box-header with-border">
 							<h3 class="box-title">Latest Matters</h3>
@@ -819,7 +930,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<!-- <div class="col-xl-4 col-12"> 
 					<div class="box">
 						<div class="box-header with-border">

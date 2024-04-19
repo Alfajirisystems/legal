@@ -159,6 +159,12 @@
 				  </a>
 				</li>	
 				<li>
+				  <a href="/summons_plaints">
+					<i class="icon-Box2"><span class="path1"></span><span class="path2"></span></i>
+					<span>Summons & Plaints</span>
+				  </a>
+				</li>
+				<li>
 				  <a href="/cases">
 					<i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>
 					<span>Matters</span>
@@ -167,7 +173,7 @@
 				<li>
 				  <a href="/attorneys">
 					<i class="icon-Hummer"><span class="path1"></span><span class="path2"></span></i>
-					<span>Attorney</span>
+					<span>Advocates</span>
 				  </a>
 				</li>
 				<!-- <li class="treeview">
@@ -538,12 +544,12 @@
 		<div class="content-header">
 			<div class="d-flex align-items-center">
 				<div class="me-auto">
-					<h4 class="page-title">Attorneys</h4>
+					<h4 class="page-title">Advocates</h4>
 					<div class="d-inline-block align-items-center">
 						<nav>
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
-								<li class="breadcrumb-item active" aria-current="page">Attorneys</li>
+								<li class="breadcrumb-item active" aria-current="page">Advocates</li>
 							</ol>
 						</nav>
 					</div>
@@ -554,32 +560,48 @@
 
 		<!-- Main content -->
 		<section class="content">
-
 			<div class="row">
-
-			  <!-- <div class="col-12 col-lg-4">
-				<div class="box ribbon-box">
-				  <div class="box-header no-border p-0">				
-					<a href="/attorney_details">
-					  <img class="img-fluid" src="../images/avatar/375x200/1.jpg" alt="">
-					</a>
-				  </div>
-				  <div class="box-body">
-						<div class="user-contact list-inline text-center">
-							<a href="#" class="btn btn-circle mb-5 btn-facebook"><i class="fa fa-facebook"></i></a>
-							<a href="#" class="btn btn-circle mb-5 btn-instagram"><i class="fa fa-instagram"></i></a>
-							<a href="#" class="btn btn-circle mb-5 btn-twitter"><i class="fa fa-twitter"></i></a>
-							<a href="#" class="btn btn-circle mb-5 btn-warning"><i class="fa fa-envelope"></i></a>				
+				<div class="col-12">
+					<div class="box">
+						<div class="box-body">
+							<div class="table-responsive rounded card-table">
+								<table class="table border-no" id="example1">
+									<thead>
+										<tr>
+											<th>Advocate ID</th>
+											<th>Firm</th>
+											<th>Phone</th>
+											<th>Email</th>
+											<th>Physical Address</th>
+										</tr>
+									</thead>
+									<tbody>
+										<!-- <tr class="hover-primary">
+											<td>#p245879</td>
+											<td>14 April 2021</td>
+											<td>Aaliyah clark</td>
+											<td>Mr. Johen Doe</td>
+											<td>Business Litigation</td>
+											<td><span class="badge badge-success-light">Win</span></td>
+											<td>1 Hearing</td>
+											<td>												
+												<div class="btn-group">
+												  <a class="hover-primary dropdown-toggle no-caret" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
+												  <div class="dropdown-menu">
+													<a class="dropdown-item" href="#">View Details</a>
+													<a class="dropdown-item" href="#">Edit</a>
+													<a class="dropdown-item" href="#">Delete</a>
+												  </div>
+											    </div>
+											</td>
+										</tr>										 -->
+									</tbody>
+								</table>
+							</div>
 						</div>
-					  <div class="text-center">
-						<h3 class="my-10"><a href="/attorney_details">Mr. Tristan</a></h3>
-						<h6 class="user-info mt-0 mb-10 text-fade">Estate Planning Lawyer</h6>
-					  </div>
-				  </div>
+					</div>
 				</div>
-			  </div> -->
-			</div>
-
+			</div>			
 		</section>
 		<!-- /.content -->
 	  </div>

@@ -159,6 +159,12 @@
 				  </a>
 				</li>	
 				<li>
+				  <a href="/summons_plaints">
+					<i class="icon-Box2"><span class="path1"></span><span class="path2"></span></i>
+					<span>Summons & Plaints</span>
+				  </a>
+				</li>
+				<li>
 				  <a href="/cases">
 					<i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>
 					<span>Matters</span>
@@ -167,7 +173,7 @@
 				<li>
 				  <a href="/attorneys">
 					<i class="icon-Hummer"><span class="path1"></span><span class="path2"></span></i>
-					<span>Attorney</span>
+					<span>Advocates</span>
 				  </a>
 				</li>
 				<!-- <li class="treeview">
