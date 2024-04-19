@@ -64,24 +64,38 @@ class BranchesController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Branches $branches)
+    public function edit(Branches $branch)
     {
         //
+        return view('admin.branches.edit', compact('branch'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Branches $branches)
+    public function update(Request $request, Branches $branch)
     {
         //
+
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'location' => 'required|string|max:255',
+        ]);
+        
+        $branch->update($request->all());
+        toastr()->success('Branch updated successfully!', 'Success');
+        return redirect()->route('branches.index');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Branches $branches)
+    public function destroy(Branches $branch)
     {
         //
+
+        $branch->delete();
+        toastr()->success('Branch deleted successfully!', 'Success');
+        return redirect()->route('branches.index');
     }
 }

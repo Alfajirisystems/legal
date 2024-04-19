@@ -16,6 +16,8 @@
 	<!-- Style-->  
 	<link rel="stylesheet" href="{{url('css/style.css')}}">
 	<link rel="stylesheet" href="{{url('css/skin_color.css')}}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
      
   </head>
 
@@ -967,6 +969,7 @@
 	<script src="{{url('js/vendors.min.js')}}"></script>
 	<script src="{{url('js/pages/chat-popup.js')}}"></script>
     <script src="{{url('assets/icons/feather-icons/feather.min.js')}}"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
 	
 	<script src="{{url('assets/vendor_components/apexcharts-bundle/dist/apexcharts.js')}}"></script>
 	
