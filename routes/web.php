@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Userscontroller;
+use App\Http\Controllers\BranchesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,5 +15,21 @@ use App\Http\Controllers\HomeController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+Auth::routes();
 Route::get('/', [HomeController::class, 'index']);
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
+Route::get('/users', [HomeController::class, 'index'])->name('admin.index');
+Route::get('/branches', [BranchesController::class, 'index'])->name('admin.branches.index');
+Route::get('/branches/create', [BranchesController::class, 'create'])->name('admin.branches.create');
+Route::post('/branches', [BranchesController::class, 'store'])->name('admin.branches.store');
+
+Route::middleware('role_or_permission:publish cases')->group(function () {
+    Route::get('/home', [HomeController::class, 'index'])->name('profile.edit');
+    
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
