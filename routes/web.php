@@ -11,7 +11,8 @@ use App\Http\Controllers\AttorneyDetailsController;
 use App\Http\Controllers\MailboxController;
 use App\Http\Controllers\LettersController;
 use App\Http\Controllers\SummonsPlaintsController;
-
+use App\Http\Controllers\Userscontroller;
+use App\Http\Controllers\BranchesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,3 +55,24 @@ Route::get('/mailbox', [MailboxController::class, 'index']);
 Route::get('/letters', [LettersController::class, 'index']);
 
 Route::get('/summons_plaints', [SummonsPlaintsController::class, 'index']);
+Auth::routes();
+Route::get('/', [HomeController::class, 'index']);
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
+
+Route::middleware('auth')->group(function () {
+    Route::get('/home', [HomeController::class, 'index'])->name('profile.edit');
+
+    Route::resource('users', Userscontroller::class);
+    Route::resource('branches', BranchesController::class);
+    // Route::get('/branches', [BranchesController::class, 'index'])->name('admin.branches.index');
+    // Route::get('/branches/create', [BranchesController::class, 'create'])->name('admin.branches.create');
+    // Route::post('/branches', [BranchesController::class, 'store'])->name('admin.branches.store');
+
+    
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

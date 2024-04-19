@@ -11,11 +11,13 @@
     <title>Company Software</title>
     
 	<!-- Vendors Style-->
-	<link rel="stylesheet" href="css/vendors_css.css">
+	<link rel="stylesheet" href="{{url('css/vendors_css.css')}}">
 	  
 	<!-- Style-->  
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/skin_color.css">
+	<link rel="stylesheet" href="{{url('css/style.css')}}">
+	<link rel="stylesheet" href="{{url('css/skin_color.css')}}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
      
   </head>
 
@@ -994,6 +996,13 @@
 		<!-- /.content -->
 	  </div>
   </div>
+    <div class="container-full">
+        <section class="content">
+ @yield('content');
+
+ </section>
+	</div>
+</div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     <div class="pull-right d-none d-sm-inline-block">
@@ -1089,15 +1098,18 @@
 	
 	
 	<!-- Vendor JS -->
-	<script src="js/vendors.min.js"></script>
-	<script src="js/pages/chat-popup.js"></script>
-    <script src="../assets/icons/feather-icons/feather.min.js"></script>
+	<script src="{{url('js/vendors.min.js')}}"></script>
+	<script src="{{url('js/pages/chat-popup.js')}}"></script>
+    <script src="{{url('assets/icons/feather-icons/feather.min.js')}}"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
 	
-	<script src="../assets/vendor_components/apexcharts-bundle/dist/apexcharts.js"></script>
+	<script src="{{url('assets/vendor_components/apexcharts-bundle/dist/apexcharts.js')}}"></script>
 	
 	<!-- Law Firm App -->
-	<script src="js/template.js"></script>
-	<script src="js/pages/dashboard.js"></script>
+	<script src="{{url('js/template.js')}}"></script>
+	<script src="{{url('js/pages/dashboard.js')}}"></script>
+	<script src="{{url('js/pages/data-table.js')}}"></script>
+	<script src="{{url('assets/vendor_components/datatable/datatables.min.js')}}"></script>
 	
 </body>
 </html>
