@@ -3,7 +3,7 @@
 <div class="col-12">
     <div class="box">
         <div class="box-header with-border">
-            <h4 class="box-title">Create Branch</h4>
+            <h4 class="box-title">Edit Branch</h4>
         </div>
 
         @if($errors->any())

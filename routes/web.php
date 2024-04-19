@@ -23,7 +23,7 @@ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::middleware('auth')->group(function () {
     Route::get('/home', [HomeController::class, 'index'])->name('profile.edit');
 
-    Route::get('/users', [HomeController::class, 'index'])->name('admin.index');
+    Route::resource('users', Userscontroller::class);
     Route::resource('branches', BranchesController::class);
     // Route::get('/branches', [BranchesController::class, 'index'])->name('admin.branches.index');
     // Route::get('/branches/create', [BranchesController::class, 'create'])->name('admin.branches.create');
