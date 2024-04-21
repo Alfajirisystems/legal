@@ -563,9 +563,10 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="box">
+						<!-- /.box-header -->
 						<div class="box-body">
-							<div class="table-responsive rounded card-table">
-								<table class="table border-no" id="example1">
+							<div class="table-responsive">
+								<table id="example" class="table table-bordered table-hover display nowrap margin-top-10 w-p100">
 									<thead>
 										<tr>
 											<th>Advocate ID</th>
@@ -576,30 +577,28 @@
 										</tr>
 									</thead>
 									<tbody>
-										<!-- <tr class="hover-primary">
-											<td>#p245879</td>
-											<td>14 April 2021</td>
-											<td>Aaliyah clark</td>
-											<td>Mr. Johen Doe</td>
-											<td>Business Litigation</td>
-											<td><span class="badge badge-success-light">Win</span></td>
-											<td>1 Hearing</td>
-											<td>												
-												<div class="btn-group">
-												  <a class="hover-primary dropdown-toggle no-caret" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
-												  <div class="dropdown-menu">
-													<a class="dropdown-item" href="#">View Details</a>
-													<a class="dropdown-item" href="#">Edit</a>
-													<a class="dropdown-item" href="#">Delete</a>
-												  </div>
-											    </div>
-											</td>
-										</tr>										 -->
-									</tbody>
-								</table>
-							</div>
-						</div>
+										<tr>
+											<!-- <td>Donna Snider</td>
+											<td>Customer Support</td>
+											<td>New York</td>
+											<td>27</td>
+											<td>2011/01/25</td> -->
+										</tr>
+									</tbody>				  
+									<tfoot>
+										<tr>
+											<th>Advocate ID</th>
+											<th>Firm</th>
+											<th>Phone</th>
+											<th>Email</th>
+											<th>Physical Address</th>
+										</tr>
+									</tfoot>
+							</table>
+
+						</div>              
 					</div>
+				</div>
 				</div>
 			</div>			
 		</section>
@@ -701,9 +700,15 @@
 	<script src="js/vendors.min.js"></script>
 	<script src="js/pages/chat-popup.js"></script>
     <script src="../assets/icons/feather-icons/feather.min.js"></script>	
+
+	<script src="../assets/vendor_components/datatable/datatables.min.js"></script>
+
 	
 	<!-- Law Firm App -->
 	<script src="js/template.js"></script>
+	<script src="js/pages/patients.js"></script>
+	<script src="js/pages/data-table.js"></script>
+
 	
 	
 
