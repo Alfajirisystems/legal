@@ -34,9 +34,16 @@
 			  <span class="dark-logo"><img src="../images/logo-letter.png" alt="logo"></span>
 		  </div>
 		  <div class="logo-lg">
+			  <!-- <span class="light-logo"></span> -->
+			  <!-- <span class="light-logo"><strong>Company Name</strong></span> -->
+			  <span class="light-logo"><strong style="font-size: 24px;">Company Name</strong></span>
+
+
+		  </div>
+		  <!-- <div class="logo-lg">
 			  <span class="light-logo"><img src="../images/logo-dark-text.png" alt="logo"></span>
 			  <span class="dark-logo"><img src="../images/logo-light-text.png" alt="logo"></span>
-		  </div>
+		  </div> -->
 		</a>	
 	</div>  
     <!-- Header Navbar -->
@@ -127,7 +134,7 @@
 				  <img src="../images/avatar/avatar-13.png" class="avatar avatar-xxl bg-primary-light rounded100" alt="User Image">
 				</div>
 				<div class="info pt-15">
-					<a class="px-20 fs-18 fw-500" href="#">Johen Doe</a>
+					<a class="px-20 fs-18 fw-500" href="#">User Name</a>
 				</div>
 			</div>
 			<ul class="list-inline profile-setting mt-20 mb-0 d-flex justify-content-center gap-3">
