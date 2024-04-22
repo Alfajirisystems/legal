@@ -21,7 +21,7 @@ $(function () {
           }
         ],
           chart: {
-          height: 150,
+          height: 130,
           type: 'line',
           zoom: {
             enabled: false
@@ -107,7 +107,7 @@ $(function () {
           }
         ],
           chart: {
-          height: 150,
+          height: 130,
           type: 'area',
           zoom: {
             enabled: false
@@ -184,7 +184,7 @@ $(function () {
           }
         ],
           chart: {
-          height: 150,
+          height: 130,
           type: 'area',
           zoom: {
             enabled: false
@@ -261,7 +261,7 @@ $(function () {
           }
         ],
           chart: {
-          height: 150,
+          height: 130,
           type: 'area',
           zoom: {
             enabled: false
@@ -338,7 +338,7 @@ $(function () {
           }
         ],
           chart: {
-          height: 150,
+          height: 130,
           type: 'area',
           zoom: {
             enabled: false
@@ -415,7 +415,7 @@ $(function () {
           }
         ],
           chart: {
-          height: 150,
+          height: 130,
           type: 'area',
           zoom: {
             enabled: false
