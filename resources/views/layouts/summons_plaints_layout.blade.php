@@ -34,9 +34,16 @@
 			  <span class="dark-logo"><img src="../images/logo-letter.png" alt="logo"></span>
 		  </div>
 		  <div class="logo-lg">
+			  <!-- <span class="light-logo"></span> -->
+			  <!-- <span class="light-logo"><strong>Company Name</strong></span> -->
+			  <span class="light-logo"><strong style="font-size: 24px;">Company Name</strong></span>
+
+
+		  </div>
+		  <!-- <div class="logo-lg">
 			  <span class="light-logo"><img src="../images/logo-dark-text.png" alt="logo"></span>
 			  <span class="dark-logo"><img src="../images/logo-light-text.png" alt="logo"></span>
-		  </div>
+		  </div> -->
 		</a>	
 	</div>  
     <!-- Header Navbar -->
@@ -127,7 +134,7 @@
 				  <img src="../images/avatar/avatar-13.png" class="avatar avatar-xxl bg-primary-light rounded100" alt="User Image">
 				</div>
 				<div class="info pt-15">
-					<a class="px-20 fs-18 fw-500" href="#">Johen Doe</a>
+					<a class="px-20 fs-18 fw-500" href="#">User Name</a>
 				</div>
 			</div>
 			<ul class="list-inline profile-setting mt-20 mb-0 d-flex justify-content-center gap-3">
@@ -562,10 +569,11 @@
 		<section class="content">
 			<div class="row">
 				<div class="col-12">
-					<div class="box">
+				<div class="box">
+						<!-- /.box-header -->
 						<div class="box-body">
-							<div class="table-responsive rounded card-table">
-								<table class="table border-no" id="example1">
+							<div class="table-responsive">
+								<table id="example" class="table table-bordered table-hover display nowrap margin-top-10 w-p100">
 									<thead>
 										<tr>
 											<th>Case ID</th>
@@ -585,29 +593,36 @@
 										</tr>
 									</thead>
 									<tbody>
-										<!-- <tr class="hover-primary">
-											<td>#p245879</td>
-											<td>14 April 2021</td>
-											<td>Aaliyah clark</td>
-											<td>Mr. Johen Doe</td>
-											<td>Business Litigation</td>
-											<td><span class="badge badge-success-light">Win</span></td>
-											<td>1 Hearing</td>
-											<td>												
-												<div class="btn-group">
-												  <a class="hover-primary dropdown-toggle no-caret" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
-												  <div class="dropdown-menu">
-													<a class="dropdown-item" href="#">View Details</a>
-													<a class="dropdown-item" href="#">Edit</a>
-													<a class="dropdown-item" href="#">Delete</a>
-												  </div>
-											    </div>
-											</td>
-										</tr>										 -->
-									</tbody>
-								</table>
-							</div>
-						</div>
+										<tr>
+											<!-- <td>Donna Snider</td>
+											<td>Customer Support</td>
+											<td>New York</td>
+											<td>27</td>
+											<td>2011/01/25</td>
+											<td>$112,000</td> -->
+										</tr>
+									</tbody>				  
+									<tfoot>
+										<tr>
+											<th>Case ID</th>
+											<th>Nature of Claim</th>
+											<th>Type of Claim</th>
+											<th>Court Location</th>
+											<th>Date of filing</th>
+											<th>Reserve</th>
+											<th>Parties</th>
+											<th>Date</th>
+											<th>Advocate</th>
+											<th>Firm</th>
+											<th>Costs</th>
+											<th>Attachments</th>
+											<th>Deadline Type</th>
+											<th>Deadline</th>
+										</tr>
+									</tfoot>
+							</table>
+
+						</div>              
 					</div>
 				</div>
 			</div>			
@@ -721,6 +736,8 @@
 	<!-- Law Firm App -->
 	<script src="js/template.js"></script>
 	<script src="js/pages/patients.js"></script>
+	<script src="js/pages/data-table.js"></script>
+
 	
 </body>
 

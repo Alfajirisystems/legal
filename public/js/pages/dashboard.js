@@ -21,7 +21,7 @@ $(function () {
           }
         ],
           chart: {
-          height: 150,
+          height: 130,
           type: 'line',
           zoom: {
             enabled: false
@@ -107,7 +107,7 @@ $(function () {
           }
         ],
           chart: {
-          height: 150,
+          height: 130,
           type: 'area',
           zoom: {
             enabled: false
@@ -175,7 +175,314 @@ $(function () {
 
         var chart = new ApexCharts(document.querySelector("#settledcases"), options);
         chart.render();
+  
+  var options = {
+          series: [{
+            name: "Letters",
+            // data: [25, 15, 22, 18, 28, 25, 35, 40, 25, 22, 28, 30]
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+          }
+        ],
+          chart: {
+          height: 130,
+          type: 'area',
+          zoom: {
+            enabled: false
+          },
+		  toolbar: {
+			show: false,
+		  },
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          width: [2],
+          curve: 'smooth',
+          dashArray: [0]
+        },
+        legend: {
+			position: 'top',
+      		horizontalAlign: 'right', 
+          tooltipHoverFormatter: function(val, opts) {
+            return val + ' - ' + opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex] + ''
+          }
+        },
+        markers: {
+          size: 0,
+          hover: {
+            sizeOffset: 6
+          }
+        },
+        xaxis: {
+          categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+			labels: {
+          		show: false,
+			},
+			axisBorder: {
+          		show: false,
+			}
+        },
+        yaxis: {
+			labels: {
+          		show: false,
+			}
+        },
+		colors: ['#42b53f'],
+        tooltip: {
+          y: [
+            {
+              title: {
+                formatter: function (val) {
+                  return val 
+                }
+              }
+            },
+          ]
+        },
+        grid: {
+          show: false,
+			padding: {
+			  right: 6,
+			  left: -10,
+			  bottom: -20,
+			},
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#totalletters"), options);
+        chart.render();
+    
+  var options = {
+          series: [{
+            name: "Advocates",
+            // data: [25, 15, 22, 18, 28, 25, 35, 40, 25, 22, 28, 30]
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+          }
+        ],
+          chart: {
+          height: 130,
+          type: 'area',
+          zoom: {
+            enabled: false
+          },
+		  toolbar: {
+			show: false,
+		  },
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          width: [2],
+          curve: 'smooth',
+          dashArray: [0]
+        },
+        legend: {
+			position: 'top',
+      		horizontalAlign: 'right', 
+          tooltipHoverFormatter: function(val, opts) {
+            return val + ' - ' + opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex] + ''
+          }
+        },
+        markers: {
+          size: 0,
+          hover: {
+            sizeOffset: 6
+          }
+        },
+        xaxis: {
+          categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+			labels: {
+          		show: false,
+			},
+			axisBorder: {
+          		show: false,
+			}
+        },
+        yaxis: {
+			labels: {
+          		show: false,
+			}
+        },
+		colors: ['#42b53f'],
+        tooltip: {
+          y: [
+            {
+              title: {
+                formatter: function (val) {
+                  return val 
+                }
+              }
+            },
+          ]
+        },
+        grid: {
+          show: false,
+			padding: {
+			  right: 6,
+			  left: -10,
+			  bottom: -20,
+			},
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#totaladvocates"), options);
+        chart.render();
+
+  var options = {
+          series: [{
+            name: "Courts",
+            // data: [25, 15, 22, 18, 28, 25, 35, 40, 25, 22, 28, 30]
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+          }
+        ],
+          chart: {
+          height: 130,
+          type: 'area',
+          zoom: {
+            enabled: false
+          },
+		  toolbar: {
+			show: false,
+		  },
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          width: [2],
+          curve: 'smooth',
+          dashArray: [0]
+        },
+        legend: {
+			position: 'top',
+      		horizontalAlign: 'right', 
+          tooltipHoverFormatter: function(val, opts) {
+            return val + ' - ' + opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex] + ''
+          }
+        },
+        markers: {
+          size: 0,
+          hover: {
+            sizeOffset: 6
+          }
+        },
+        xaxis: {
+          categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+			labels: {
+          		show: false,
+			},
+			axisBorder: {
+          		show: false,
+			}
+        },
+        yaxis: {
+			labels: {
+          		show: false,
+			}
+        },
+		colors: ['#42b53f'],
+        tooltip: {
+          y: [
+            {
+              title: {
+                formatter: function (val) {
+                  return val 
+                }
+              }
+            },
+          ]
+        },
+        grid: {
+          show: false,
+			padding: {
+			  right: 6,
+			  left: -10,
+			  bottom: -20,
+			},
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#totalcourts"), options);
+        chart.render();
 	
+  var options = {
+          series: [{
+            name: "Judges",
+            // data: [25, 15, 22, 18, 28, 25, 35, 40, 25, 22, 28, 30]
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+          }
+        ],
+          chart: {
+          height: 130,
+          type: 'area',
+          zoom: {
+            enabled: false
+          },
+		  toolbar: {
+			show: false,
+		  },
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          width: [2],
+          curve: 'smooth',
+          dashArray: [0]
+        },
+        legend: {
+			position: 'top',
+      		horizontalAlign: 'right', 
+          tooltipHoverFormatter: function(val, opts) {
+            return val + ' - ' + opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex] + ''
+          }
+        },
+        markers: {
+          size: 0,
+          hover: {
+            sizeOffset: 6
+          }
+        },
+        xaxis: {
+          categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+			labels: {
+          		show: false,
+			},
+			axisBorder: {
+          		show: false,
+			}
+        },
+        yaxis: {
+			labels: {
+          		show: false,
+			}
+        },
+		colors: ['#42b53f'],
+        tooltip: {
+          y: [
+            {
+              title: {
+                formatter: function (val) {
+                  return val 
+                }
+              }
+            },
+          ]
+        },
+        grid: {
+          show: false,
+			padding: {
+			  right: 6,
+			  left: -10,
+			  bottom: -20,
+			},
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#totaljudges"), options);
+        chart.render();
 	
 	var options = {
           series: [{

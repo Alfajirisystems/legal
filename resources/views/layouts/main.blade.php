@@ -11,13 +11,11 @@
     <title>Company Software</title>
     
 	<!-- Vendors Style-->
-	<link rel="stylesheet" href="{{url('css/vendors_css.css')}}">
+	<link rel="stylesheet" href="css/vendors_css.css">
 	  
 	<!-- Style-->  
-	<link rel="stylesheet" href="{{url('css/style.css')}}">
-	<link rel="stylesheet" href="{{url('css/skin_color.css')}}">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/skin_color.css">
      
   </head>
 
@@ -36,9 +34,16 @@
 			  <span class="dark-logo"><img src="../images/logo-letter.png" alt="logo"></span>
 		  </div>
 		  <div class="logo-lg">
+			  <!-- <span class="light-logo"></span> -->
+			  <!-- <span class="light-logo"><strong>Company Name</strong></span> -->
+			  <span class="light-logo"><strong style="font-size: 24px;">Company Name</strong></span>
+
+
+		  </div>
+		  <!-- <div class="logo-lg">
 			  <span class="light-logo"><img src="../images/logo-dark-text.png" alt="logo"></span>
 			  <span class="dark-logo"><img src="../images/logo-light-text.png" alt="logo"></span>
-		  </div>
+		  </div> -->
 		</a>	
 	</div>  
     <!-- Header Navbar -->
@@ -129,7 +134,7 @@
 				  <img src="../images/avatar/avatar-13.png" class="avatar avatar-xxl bg-primary-light rounded100" alt="User Image">
 				</div>
 				<div class="info pt-15">
-					<a class="px-20 fs-18 fw-500" href="#">Johen Doe</a>
+					<a class="px-20 fs-18 fw-500" href="#">User Name</a>
 				</div>
 			</div>
 			<ul class="list-inline profile-setting mt-20 mb-0 d-flex justify-content-center gap-3">
@@ -568,10 +573,50 @@
 				<div class="col-xl-4 col-12">
 					<div class="box">
 						<div class="box-header no-border">
-							<h3 class="box-title">Settled Matters (Monthly) (0)</h3>
+							<h3 class="box-title">Settled Matters (0)</h3>
 						</div>
 						<div class="box-body py-0 px-0">
 							<div class="chart" id="settledcases"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-12">
+					<div class="box">
+						<div class="box-header no-border">
+							<h3 class="box-title">Letters (0)</h3>
+						</div>
+						<div class="box-body py-0 px-0">
+							<div class="chart" id="totalletters"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-12">
+					<div class="box">
+						<div class="box-header no-border">
+							<h3 class="box-title">Advocates (0)</h3>
+						</div>
+						<div class="box-body py-0 px-0">
+							<div class="chart" id="totaladvocates"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-12">
+					<div class="box">
+						<div class="box-header no-border">
+							<h3 class="box-title">Courts (0)</h3>
+						</div>
+						<div class="box-body py-0 px-0">
+							<div class="chart" id="totalcourts"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-12">
+					<div class="box">
+						<div class="box-header no-border">
+							<h3 class="box-title">Judges (0)</h3>
+						</div>
+						<div class="box-body py-0 px-0">
+							<div class="chart" id="totaljudges"></div>
 						</div>
 					</div>
 				</div>
@@ -996,13 +1041,6 @@
 		<!-- /.content -->
 	  </div>
   </div>
-    <div class="container-full">
-        <section class="content">
- @yield('content');
-
- </section>
-	</div>
-</div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     <div class="pull-right d-none d-sm-inline-block">
@@ -1098,18 +1136,15 @@
 	
 	
 	<!-- Vendor JS -->
-	<script src="{{url('js/vendors.min.js')}}"></script>
-	<script src="{{url('js/pages/chat-popup.js')}}"></script>
-    <script src="{{url('assets/icons/feather-icons/feather.min.js')}}"></script>
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+	<script src="js/vendors.min.js"></script>
+	<script src="js/pages/chat-popup.js"></script>
+    <script src="../assets/icons/feather-icons/feather.min.js"></script>
 	
-	<script src="{{url('assets/vendor_components/apexcharts-bundle/dist/apexcharts.js')}}"></script>
+	<script src="../assets/vendor_components/apexcharts-bundle/dist/apexcharts.js"></script>
 	
 	<!-- Law Firm App -->
-	<script src="{{url('js/template.js')}}"></script>
-	<script src="{{url('js/pages/dashboard.js')}}"></script>
-	<script src="{{url('js/pages/data-table.js')}}"></script>
-	<script src="{{url('assets/vendor_components/datatable/datatables.min.js')}}"></script>
+	<script src="js/template.js"></script>
+	<script src="js/pages/dashboard.js"></script>
 	
 </body>
 </html>

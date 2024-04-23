@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use App\Models\User; // Add this line to include the User model
 
 class HomeController extends Controller
 {
@@ -28,7 +31,6 @@ class HomeController extends Controller
 
     public function users()
     {
-
         $users = User::all();
 
         return view('admin.users')->with('users', $users);
