@@ -154,23 +154,30 @@
 				  </a>
 				</li>
 				<li>
-				  <a href="/appointments">
-					<i class="icon-Barcode-read"><span class="path1"></span><span class="path2"></span></i>
-					<span>Appointments</span>
+				  <a href="/letters">
+					<i class="icon-Library"><span class="path1"></span><span class="path2"></span></i>
+					<span>Demand Letters</span>
 				  </a>
 				</li>
 				<li>
-				  <a href="/letters">
-					<i class="icon-Library"><span class="path1"></span><span class="path2"></span></i>
-					<span>Letters</span>
+				  <a href="/statutory_notices">
+					<i class="icon-Barcode-read"><span class="path1"></span><span class="path2"></span></i>
+					<span>Statutory Notices</span>
 				  </a>
-				</li>	
+				</li>
 				<li>
 				  <a href="/summons_plaints">
 					<i class="icon-Box2"><span class="path1"></span><span class="path2"></span></i>
 					<span>Summons & Plaints</span>
 				  </a>
 				</li>
+				<li>
+				  <a href="/appointments">
+					<i class="icon-Globe"><span class="path1"></span><span class="path2"></span></i>
+					<span>Appointments</span>
+				  </a>
+				</li>	
+				
 				<li>
 				  <a href="/cases">
 					<i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>
@@ -209,7 +216,7 @@
 					<li><a href="attorney_details.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Attorney Details</a></li>
 				  </ul>
 				</li> -->
-				<li class="header">Security</li>
+				<!-- <li class="header">Security</li> -->
 				<!-- <li class="treeview">
 				  <a href="#">
 					<i class="icon-Library"><span class="path1"></span><span class="path2"></span></i>
@@ -494,21 +501,8 @@
 					</li>
 				  </ul>
 				</li>	  -->
-				<li class="treeview">
-				  <a href="#">
-					<i class="icon-Lock-overturning"><span class="path1"></span><span class="path2"></span></i>
-					<span>Authentication</span>
-					<span class="pull-right-container">
-					  <i class="fa fa-angle-right pull-right"></i>
-					</span>
-				  </a>
-				  <ul class="treeview-menu">
-					<!-- <li><a href="/login"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Login</a></li> -->
-					<li><a href="auth_register.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Register</a></li>
-					<li><a href="/lockscreen"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Lockscreen</a></li>
-					<li><a href="auth_user_pass.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Recover password</a></li>	
-				  </ul>
-				</li>
+
+				
 				<!-- <li class="treeview">
 				  <a href="#">
 					<i class="icon-Warning-2"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
@@ -561,7 +555,7 @@
 						</nav>
 					</div>
 				</div>
-				
+				<a href="/form_matters" class="btn btn-primary px-10 mx-30" style="position: fixed; right: 0;">Add New Matter</a>
 			</div>
 		</div>
 		  

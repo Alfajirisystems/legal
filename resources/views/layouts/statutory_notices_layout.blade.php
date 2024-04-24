@@ -545,17 +545,17 @@
 		<div class="content-header">
 			<div class="d-flex align-items-center">
 				<div class="me-auto">
-					<h4 class="page-title">Summons & Plaints</h4>
+					<h4 class="page-title">Statutory Notices</h4>
 					<div class="d-inline-block align-items-center">
 						<nav>
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
-								<li class="breadcrumb-item active" aria-current="page">Summons & Plaints</li>
+								<li class="breadcrumb-item active" aria-current="page">Statutory Notices</li>
 							</ol>
 						</nav>
 					</div>
 				</div>
-				<a href="/form_summons_plaints" class="btn btn-primary px-10 mx-30" style="position: fixed; right: 0;">Add New Summon/Plaint</a>
+				<a href="/form_statutory" class="btn btn-primary px-10 mx-30" style="position: fixed; right: 0;">Add New Statutory Notice</a>
 			</div>
 		</div>
 		  
@@ -563,61 +563,49 @@
 		<section class="content">
 			<div class="row">
 				<div class="col-12">
-				<div class="box">
+					<div class="box">
 						<!-- /.box-header -->
 						<div class="box-body">
 							<div class="table-responsive">
 								<table id="example" class="table table-bordered table-hover display nowrap margin-top-10 w-p100">
 									<thead>
 										<tr>
-											<th>Case ID</th>
-											<th>Nature of Claim</th>
-											<th>Type of Claim</th>
-											<th>Court Location</th>
-											<th>Date of filing</th>
-											<th>Reserve</th>
-											<th>Parties</th>
-											<th>Date</th>
-											<th>Advocate</th>
-											<th>Firm</th>
-											<th>Costs</th>
+											<th>Reg No</th>
+											<th>Date of loss</th>
+											<th>Insured Party</th>
+											<th>Claim</th>
+											<th>Author</th>
 											<th>Attachments</th>
-											<th>Deadline Type</th>
-											<th>Deadline</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<!-- <td>Donna Snider</td>
-											<td>Customer Support</td>
-											<td>New York</td>
-											<td>27</td>
-											<td>2011/01/25</td>
-											<td>$112,000</td> -->
+											<td>A3290</td>
+											<td>2023/04/12</td>
+											<td>Joseph Njoroge</td>
+											<td>Claim </td>
+											<td>Martin Kamau</td>
+											<td>
+												<a href="#" target="_blank" style="color: blue;">Download Attachment</a>
+											</td>
 										</tr>
 									</tbody>				  
 									<tfoot>
 										<tr>
-											<th>Case ID</th>
-											<th>Nature of Claim</th>
-											<th>Type of Claim</th>
-											<th>Court Location</th>
-											<th>Date of filing</th>
-											<th>Reserve</th>
-											<th>Parties</th>
-											<th>Date</th>
-											<th>Advocate</th>
-											<th>Firm</th>
-											<th>Costs</th>
+											<th>Reg No</th>
+											<th>Date of loss</th>
+											<th>Insured Party</th>
+											<th>Claim</th>
+											<th>Author</th>
 											<th>Attachments</th>
-											<th>Deadline Type</th>
-											<th>Deadline</th>
 										</tr>
 									</tfoot>
 							</table>
 
 						</div>              
 					</div>
+				<!-- /.box-body -->
+			  	</div>
 				</div>
 			</div>			
 		</section>
@@ -633,7 +621,7 @@
 		  </li>
 		</ul>
     </div>
-	  &copy; <script>document.write(new Date().getFullYear())</script> <a href="/">Lawfirm Company</a>. All Rights Reserved.
+	  &copy; <script>document.write(new Date().getFullYear())</script> <a href="/">Company Name</a>. All Rights Reserved.
   </footer>
 
   <!-- Control Sidebar -->
@@ -713,6 +701,7 @@
   <div class="control-sidebar-bg"></div>
   
 </div>
+
 <!-- ./wrapper -->
 	
 
@@ -731,7 +720,6 @@
 	<script src="js/template.js"></script>
 	<script src="js/pages/patients.js"></script>
 	<script src="js/pages/data-table.js"></script>
-
 	
 </body>
 

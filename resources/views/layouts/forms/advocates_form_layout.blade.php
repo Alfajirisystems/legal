@@ -545,82 +545,66 @@
 		<div class="content-header">
 			<div class="d-flex align-items-center">
 				<div class="me-auto">
-					<h4 class="page-title">Summons & Plaints</h4>
+					<h4 class="page-title">Matters</h4>
 					<div class="d-inline-block align-items-center">
 						<nav>
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
-								<li class="breadcrumb-item active" aria-current="page">Summons & Plaints</li>
+								<li class="breadcrumb-item active" aria-current="page">Matters</li>
 							</ol>
 						</nav>
 					</div>
 				</div>
-				<a href="/form_summons_plaints" class="btn btn-primary px-10 mx-30" style="position: fixed; right: 0;">Add New Summon/Plaint</a>
+				
 			</div>
 		</div>
 		  
 		<!-- Main content -->
 		<section class="content">
-			<div class="row">
-				<div class="col-12">
-				<div class="box">
-						<!-- /.box-header -->
-						<div class="box-body">
-							<div class="table-responsive">
-								<table id="example" class="table table-bordered table-hover display nowrap margin-top-10 w-p100">
-									<thead>
-										<tr>
-											<th>Case ID</th>
-											<th>Nature of Claim</th>
-											<th>Type of Claim</th>
-											<th>Court Location</th>
-											<th>Date of filing</th>
-											<th>Reserve</th>
-											<th>Parties</th>
-											<th>Date</th>
-											<th>Advocate</th>
-											<th>Firm</th>
-											<th>Costs</th>
-											<th>Attachments</th>
-											<th>Deadline Type</th>
-											<th>Deadline</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<!-- <td>Donna Snider</td>
-											<td>Customer Support</td>
-											<td>New York</td>
-											<td>27</td>
-											<td>2011/01/25</td>
-											<td>$112,000</td> -->
-										</tr>
-									</tbody>				  
-									<tfoot>
-										<tr>
-											<th>Case ID</th>
-											<th>Nature of Claim</th>
-											<th>Type of Claim</th>
-											<th>Court Location</th>
-											<th>Date of filing</th>
-											<th>Reserve</th>
-											<th>Parties</th>
-											<th>Date</th>
-											<th>Advocate</th>
-											<th>Firm</th>
-											<th>Costs</th>
-											<th>Attachments</th>
-											<th>Deadline Type</th>
-											<th>Deadline</th>
-										</tr>
-									</tfoot>
-							</table>
+            <div class="row">
+                <div class="col-12">
+                <div class="box">
+                    <div class="box-header">
+                    <h3 class="box-title">New Advocate</h3>
+                    </div>
+                    <form action="submit_data.php" method="post">
+                    <div class="box-body">
+                        <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                            <label for="advocate_id">Advocate ID (Optional):</label>
+                            <input type="text" class="form-control" id="advocate_id" name="advocate_id">
+                            </div>
+                            <div class="form-group">
+                            <label for="firm">Firm:</label>
+                            <input type="text" class="form-control" id="firm" name="firm" required>
+                            </div>
+                            <div class="form-group">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                            <label for="physical_address">Physical Address:</label>
+                            <textarea class="form-control" rows="4" id="physical_address" name="physical_address" required></textarea>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </section>
 
-						</div>              
-					</div>
-				</div>
-			</div>			
-		</section>
 		<!-- /.content -->
 	  </div>
   </div>
