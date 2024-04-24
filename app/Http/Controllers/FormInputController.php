@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class LoginController extends Controller
+class FormInputController extends Controller
 {
     //
     public function index()
     {
-        return view('admin.login');
+        return view('admin.form_letters');
     }
 }
