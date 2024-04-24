@@ -1,5 +1,6 @@
 @extends('layouts.main')
 @section('content')
+<div class="row">
 <div class="col-12">
     <div class="box">
         <div class="box-header with-border">
@@ -80,5 +81,6 @@
         </form>
     </div>
     <!-- /.box -->
+</div>
 </div>
 @endsection
