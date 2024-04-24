@@ -65,6 +65,8 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('users', Userscontroller::class);
     Route::resource('branches', BranchesController::class);
+    
+    
     // Route::get('/branches', [BranchesController::class, 'index'])->name('admin.branches.index');
     // Route::get('/branches/create', [BranchesController::class, 'create'])->name('admin.branches.create');
     // Route::post('/branches', [BranchesController::class, 'store'])->name('admin.branches.store');
