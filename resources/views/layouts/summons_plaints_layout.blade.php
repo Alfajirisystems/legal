@@ -171,51 +171,51 @@
 					<span>Summons & Plaints</span>
 				  </a>
 				</li>
-				<li>
+				<!-- <li>
 				  <a href="/appointments">
 					<i class="icon-Globe"><span class="path1"></span><span class="path2"></span></i>
 					<span>Appointments</span>
 				  </a>
-				</li>	
+				</li>	 -->
 				
 				<li>
 				  <a href="/cases">
-					<i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>
+					<i class="icon-Globe"><span class="path1"></span><span class="path2"></span></i>
 					<span>Matters</span>
 				  </a>
 				</li>		
-				<li>
+				<!-- <li>
 				  <a href="/attorneys">
 					<i class="icon-Hummer"><span class="path1"></span><span class="path2"></span></i>
 					<span>Advocates</span>
 				  </a>
-				</li>
-				<!-- <li class="treeview">
+				</li> -->
+				<li class="treeview">
 				  <a href="#">
 					<i class="icon-User"><span class="path1"></span><span class="path2"></span></i>
-					<span>Matters</span>
+					<span>Claims</span>
 					<span class="pull-right-container">
 					  <i class="fa fa-angle-right pull-right"></i>
 					</span>
 				  </a>
 				  <ul class="treeview-menu">
-					<li><a href="/cases"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Matters</a></li>
-					<li><a href="case_details.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Case Details</a></li>
+					<li><a href="/tppd_claims"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>TPPD Claims</a></li>
+					<li><a href="/settlements"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Settlements</a></li>
 				  </ul>
-				</li>				 -->
-				<!-- <li class="treeview">
+				</li>				
+				<li class="treeview">
 				  <a href="#">
 					<i class="icon-Hummer"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
-					<span>Attorney</span>
+					<span>Law Personnel</span>
 					<span class="pull-right-container">
 					  <i class="fa fa-angle-right pull-right"></i>
 					</span>
 				  </a>
 				  <ul class="treeview-menu">
-					<li><a href="/attorneys"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Attorneys</a></li>
-					<li><a href="attorney_details.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Attorney Details</a></li>
+					<li><a href="/attorneys"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Advocates</a></li>
+					<li><a href="/judges"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Judges</a></li>
 				  </ul>
-				</li> -->
+				</li>
 				<!-- <li class="header">Security</li> -->
 				<!-- <li class="treeview">
 				  <a href="#">
@@ -537,7 +537,6 @@
 		</div>
     </section>
   </aside>
-
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
 	  <div class="container-full">

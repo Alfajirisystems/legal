@@ -540,100 +540,102 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-  <div class="container-full">
-    <div class="content-header">
-      <div class="d-flex align-items-center">
-        <div class="me-auto">
-          <h4 class="page-title">Summons & Plaints</h4>
-          <div class="d-inline-block align-items-center">
-            <nav>
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
-                <li class="breadcrumb-item active" aria-current="page">Summons & Plaints</li>
-              </ol>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <section class="content">
-      <div class="row">
-        <div class="col-12">
-          <div class="box">
-            <div class="box-header">
-              <h3 class="box-title">New Summons & Plaint</h3>
-            </div>
-            <form action="submit_data.php" method="post">
-              <div class="box-body">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="case_id">Case ID:</label>
-                      <input type="text" class="form-control" id="case_id" name="case_id" required>
+	  <div class="container-full">
+		<!-- Content Header (Page header) -->	  
+		<div class="content-header">
+			<div class="d-flex align-items-center">
+				<div class="me-auto">
+					<h4 class="page-title">Claims</h4>
+					<div class="d-inline-block align-items-center">
+						<nav>
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
+								<li class="breadcrumb-item active" aria-current="page">TPPD Claims</li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+				<a href="/form_tppd" class="btn btn-primary px-10 mx-30" style="position: fixed; right: 0;">Add New TPPD Claim</a>
+			</div>
+		</div>
+		  
+		<!-- Main content -->
+		<section class="content">
+            <div class="row">
+                <div class="col-12">
+                    <div class="box">
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="table-responsive">
+                                <table id="example" class="table table-bordered table-hover display nowrap margin-top-10 w-p100">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Case No</th>
+                                            <th>Matter Reported</th>
+                                            <th>Overpayment</th>
+                                            <th>Court</th>
+                                            <th>Reserve Funds</th>
+                                            <th>Advocate Appointed</th>
+                                            <th>Attachments</th>
+                                            <th>Firm Name</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>001</td>
+                                            <td>CN001</td>
+                                            <td>Yes</td>
+                                            <td>No</td>
+                                            <td>
+                                                Ngong Law Courts
+                                            </td>
+                                            <td>10,000</td>
+                                            <td>Yes</td>
+                                            <td>
+                                                <a href="#" target="_blank" style="color: blue;">Download Attachment</a>
+                                            </td>
+                                            <td>XYZ Law Firm</td>
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>CN002</td>
+                                            <td>No</td>
+                                            <td>Yes</td>
+                                            <td>
+                                                Nairobi Law Courts
+                                            </td>
+                                            <td>5,000</td>
+                                            <td>No</td>
+                                            <td>
+                                                <a href="#" target="_blank" style="color: blue;">Download Attachment</a>
+                                            </td>
+                                            <td>ABC Law Firm</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Case No</th>
+                                            <th>Matter Reported</th>
+                                            <th>Overpayment</th>
+                                            <th>Court</th>
+                                            <th>Reserve Funds</th>
+                                            <th>Advocate Appointed</th>
+                                            <th>Attachments</th>
+                                            <th>Firm Name</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>              
+                        </div>
                     </div>
-                    <div class="form-group">
-                      <label for="nature_of_claim">Nature of Claim:</label>
-                      <input type="text" class="form-control" id="nature_of_claim" name="nature_of_claim" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="type_of_claim">Type of Claim:</label>
-                      <select class="form-control" id="type_of_claim" name="type_of_claim" required>
-                        <option value="">Select Type</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="court_location">Court Location:</label>
-                      <input type="text" class="form-control" id="court_location" name="court_location" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="date_of_filing">Date of Filing:</label>
-                      <input type="date" class="form-control" id="date_of_filing" name="date_of_filing" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="reserve">Reserve:</label>
-                      <input type="number" class="form-control" id="reserve" name="reserve" required>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="parties">Parties:</label>
-                      <textarea class="form-control" rows="3" id="parties" name="parties" required></textarea>
-                    </div>
-                    <div class="form-group">
-                      <label for="date">Date:</label>
-                      <input type="date" class="form-control" id="date" name="date" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="advocate">Advocate:</label>
-                      <input type="text" class="form-control" id="advocate" name="advocate" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="firm">Firm:</label>
-                      <input type="text" class="form-control" id="firm" name="firm" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="costs">Costs:</label>
-                      <input type="number" class="form-control" id="costs" name="costs" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="attachments">Attachments:</label>
-                      <input type="file" class="form-control-file" id="attachments" name="attachments" required multiple>
-                    </div>
-                  </div>
                 </div>
-              </div>
-              <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+            </div>			
+        </section>
+		<!-- /.content -->
+	  </div>
   </div>
-</div>
-
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     <div class="pull-right d-none d-sm-inline-block">
@@ -643,7 +645,7 @@
 		  </li>
 		</ul>
     </div>
-	  &copy; <script>document.write(new Date().getFullYear())</script> <a href="/">Lawfirm Company</a>. All Rights Reserved.
+	  &copy; <script>document.write(new Date().getFullYear())</script> <a href="/">Company Name</a>. All Rights Reserved.
   </footer>
 
   <!-- Control Sidebar -->
@@ -723,6 +725,7 @@
   <div class="control-sidebar-bg"></div>
   
 </div>
+
 <!-- ./wrapper -->
 	
 
@@ -741,7 +744,6 @@
 	<script src="js/template.js"></script>
 	<script src="js/pages/patients.js"></script>
 	<script src="js/pages/data-table.js"></script>
-
 	
 </body>
 
