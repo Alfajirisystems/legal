@@ -75,7 +75,7 @@ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 
 Route::middleware('auth')->group(function () {
-    
+
     Route::get('/home', [HomeController::class, 'index'])->name('profile.edit');
 
     Route::resource('users', Userscontroller::class);
@@ -83,38 +83,38 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/form_input', [FormInputController::class, 'index']);
+            Route::get('/form_input', [FormInputController::class, 'index']);
 
-Route::get('/statutory_notices', [StatutoryNoticesController::class, 'index']);
+            Route::get('/statutory_notices', [StatutoryNoticesController::class, 'index']);
 
-Route::get('/form_statutory', [StatutoryFormInputController::class, 'index']);
+            Route::get('/form_statutory', [StatutoryFormInputController::class, 'index']);
 
-Route::get('/form_matters', [MattersFormInputController::class, 'index']);
+            Route::get('/form_matters', [MattersFormInputController::class, 'index']);
 
-Route::get('/form_advocates', [AdvocatesFormInputController::class, 'index']);
+            Route::get('/form_advocates', [AdvocatesFormInputController::class, 'index']);
 
-Route::get('/form_tppd', [TppdFormInputController::class, 'index']);
+            Route::get('/form_tppd', [TppdFormInputController::class, 'index']);
 
-Route::get('/form_summons_plaints', [SummonsPlaintsFormInputController::class, 'index']);
+            Route::get('/form_summons_plaints', [SummonsPlaintsFormInputController::class, 'index']);
 
-Route::get('/tppd_claims', [TppdClaimsController::class, 'index']);
+            Route::get('/tppd_claims', [TppdClaimsController::class, 'index']);
 
-Route::get('/settlements', [SettlementsController::class, 'index']);
+            Route::get('/settlements', [SettlementsController::class, 'index']);
 
-Route::get('/form_settlements', [SettlementsFormInputController::class, 'index']);
+            Route::get('/form_settlements', [SettlementsFormInputController::class, 'index']);
 
-Route::get('/form_judges', [JudgesFormInputController::class, 'index']);
+            Route::get('/form_judges', [JudgesFormInputController::class, 'index']);
 
-Route::get('/judges', [JudgesController::class, 'index']);
+            Route::get('/judges', [JudgesController::class, 'index']);
 
-    
-    
-    // Route::get('/branches', [BranchesController::class, 'index'])->name('admin.branches.index');
-    // Route::get('/branches/create', [BranchesController::class, 'create'])->name('admin.branches.create');
-    // Route::post('/branches', [BranchesController::class, 'store'])->name('admin.branches.store');
+                
+                
+                // Route::get('/branches', [BranchesController::class, 'index'])->name('admin.branches.index');
+                // Route::get('/branches/create', [BranchesController::class, 'create'])->name('admin.branches.create');
+                // Route::post('/branches', [BranchesController::class, 'store'])->name('admin.branches.store');
 
-    
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+                
+                Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
 Auth::routes();

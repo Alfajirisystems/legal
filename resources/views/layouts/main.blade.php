@@ -234,7 +234,7 @@
                                 </ul>
                             </li>
                             <li class="treeview">
-                                <a href="#">
+                                <a href="/users">
                                     <i class="icon-Hummer"><span class="path1"></span><span class="path2"></span><span
                                             class="path3"></span></i>
                                     <span>Law Personnel</span>
@@ -248,6 +248,16 @@
                                     <li><a href="/judges"><i class="icon-Commit"><span class="path1"></span><span
                                                     class="path2"></span></i>Judges</a></li>
                                 </ul>
+                            </li>
+							<li class="treeview">
+                                <a href="/branches">
+                                    
+                                    <span>Branches</span>
+                                    <span class="pull-right-container">
+                                        <i class="fa fa-angle-right pull-right"></i>
+                                    </span>
+                                </a>
+                                
                             </li>
                             <!-- <li class="header">Security</li> -->
                             <!-- <li class="treeview">

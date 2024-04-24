@@ -44,9 +44,9 @@ class BranchesController extends Controller
         try {
             $branch->save();
             toastr()->success('Branch created successfully!', 'Success');
-            return redirect()->route('admin.branches.index');
+            return redirect()->route('branches.index');
         } catch (\Exception $e) {
-            toastr()->error('Oops! Something went wrong!', 'Oops!');
+            toastr()->error($e->getMessage(), 'Error');
             return redirect()->back()->with('error', 'Error creating branch');
         }
        
