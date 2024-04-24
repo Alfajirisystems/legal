@@ -29,59 +29,104 @@
                     <div class="box-header">
                     <h3 class="box-title">New Matter</h3>
                     </div>
-                    <form action="submit_data.php" method="post"> <div class="box-body">
-                        <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                            <label for="matter_id">Matter ID:</label>
-                            <input type="text" class="form-control" id="matter_id" name="matter_id" required>
-                            </div>
-                            <div class="form-group">
-                            <label for="date">Date:</label>
-                            <input type="date" class="form-control" id="date" name="date" required>
-                            </div>
-                            <div class="form-group">
-                            <label for="client_name">Client Name:</label>
-                            <input type="text" class="form-control" id="client_name" name="client_name" required>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                            <label for="attorney_assigned">Attorney Assigned:</label>
-                            <select class="form-control" id="attorney_assigned" name="attorney_assigned" required>
-                                <option value="">Select Attorney</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                            <label for="case_type">Case Type:</label>
-                            <select class="form-control" id="case_type" name="case_type" required>
-                                <option value="">Select Case Type</option>
-                                </select>
-                            </div>
-                            <div class.form-group>
-                            <label for="status">Status:</label>
-                            <select class="form-control" id="status" name="status" required>
-                                <option value="">Select Status</option>
-                                <option value="Open">Open</option>
-                                <option value="In Progress">In Progress</option>
-                                <option value="Closed">Closed</option>
-                            </select>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                            <label for="hearing">Hearing (Optional):</label>
-                            <textarea class="form-control" rows="3" id="hearing" name="hearing"></textarea>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="box-footer">
-                        <button type="submit" class="btn btn-primary">Save</button>
-                    </div>
-                    </form>
+                    <form action="submit_data.php" method="post">
+						<div class="box-body">
+							<div class="row">
+								<!-- Left Column -->
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="matter_id">Matter ID:</label>
+										<input type="text" class="form-control" id="matter_id" name="matter_id" required>
+									</div>
+									<div class="form-group">
+										<label for="name">Name:</label>
+										<input type="text" class="form-control" id="name" name="name" required>
+									</div>
+									<div class="form-group">
+										<label for="category">Category:</label>
+										<select class="form-control" id="category" name="category" required>
+											<option value="">Select Category</option>
+											<!-- Add your dropdown options here -->
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="plaintiff_name">Plaintiff Name:</label>
+										<input type="text" class="form-control" id="plaintiff_name" name="plaintiff_name" required>
+									</div>
+									<div class="form-group">
+										<label for="plaintiff_advocate">Plaintiff Advocate:</label>
+										<select class="form-control" id="plaintiff_advocate" name="plaintiff_advocate" required>
+											<option value="">Select Plaintiff Advocate</option>
+											<!-- Add your dropdown options here -->
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="witness">Witness:</label>
+										<input type="text" class="form-control" id="witness" name="witness" required>
+									</div>
+									<div class="form-group">
+										<label for="claimedamount">Claimed Amount:</label>
+										<input type="text" class="form-control" id="claimedamount" name="claimedamount" required>
+									</div>
+								</div>
+
+								<!-- Right Column -->
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="court">Court:</label>
+										<select class="form-control" id="court" name="court" required>
+											<option value="">Select Court</option>
+											<!-- Add your dropdown options here -->
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="date">Date:</label>
+										<input type="date" class="form-control" id="date" name="date" required>
+									</div>
+									<div class="form-group">
+										<label for="insurer">Insurer:</label>
+										<select class="form-control" id="insurer" name="insurer" required>
+											<option value="">Select Insurer</option>
+											<!-- Add your dropdown options here -->
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="attachments">Attachments:</label>
+										<input type="file" class="form-control" id="attachments" name="attachments" multiple required>
+									</div>
+									<div class="form-group">
+										<label for="status">Status:</label>
+										<select class="form-control" id="status" name="status" required>
+											<option value="">Select Status</option>
+											<option value="Open">Open</option>
+											<option value="In Progress">In Progress</option>
+											<option value="Closed">Closed</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="filing_dates">Filing Dates:</label>
+										<input type="text" class="form-control" id="filing_dates" name="filing_dates" required>
+									</div>
+									<div class="form-group">
+										<label for="submission_date">Submission Date:</label>
+										<input type="date" class="form-control" id="submission_date" name="submission_date" required>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label for="hearing">Hearing (Optional):</label>
+										<textarea class="form-control" rows="3" id="hearing" name="hearing"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="box-footer">
+							<button type="submit" class="btn btn-primary">Save</button>
+						</div>
+					</form>
+
                 </div>
                 </div>
             </div>

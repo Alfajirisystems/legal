@@ -6,17 +6,17 @@
 		<div class="content-header">
 			<div class="d-flex align-items-center">
 				<div class="me-auto">
-					<h4 class="page-title">Cases</h4>
+					<h4 class="page-title">Matters</h4>
 					<div class="d-inline-block align-items-center">
 						<nav>
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
-								<li class="breadcrumb-item active" aria-current="page">Cases</li>
+								<li class="breadcrumb-item active" aria-current="page">Matters</li>
 							</ol>
 						</nav>
 					</div>
 				</div>
-				
+				<a href="/form_matters" class="btn btn-primary px-10 mx-30" style="position: fixed; right: 0;">Add New Matter</a>
 			</div>
 		</div>
 		  
@@ -25,253 +25,90 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="box">
+						<!-- /.box-header -->
 						<div class="box-body">
-							<div class="table-responsive rounded card-table">
-								<table class="table border-no" id="example1">
+							<div class="table-responsive">
+								<table id="example" class="table table-bordered table-hover display nowrap margin-top-10 w-p100">
 									<thead>
 										<tr>
-											<th>Cases ID</th>
+											<th>Matter ID</th>
+											<th>Name</th>
+											<th>Category</th>
+											<th>Plaintiff Name</th>
+											<th>Plaintiff Advocate</th>
+											<th>Witness</th>
+											<th>Claimed Amount</th>
+											<th>Court</th>
 											<th>Date</th>
-											<th>Client Name</th>
-											<th>Attorney Assgined</th>
-											<th>Case Type</th>
+											<th>Insurer</th>
+											<th>Attachments</th>
 											<th>Status</th>
+											<th>Filing Dates</th>
+											<th>Submission Date</th>
 											<th>Hearing</th>
-											<th></th>
 										</tr>
 									</thead>
 									<tbody>
-										<tr class="hover-primary">
-											<td>#p245879</td>
-											<td>14 April 2021</td>
-											<td>Aaliyah clark</td>
-											<td>Mr. Johen Doe</td>
-											<td>Business Litigation</td>
-											<td><span class="badge badge-success-light">Win</span></td>
-											<td>1 Hearing</td>
-											<td>												
-												<div class="btn-group">
-												  <a class="hover-primary dropdown-toggle no-caret" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
-												  <div class="dropdown-menu">
-													<a class="dropdown-item" href="#">View Details</a>
-													<a class="dropdown-item" href="#">Edit</a>
-													<a class="dropdown-item" href="#">Delete</a>
-												  </div>
-											    </div>
+										<tr>
+											<td>001</td>
+											<td>John Doe</td>
+											<td>Personal Injury</td>
+											<td>Jane Doe</td>
+											<td>John Smith</td>
+											<td>Witness1, Witness2</td>
+											<td>$50,000</td>
+											<td>Supreme Court</td>
+											<td>2024-04-24</td>
+											<td>XYZ Insurance</td>
+											<td>
+												<a href="#" target="_blank" style="color: blue;">Download Attachment</a>
 											</td>
-										</tr>										
-										<tr class="hover-primary">
-											<td>#p245880</td>
-											<td>18 April 2021</td>
-											<td>Mical clark</td>
-											<td>Mr. Aiden Doe</td>
-											<td>Criminal Law</td>
-											<td><span class="badge badge-success-light">Win</span></td>
-											<td>3 Hearing</td>
-											<td>												
-												<div class="btn-group">
-												  <a class="hover-primary dropdown-toggle no-caret" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
-												  <div class="dropdown-menu">
-													<a class="dropdown-item" href="#">View Details</a>
-													<a class="dropdown-item" href="#">Edit</a>
-													<a class="dropdown-item" href="#">Delete</a>
-												  </div>
-											    </div>
+											<td>Open</td>
+											<td>2024-04-20</td>
+											<td>2024-04-22</td>
+											<td>Not set</td>
+										</tr>
+										<tr>
+											<td>002</td>
+											<td>Jane Smith</td>
+											<td>Property Damage</td>
+											<td>John Smith</td>
+											<td>Jane Smith</td>
+											<td>Witness3</td>
+											<td>$20,000</td>
+											<td>County Court</td>
+											<td>2024-04-25</td>
+											<td>ABC Insurance</td>
+											<td>
+												<a href="#" target="_blank" style="color: blue;">Download Attachment</a>
 											</td>
-										</tr>										
-										<tr class="hover-primary">
-											<td>#p245881</td>
-											<td>22 May 2021, 15:30 PM</td>
-											<td>Stela clark</td>
-											<td>Mr. Lalvani doe</td>
-											<td>Identity Theft</td>
-											<td><span class="badge badge-danger-light">Lost</span></td>
-											<td>FF-112</td>
-											<td>												
-												<div class="btn-group">
-												  <a class="hover-primary dropdown-toggle no-caret" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
-												  <div class="dropdown-menu">
-													<a class="dropdown-item" href="#">View Details</a>
-													<a class="dropdown-item" href="#">Edit</a>
-													<a class="dropdown-item" href="#">Delete</a>
-												  </div>
-											    </div>
-											</td>
-										</tr>										
-										<tr class="hover-primary">
-											<td>#p245882</td>
-											<td>26 April 2021</td>
-											<td>Boone Doe</td>
-											<td>Mr. Don Paton</td>
-											<td>Travel Accident</td>
-											<td><span class="badge badge-danger-light">Lost</span></td>
-											<td>No Hearing</td>
-											<td>												
-												<div class="btn-group">
-												  <a class="hover-primary dropdown-toggle no-caret" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
-												  <div class="dropdown-menu">
-													<a class="dropdown-item" href="#">View Details</a>
-													<a class="dropdown-item" href="#">Edit</a>
-													<a class="dropdown-item" href="#">Delete</a>
-												  </div>
-											    </div>
-											</td>
-										</tr>										
-										<tr class="hover-primary">
-											<td>#p245883</td>
-											<td>30 April 2021</td>
-											<td>Carlie Paton</td>
-											<td>Mr. Mical Doe</td>
-											<td>Legal Advice</td>
-											<td><span class="badge badge-warning-light">Declined</span></td>
-											<td>5 Hearing</td>
-											<td>												
-												<div class="btn-group">
-												  <a class="hover-primary dropdown-toggle no-caret" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
-												  <div class="dropdown-menu">
-													<a class="dropdown-item" href="#">View Details</a>
-													<a class="dropdown-item" href="#">Edit</a>
-													<a class="dropdown-item" href="#">Delete</a>
-												  </div>
-											    </div>
-											</td>
-										</tr>										
-										<tr class="hover-primary">
-											<td>#p245884</td>
-											<td>1 May 2021</td>
-											<td>Delilah</td>
-											<td>Mr. Johen Doe</td>
-											<td>Business Law</td>
-											<td><span class="badge badge-success-light">Win</span></td>
-											<td>3 Hearing</td>
-											<td>												
-												<div class="btn-group">
-												  <a class="hover-primary dropdown-toggle no-caret" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
-												  <div class="dropdown-menu">
-													<a class="dropdown-item" href="#">View Details</a>
-													<a class="dropdown-item" href="#">Edit</a>
-													<a class="dropdown-item" href="#">Delete</a>
-												  </div>
-											    </div>
-											</td>
-										</tr>										
-										<tr class="hover-primary">
-											<td>#p245885</td>
-											<td>2 May 2021</td>
-											<td>Hannah Doe</td>
-											<td>Mr. Jennifer Ruby</td>
-											<td>Civil Litigation</td>
-											<td><span class="badge badge-warning-light">Declined</span></td>
-											<td>7 Hearing</td>
-											<td>												
-												<div class="btn-group">
-												  <a class="hover-primary dropdown-toggle no-caret" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
-												  <div class="dropdown-menu">
-													<a class="dropdown-item" href="#">View Details</a>
-													<a class="dropdown-item" href="#">Edit</a>
-													<a class="dropdown-item" href="#">Delete</a>
-												  </div>
-											    </div>
-											</td>
-										</tr>										
-										<tr class="hover-primary">
-											<td>#p245886</td>
-											<td>3 May 2021</td>
-											<td>Emerson Clark</td>
-											<td>Mr. Alex Siauw</td>
-											<td>Insurance Defence</td>
-											<td><span class="badge badge-warning-light">Declined</span></td>
-											<td>1 Hearing</td>
-											<td>												
-												<div class="btn-group">
-												  <a class="hover-primary dropdown-toggle no-caret" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
-												  <div class="dropdown-menu">
-													<a class="dropdown-item" href="#">View Details</a>
-													<a class="dropdown-item" href="#">Edit</a>
-													<a class="dropdown-item" href="#">Delete</a>
-												  </div>
-											    </div>
-											</td>
-										</tr>										
-										<tr class="hover-primary">
-											<td>#p245887</td>
-											<td>4 May 2021</td>
-											<td>Crystal Doe</td>
-											<td>Mr. Samuel Jr.</td>
-											<td>Family Law</td>
-											<td><span class="badge badge-success-light">Win</span></td>
-											<td>3 Hearing</td>
-											<td>												
-												<div class="btn-group">
-												  <a class="hover-primary dropdown-toggle no-caret" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
-												  <div class="dropdown-menu">
-													<a class="dropdown-item" href="#">View Details</a>
-													<a class="dropdown-item" href="#">Edit</a>
-													<a class="dropdown-item" href="#">Delete</a>
-												  </div>
-											    </div>
-											</td>
-										</tr>										
-										<tr class="hover-primary">
-											<td>#p245888</td>
-											<td>5 May 2021</td>
-											<td>Jenny don</td>
-											<td>Mr. Widan Cheeh</td>
-											<td>Cold & Flu</td>
-											<td><span class="badge badge-warning-light">Declined</span></td>
-											<td>3 Hearing</td>
-											<td>												
-												<div class="btn-group">
-												  <a class="hover-primary dropdown-toggle no-caret" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
-												  <div class="dropdown-menu">
-													<a class="dropdown-item" href="#">View Details</a>
-													<a class="dropdown-item" href="#">Edit</a>
-													<a class="dropdown-item" href="#">Delete</a>
-												  </div>
-											    </div>
-											</td>
-										</tr>										
-										<tr class="hover-primary">
-											<td>#p245889</td>
-											<td>6 May 2021</td>
-											<td>Joanne Clark</td>
-											<td>Mr. Samantha</td>
-											<td>Employment Law</td>
-											<td><span class="badge badge-danger-light">Lost</span></td>
-											<td>No Hearing</td>
-											<td>												
-												<div class="btn-group">
-												  <a class="hover-primary dropdown-toggle no-caret" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
-												  <div class="dropdown-menu">
-													<a class="dropdown-item" href="#">View Details</a>
-													<a class="dropdown-item" href="#">Edit</a>
-													<a class="dropdown-item" href="#">Delete</a>
-												  </div>
-											    </div>
-											</td>
-										</tr>										
-										<tr class="hover-primary">
-											<td>#p245890</td>
-											<td>6 May 2021</td>
-											<td>Madeline doe</td>
-											<td>Mr. Widan Cheeh</td>
-											<td>Business Litigation</td>
-											<td><span class="badge badge-warning-light">Declined</span></td>
-											<td>4 Hearing</td>
-											<td>												
-												<div class="btn-group">
-												  <a class="hover-primary dropdown-toggle no-caret" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
-												  <div class="dropdown-menu">
-													<a class="dropdown-item" href="#">View Details</a>
-													<a class="dropdown-item" href="#">Edit</a>
-													<a class="dropdown-item" href="#">Delete</a>
-												  </div>
-											    </div>
-											</td>
+											<td>In Progress</td>
+											<td>2024-04-21</td>
+											<td>2024-04-23</td>
+											<td>2024-04-28</td>
 										</tr>
 									</tbody>
+									<tfoot>
+										<tr>
+											<th>Matter ID</th>
+											<th>Name</th>
+											<th>Category</th>
+											<th>Plaintiff Name</th>
+											<th>Plaintiff Advocate</th>
+											<th>Witness</th>
+											<th>Claimed Amount</th>
+											<th>Court</th>
+											<th>Date</th>
+											<th>Insurer</th>
+											<th>Attachments</th>
+											<th>Status</th>
+											<th>Filing Dates</th>
+											<th>Submission Date</th>
+											<th>Hearing</th>
+										</tr>
+									</tfoot>
 								</table>
-							</div>
+							</div>              
 						</div>
 					</div>
 				</div>
@@ -280,5 +117,4 @@
 		<!-- /.content -->
 	  </div>
   </div>
-
 @endsection
