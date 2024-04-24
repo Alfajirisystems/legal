@@ -540,77 +540,53 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-	  <div class="container-full">
-		<!-- Main content -->
-		<section class="content">
-			<div class="row">								
-				<div class="col-xl-4 col-12">
-					<div class="box">
+  	<div class="container-full">
+    	<section class="content">
+			<div class="row">
+				<div class="col-xl-8 col-12">  <div class="row">
+					<div class="col-md-6 col-sm-12">  <div class="box">
 						<div class="box-header no-border">
 							<h3 class="box-title">Total Matters (0)</h3>
 						</div>
-						<div class="box-body py-0 px-0">
-							<div class="chart" id="totalcases"></div>
-						</div>
+					<div class="box-body py-0 px-0">
+						<div class="chart" id="totalcases"></div>
 					</div>
 				</div>
-				<!-- <div class="col-xl-4 col-12">
-					<div class="box">
-						<div class="box-header no-border">
-							<h3 class="box-title">Settled Cases (745)</h3>
-						</div>
+            </div>
+            <div class="col-md-6 col-sm-12">  <div class="box">
+                <div class="box-header no-border">
+                  <h3 class="box-title">Settled Matters (0)</h3>
+                </div>
+                <div class="box-body py-0 px-0">
+                  <div class="chart" id="settledcases"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12">  <div class="box">
+                <div class="box-header no-border">
+                  <h3 class="box-title">Advocates (0)</h3>
+                </div>
+                <div class="box-body py-0 px-0">
+                  <div class="chart" id="totaladvocates"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">  <div class="box">
+                <div class="box-header no-border">
+                  <h3 class="box-title">Courts (0)</h3>
+                </div>
+                <div class="box-body py-0 px-0">
+                  <div class="chart" id="totalcourts"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+					<div class="col-xl-4 col-12">  <div class="box">
 						<div class="box-body py-0 px-0">
-							<div class="chart" id="settledcases"></div>
-						</div>
-					</div>
-				</div> -->
-				<div class="col-xl-4 col-12">
-					<div class="box">
-						<div class="box-header no-border">
-							<h3 class="box-title">Settled Matters (0)</h3>
-						</div>
-						<div class="box-body py-0 px-0">
-							<div class="chart" id="settledcases"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-4 col-12">
-					<div class="box">
-						<div class="box-header no-border">
-							<h3 class="box-title">Letters (0)</h3>
-						</div>
-						<div class="box-body py-0 px-0">
-							<div class="chart" id="totalletters"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-4 col-12">
-					<div class="box">
-						<div class="box-header no-border">
-							<h3 class="box-title">Advocates (0)</h3>
-						</div>
-						<div class="box-body py-0 px-0">
-							<div class="chart" id="totaladvocates"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-4 col-12">
-					<div class="box">
-						<div class="box-header no-border">
-							<h3 class="box-title">Courts (0)</h3>
-						</div>
-						<div class="box-body py-0 px-0">
-							<div class="chart" id="totalcourts"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-4 col-12">
-					<div class="box">
-						<div class="box-header no-border">
-							<h3 class="box-title">Judges (0)</h3>
-						</div>
-						<div class="box-body py-0 px-0">
-							<div class="chart" id="totaljudges"></div>
+						<div id="calendar" class="apt-cal"></div>
 						</div>
 					</div>
 				</div>
@@ -1107,6 +1083,9 @@
 <!-- ./wrapper -->
 	
 	<!-- Page Content overlay -->
+
+	<link href='../assets/vendor_components/perfect-scrollbar-master/css/perfect-scrollbar.css' rel='stylesheet' />
+	<link href='../assets/vendor_components/fullcalendar/fullcalendar.min.css' rel='stylesheet' />
 	
 	
 	<!-- Vendor JS -->
@@ -1119,6 +1098,7 @@
 	<!-- Law Firm App -->
 	<script src="js/template.js"></script>
 	<script src="js/pages/dashboard.js"></script>
+
 	
 </body>
 </html>
