@@ -7,6 +7,7 @@ use App\Http\Controllers\CasesController;
 use App\Http\Controllers\AttorneysController;
 use App\Http\Controllers\LockScreenController;
 // use App\Http\Controllers\LoginController;
+use App\Http\Controllers\CourtsController;
 use App\Http\Controllers\AttorneyDetailsController;
 use App\Http\Controllers\MailboxController;
 use App\Http\Controllers\LettersController;
@@ -80,41 +81,38 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('users', Userscontroller::class);
     Route::resource('branches', BranchesController::class);
+    Route::resource('courts', CourtsController::class);
+    Route::resource('appointments', AppointmentsController::class);
+    Route::resource('attorneys', AttorneysController::class);
+    Route::resource('attorneyDetails', AttorneyDetailsController::class);
+    Route::resource('letters', LettersController::class);
+    Route::resource('tppdClaims', TppdClaimsController::class);
+    Route::resource('summonsPlaints', SummonsPlaintsController::class);
+    Route::resource('settlements', SettlementsController::class);
+    Route::resource('judges', JudgesController::class);
 
-    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-            Route::get('/form_input', [FormInputController::class, 'index']);
+    Route::get('/statutory_notices', [StatutoryNoticesController::class, 'index']);
 
-            Route::get('/statutory_notices', [StatutoryNoticesController::class, 'index']);
+    Route::get('/form_statutory', [StatutoryFormInputController::class, 'index']);
 
-            Route::get('/form_statutory', [StatutoryFormInputController::class, 'index']);
+    Route::get('/form_matters', [MattersFormInputController::class, 'index']);
 
-            Route::get('/form_matters', [MattersFormInputController::class, 'index']);
+    Route::get('/form_advocates', [AdvocatesFormInputController::class, 'index']);
 
-            Route::get('/form_advocates', [AdvocatesFormInputController::class, 'index']);
+    Route::get('/form_tppd', [TppdFormInputController::class, 'index']);
 
-            Route::get('/form_tppd', [TppdFormInputController::class, 'index']);
+    Route::get('/form_summons_plaints', [SummonsPlaintsFormInputController::class, 'index']);
 
-            Route::get('/form_summons_plaints', [SummonsPlaintsFormInputController::class, 'index']);
+    Route::get('/tppd_claims', [TppdClaimsController::class, 'index']);
 
-            Route::get('/tppd_claims', [TppdClaimsController::class, 'index']);
 
-            Route::get('/settlements', [SettlementsController::class, 'index']);
 
-            Route::get('/form_settlements', [SettlementsFormInputController::class, 'index']);
+    Route::get('/form_settlements', [SettlementsFormInputController::class, 'index']);
 
-            Route::get('/form_judges', [JudgesFormInputController::class, 'index']);
+    Route::get('/form_judges', [JudgesFormInputController::class, 'index']);
 
-            Route::get('/judges', [JudgesController::class, 'index']);
-
-                
-                
-                // Route::get('/branches', [BranchesController::class, 'index'])->name('admin.branches.index');
-                // Route::get('/branches/create', [BranchesController::class, 'create'])->name('admin.branches.create');
-                // Route::post('/branches', [BranchesController::class, 'store'])->name('admin.branches.store');
-
-                
-                Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
 Auth::routes();

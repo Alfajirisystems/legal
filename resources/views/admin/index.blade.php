@@ -1,10 +1,7 @@
 
 @extends('layouts.main')
 @section('content')
-<div class="content-wrapper">
-	  <div class="container-full">
-		<!-- Main content -->
-		<section class="content">
+
 			<div class="row">								
 				<div class="col-xl-4 col-12">
 					<div class="box">
@@ -462,9 +459,6 @@
 					</div>
 				</div>
 			</div>				
-		</section>
-		<!-- /.content -->
-	  </div>
-  </div>
+		
 
 @endsection

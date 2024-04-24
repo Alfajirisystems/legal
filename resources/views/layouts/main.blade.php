@@ -149,28 +149,9 @@
         <aside class="main-sidebar">
             <!-- sidebar-->
             <section class="sidebar position-relative">
-                <div class="user-profile bb-1 px-20 py-10">
-                    <div class="d-block text-center">
-                        <div class="image">
-                            <img src="../images/avatar/avatar-13.png"
-                                class="avatar avatar-xxl bg-primary-light rounded100" alt="User Image">
-                        </div>
-                        <div class="info pt-15">
-                            <a class="px-20 fs-18 fw-500" href="#">User Name</a>
-                        </div>
-                    </div>
-                    <ul class="list-inline profile-setting mt-20 mb-0 d-flex justify-content-center gap-3">
-                        <li><a href="/mailbox" data-bs-toggle="tooltip" title="Email"><i
-                                    class="icon-Incoming-mail fs-24"><span class="path1"></span><span
-                                        class="path2"></span></i></a></li>
-                        <!-- <li><a href="contact_app_chat.html" data-bs-toggle="tooltip" title="Chat"><i class="icon-Group-chat fs-24"><span class="path1"></span><span class="path2"></span></i></a></li> -->
-                        <li><a href="/login" data-bs-toggle="tooltip" title="Logout"><i
-                                    class="icon-Lock-overturning fs-24"><span class="path1"></span><span
-                                        class="path2"></span></i></a></li>
-                    </ul>
-                </div>
+              
                 <div class="multinav">
-                    <div class="multinav-scroll" style="height: 100%;">
+                    <div class="" style="height: 100%;">
                         <!-- sidebar menu-->
                         <ul class="sidebar-menu" data-widget="tree">
                             <li>
@@ -180,11 +161,20 @@
                                     <span>Dashboard</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="/letters">
+                            <li class="treeview">
+                                <a href="">
                                     <i class="icon-Library"><span class="path1"></span><span class="path2"></span></i>
                                     <span>Demand Letters</span>
                                 </a>
+
+                                <ul class="treeview-menu">
+                                    <li><a href="/letters"><i class="icon-Commit"><span class="path1"></span><span
+                                                    class="path2"></span></i>View letters</a></li>
+                                    <li><a href="/letters/create"><i class="icon-Commit"><span class="path1"></span><span
+                                                    class="path2"></span></i>Create Letters</a></li>
+                                </ul>
+
+
                             </li>
                             <li>
                                 <a href="/statutory_notices">
@@ -237,26 +227,35 @@
                                 <a href="/users">
                                     <i class="icon-Hummer"><span class="path1"></span><span class="path2"></span><span
                                             class="path3"></span></i>
-                                    <span>Law Personnel</span>
+                                    <span>System Users</span>
                                     <span class="pull-right-container">
                                         <i class="fa fa-angle-right pull-right"></i>
                                     </span>
                                 </a>
                                 <ul class="treeview-menu">
-                                    <li><a href="/attorneys"><i class="icon-Commit"><span class="path1"></span><span
-                                                    class="path2"></span></i>Advocates</a></li>
-                                    <li><a href="/judges"><i class="icon-Commit"><span class="path1"></span><span
-                                                    class="path2"></span></i>Judges</a></li>
+                                    <li><a href="/users"><i class="icon-Commit"><span class="path1"></span><span
+                                                    class="path2"></span></i>Users</a></li>
+                                    
                                 </ul>
                             </li>
 							<li class="treeview">
-                                <a href="/branches">
-                                    
-                                    <span>Branches</span>
+                                <a href="">
+                                    <i class="icon-Hummer"><span class="path1"></span><span class="path2"></span><span
+                                            class="path3"></span></i>
+                                    <span>System Settings</span>
                                     <span class="pull-right-container">
                                         <i class="fa fa-angle-right pull-right"></i>
                                     </span>
                                 </a>
+								<ul class="treeview-menu">
+									<li><a href="/branches"><i class="icon-Commit"><span class="path1"></span><span
+													class="path2"></span></i>Branches</a>
+                                                
+                                                </li>
+                                                <li><a href="/courts"><i class="icon-Commit"><span class="path1"></span><span
+													class="path2"></span></i>Courts</a>
+                                                
+                                                </li>
                                 
                             </li>
                             <!-- <li class="header">Security</li> -->
@@ -704,6 +703,8 @@
     <!-- Law Firm App -->
     <script src="{{ url('js/template.js') }}"></script>
     <script src="{{ url('js/pages/dashboard.js') }}"></script>
+    <script src="{{url('js/pages/data-table.js')}}"></script>
+    <script src="{{url('assets/vendor_components/datatable/datatables.min.js')}}"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
