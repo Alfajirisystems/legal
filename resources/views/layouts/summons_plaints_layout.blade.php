@@ -126,98 +126,119 @@
   </header>
   
   <aside class="main-sidebar">
-    <!-- sidebar-->
-    <section class="sidebar position-relative">
-		<div class="user-profile bb-1 px-20 py-10">
-			<div class="d-block text-center">			
-				<div class="image">
-				  <img src="../images/avatar/avatar-13.png" class="avatar avatar-xxl bg-primary-light rounded100" alt="User Image">
-				</div>
-				<div class="info pt-15">
-					<a class="px-20 fs-18 fw-500" href="#">User Name</a>
-				</div>
-			</div>
-			<ul class="list-inline profile-setting mt-20 mb-0 d-flex justify-content-center gap-3">
-				<li><a href="/mailbox" data-bs-toggle="tooltip" title="Email"><i class="icon-Incoming-mail fs-24"><span class="path1"></span><span class="path2"></span></i></a></li>
-				<!-- <li><a href="contact_app_chat.html" data-bs-toggle="tooltip" title="Chat"><i class="icon-Group-chat fs-24"><span class="path1"></span><span class="path2"></span></i></a></li> -->
-				<li><a href="/login" data-bs-toggle="tooltip" title="Logout"><i class="icon-Lock-overturning fs-24"><span class="path1"></span><span class="path2"></span></i></a></li>
-			</ul>
-	    </div>
-	  	<div class="multinav">
-		  <div class="multinav-scroll" style="height: 100%;">	
-			  <!-- sidebar menu-->
-			  <ul class="sidebar-menu" data-widget="tree">				
-				<li>
-				  <a href="/">
-					<i class="icon-Layout-4-blocks"><span class="path1"></span><span class="path2"></span></i>
-					<span>Dashboard</span>
-				  </a>
-				</li>
-				<li>
-				  <a href="/letters">
-					<i class="icon-Library"><span class="path1"></span><span class="path2"></span></i>
-					<span>Demand Letters</span>
-				  </a>
-				</li>
-				<li>
-				  <a href="/statutory_notices">
-					<i class="icon-Barcode-read"><span class="path1"></span><span class="path2"></span></i>
-					<span>Statutory Notices</span>
-				  </a>
-				</li>
-				<li>
-				  <a href="/summons_plaints">
-					<i class="icon-Box2"><span class="path1"></span><span class="path2"></span></i>
-					<span>Summons & Plaints</span>
-				  </a>
-				</li>
-				<!-- <li>
+            <!-- sidebar-->
+            <section class="sidebar position-relative">
+              
+                <div class="multinav">
+                    <div class="" style="height: 100%;">
+                        <!-- sidebar menu-->
+                        <ul class="sidebar-menu" data-widget="tree">
+                            <li>
+                                <a href="/">
+                                    <i class="icon-Layout-4-blocks"><span class="path1"></span><span
+                                            class="path2"></span></i>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="treeview">
+                                <a href="">
+                                    <i class="icon-Library"><span class="path1"></span><span class="path2"></span></i>
+                                    <span>Demand Letters</span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    <li><a href="/letters"><i class="icon-Commit"><span class="path1"></span><span
+                                                    class="path2"></span></i>View letters</a></li>
+                                    <li><a href="/letters/create"><i class="icon-Commit"><span class="path1"></span><span
+                                                    class="path2"></span></i>Create Letters</a></li>
+                                </ul>
+
+
+                            </li>
+                            <li>
+                                <a href="/statutory_notices">
+                                    <i class="icon-Barcode-read"><span class="path1"></span><span
+                                            class="path2"></span></i>
+                                    <span>Statutory Notices</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/summons_plaints">
+                                    <i class="icon-Box2"><span class="path1"></span><span class="path2"></span></i>
+                                    <span>Summons & Plaints</span>
+                                </a>
+                            </li>
+                            <!-- <li>
 				  <a href="/appointments">
 					<i class="icon-Globe"><span class="path1"></span><span class="path2"></span></i>
 					<span>Appointments</span>
 				  </a>
 				</li>	 -->
-				
-				<li>
-				  <a href="/cases">
-					<i class="icon-Globe"><span class="path1"></span><span class="path2"></span></i>
-					<span>Matters</span>
-				  </a>
-				</li>		
-				<!-- <li>
+
+                            <li>
+                                <a href="/cases">
+                                    <i class="icon-Globe"><span class="path1"></span><span class="path2"></span></i>
+                                    <span>Matters</span>
+                                </a>
+                            </li>
+                            <!-- <li>
 				  <a href="/attorneys">
 					<i class="icon-Hummer"><span class="path1"></span><span class="path2"></span></i>
 					<span>Advocates</span>
 				  </a>
 				</li> -->
-				<li class="treeview">
-				  <a href="#">
-					<i class="icon-User"><span class="path1"></span><span class="path2"></span></i>
-					<span>Claims</span>
-					<span class="pull-right-container">
-					  <i class="fa fa-angle-right pull-right"></i>
-					</span>
-				  </a>
-				  <ul class="treeview-menu">
-					<li><a href="/tppd_claims"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>TPPD Claims</a></li>
-					<li><a href="/settlements"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Settlements</a></li>
-				  </ul>
-				</li>				
-				<li class="treeview">
-				  <a href="#">
-					<i class="icon-Hummer"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
-					<span>Law Personnel</span>
-					<span class="pull-right-container">
-					  <i class="fa fa-angle-right pull-right"></i>
-					</span>
-				  </a>
-				  <ul class="treeview-menu">
-					<li><a href="/attorneys"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Advocates</a></li>
-					<li><a href="/judges"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Judges</a></li>
-				  </ul>
-				</li>
-				<!-- <li class="header">Security</li> -->
-				<!-- <li class="treeview">
+                            <li class="treeview">
+                                <a href="#">
+                                    <i class="icon-User"><span class="path1"></span><span class="path2"></span></i>
+                                    <span>Claims</span>
+                                    <span class="pull-right-container">
+                                        <i class="fa fa-angle-right pull-right"></i>
+                                    </span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li><a href="/tppd_claims"><i class="icon-Commit"><span class="path1"></span><span
+                                                    class="path2"></span></i>TPPD Claims</a></li>
+                                    <li><a href="/settlements"><i class="icon-Commit"><span class="path1"></span><span
+                                                    class="path2"></span></i>Settlements</a></li>
+                                </ul>
+                            </li>
+                            <li class="treeview">
+                                <a href="/users">
+                                    <i class="icon-Hummer"><span class="path1"></span><span class="path2"></span><span
+                                            class="path3"></span></i>
+                                    <span>System Users</span>
+                                    <span class="pull-right-container">
+                                        <i class="fa fa-angle-right pull-right"></i>
+                                    </span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li><a href="/users"><i class="icon-Commit"><span class="path1"></span><span
+                                                    class="path2"></span></i>Users</a></li>
+                                    
+                                </ul>
+                            </li>
+							<li class="treeview">
+                                <a href="">
+                                    <i class="icon-Hummer"><span class="path1"></span><span class="path2"></span><span
+                                            class="path3"></span></i>
+                                    <span>System Settings</span>
+                                    <span class="pull-right-container">
+                                        <i class="fa fa-angle-right pull-right"></i>
+                                    </span>
+                                </a>
+								<ul class="treeview-menu">
+									<li><a href="/branches"><i class="icon-Commit"><span class="path1"></span><span
+													class="path2"></span></i>Branches</a>
+                                                
+                                                </li>
+                                                <li><a href="/courts"><i class="icon-Commit"><span class="path1"></span><span
+													class="path2"></span></i>Courts</a>
+                                                
+                                                </li>
+                                
+                            </li>
+                            <!-- <li class="header">Security</li> -->
+                            <!-- <li class="treeview">
 				  <a href="#">
 					<i class="icon-Library"><span class="path1"></span><span class="path2"></span></i>
 					<span>Features</span>
@@ -315,7 +336,7 @@
 					</li>  
 				  </ul>
 				</li>			 -->
-				<!-- <li class="treeview">
+                            <!-- <li class="treeview">
 				  <a href="#">
 					<i class="icon-Box2"><span class="path1"></span><span class="path2"></span></i>
 					<span>Forms, Tables & Charts</span>
@@ -502,8 +523,8 @@
 				  </ul>
 				</li>	  -->
 
-				
-				<!-- <li class="treeview">
+
+                            <!-- <li class="treeview">
 				  <a href="#">
 					<i class="icon-Warning-2"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
 					<span>Miscellaneous</span>
@@ -517,26 +538,29 @@
 					<li><a href="error_maintenance.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Maintenance</a></li>	
 				  </ul>
 				</li>	 	      -->
-			  </ul>
-			  
-			  <div class="sidebar-widgets">
-				  <!-- <div class="mx-25 mb-30 pb-20 side-bx bg-primary-light rounded20">
+                        </ul>
+
+                        <div class="sidebar-widgets">
+                            <!-- <div class="mx-25 mb-30 pb-20 side-bx bg-primary-light rounded20">
 					<div class="text-center">
 						<img src="https://lawfirm-admin-template.multipurposethemes.com/images/svg-icon/color-svg/custom-17.svg" class="sideimg p-5" alt=""> -->
-						<!-- <h4 class="title-bx text-primary">Make an Appointments</h4> -->
-						<!-- <a href="#" class="py-10 fs-14 mb-0 text-primary">
+                            <!-- <h4 class="title-bx text-primary">Make an Appointments</h4> -->
+                            <!-- <a href="#" class="py-10 fs-14 mb-0 text-primary">
 							Best Law Services here <i class="mdi mdi-arrow-right"></i>
 						</a> -->
-					<!-- </div> -->
-				  <!-- </div> -->
-				<div class="copyright text-center m-25">
-					<p><strong class="d-block">Company</strong> © <script>document.write(new Date().getFullYear())</script> All Rights Reserved</p>
-				</div>
-			  </div>
-		  </div>
-		</div>
-    </section>
-  </aside>
+                            <!-- </div> -->
+                            <!-- </div> -->
+                            <div class="copyright text-center m-25">
+                                <p><strong class="d-block">Company</strong> © <script>
+                                        document.write(new Date().getFullYear())
+
+                                    </script> All Rights Reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </aside>
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
 	  <div class="container-full">

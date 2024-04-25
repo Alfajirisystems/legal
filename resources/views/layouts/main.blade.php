@@ -584,13 +584,277 @@
         </aside>
 
         <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
+        <!-- <div class="content-wrapper">
             <div class="container-full">
                 <section class="content">
                     @yield('content')
                 </section>
             </div>
-        </div>
+        </div> -->
+		<!-- Content Wrapper. Contains page content -->
+		<div class="content-wrapper">
+			<div class="container-full">
+				<section class="content">
+					<div class="row">
+						<div class="col-xl-8 col-12">  <div class="row">
+							<div class="col-md-6 col-sm-12">  <div class="box">
+								<div class="box-header no-border">
+									<h3 class="box-title">Total Matters (0)</h3>
+								</div>
+							<div class="box-body py-0 px-0">
+								<div class="chart" id="totalcases"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">  <div class="box">
+						<div class="box-header no-border">
+						<h3 class="box-title">Settled Matters (0)</h3>
+						</div>
+						<div class="box-body py-0 px-0">
+						<div class="chart" id="settledcases"></div>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-12">  <div class="box">
+						<div class="box-header no-border">
+						<h3 class="box-title">Advocates (0)</h3>
+						</div>
+						<div class="box-body py-0 px-0">
+						<div class="chart" id="totaladvocates"></div>
+						</div>
+					</div>
+					</div>
+					<div class="col-md-6 col-sm-12">  <div class="box">
+						<div class="box-header no-border">
+						<h3 class="box-title">Courts (0)</h3>
+						</div>
+						<div class="box-body py-0 px-0">
+						<div class="chart" id="totalcourts"></div>
+						</div>
+					</div>
+					</div>
+				</div>
+				</div>
+							<div class="col-xl-4 col-12">  <div class="box">
+								<div class="box-body py-0 px-0">
+								<div id="calendar" class="apt-cal"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-8 col-12">
+							<div class="box">
+								<div class="box-header">
+									<h3 class="box-title">Opportunity Outcome</h3>
+								</div>
+								<div class="box-body py-xl-0">
+									<div class="chart" id="opportunityoutcome"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-12">
+							<div class="box overflow-h">
+								<div class="box-header">
+									<h3 class="box-title">Earnings this month</h3>
+								</div>
+								<div class="box-body pb-0">
+									<h4 class="text-dark">$0 
+										<small class="text-success">0% 
+										<span class="badge badge-pill badge-success-light"><i class="fa fa-angle-up text-success"></i></span></small>
+									</h4>
+									<div id="statisticschart5"></div>
+								</div>
+							</div>
+							<div class="box bg-info-light">
+								<div class="box-body text-center">
+									<div class="d-flex justify-content-between align-items-center mb-20">
+										<h3 class="fw-400 mb-0">Declined</h3>
+										<span class="text-info fs-36 icon-Warning-2"><span class="path1"></span><span class="path2"></span><span class="path2"></span></span>
+									</div>
+									<div class="d-flex justify-content-between align-items-center">
+										<h4 class="text-info fs-22 mb-0">0</h4>
+										<div class="text-info-50 fs-20">0%</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+						<div class="col-xl-6 col-12">
+							<div class="box">
+								<div class="box-header">
+									<h3 class="box-title">Revenue</h3>
+								</div>
+								<div class="box-body py-0">
+									<div id="charts_widget_43_chart"></div>						
+								</div>
+							</div>	
+						</div>			
+						<div class="col-xl-6 col-12">					
+							<div class="box">
+								<div class="box-header">
+									<h3 class="box-title">Outcomes by Opportunity Source</h3>
+								</div>
+								<div class="box-body py-0">
+									<div class="chart" id="opportunityoutcome2"></div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- <div class="col-xl-4 col-12"> 
+							<div class="box">
+								<div class="box-header with-border">
+									<h3 class="box-title">Latest Matters</h3>
+									<ul class="box-controls pull-right">
+									<li class="dropdown">
+										<a data-bs-toggle="dropdown" href="#" class="px-10 pt-5"><i class="ti-more-alt"></i></a>
+										<div class="dropdown-menu dropdown-menu-end">
+										<a class="dropdown-item" href="#"><i class="ti-import"></i> Import</a>
+										<a class="dropdown-item" href="#"><i class="ti-export"></i> Export</a>
+										<a class="dropdown-item" href="#"><i class="ti-printer"></i> Print</a>
+										</div>
+									</li>
+									</ul>
+								</div>
+								<div class="box-body">
+									<div class="d-flex align-items-center mb-30">
+										<div class="me-15">
+											<img src="" class="" alt="">
+										</div>
+										<div class="d-flex flex-column flex-grow-1 fw-500">
+											<a href="#" class="text-dark hover-primary mb-1 fs-16"></a>
+											<span class="text-fade"></span>
+										</div>								
+									</div>
+									<div class="d-flex align-items-center mb-30">
+										<div class="me-15">
+											<img src="" class="" alt="">
+										</div>
+										<div class="d-flex flex-column flex-grow-1 fw-500">
+											<a href="#" class="text-dark hover-danger mb-1 fs-16"></a>
+											<span class="text-fade"></span>
+										</div>								
+									</div>
+									<div class="d-flex align-items-center">
+										<div class="me-15">
+											<img src="" class="" alt="">
+										</div>
+										<div class="d-flex flex-column flex-grow-1 fw-500">
+											<a href="#" class="text-dark hover-success mb-1 fs-16"></a>
+											<span class="text-fade"></span>
+										</div>								
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-12"> 
+							<div class="box">
+								<div class="box-header with-border">
+									<h3 class="box-title">Latest Task</h3>
+									<ul class="box-controls pull-right">
+									<li class="dropdown">
+										<a data-bs-toggle="dropdown" href="#" class="px-10 pt-5"><i class="ti-more-alt"></i></a>
+										<div class="dropdown-menu dropdown-menu-end">
+										<a class="dropdown-item" href="#"><i class="ti-import"></i> Import</a>
+										<a class="dropdown-item" href="#"><i class="ti-export"></i> Export</a>
+										<a class="dropdown-item" href="#"><i class="ti-printer"></i> Print</a>
+										</div>
+									</li>
+									</ul>
+								</div>
+								<div class="box-body">
+									<div class="d-flex align-items-center mb-30">
+										<div class="me-15">
+											<img src="" class="" alt="">
+										</div>
+										<div class="d-flex flex-column flex-grow-1 fw-500">
+											<a href="#" class="text-dark hover-primary mb-1 fs-16"></a>
+											<span class="text-fade"></span>
+										</div>								
+									</div>
+									<div class="d-flex align-items-center mb-30">
+										<div class="me-15">
+											<img src="" class="" alt="">
+										</div>
+										<div class="d-flex flex-column flex-grow-1 fw-500">
+											<a href="#" class="text-dark hover-danger mb-1 fs-16"></a>
+											<span class="text-fade"></span>
+										</div>								
+									</div>
+									<div class="d-flex align-items-center">
+										<div class="me-15">
+											<img src="" class="" alt="">
+										</div>
+										<div class="d-flex flex-column flex-grow-1 fw-500">
+											<a href="#" class="text-dark hover-success mb-1 fs-16"></a>
+											<span class="text-fade"></span>
+										</div>								
+									</div>
+								</div>
+							</div>
+						</div> -->
+						<!-- <div class="col-xl-4 col-12"> 
+							<div class="box">
+								<div class="box-header with-border">
+									<h3 class="box-title">New Members</h3>
+									<ul class="box-controls pull-right">
+									<li class="dropdown">
+										<a data-bs-toggle="dropdown" href="#" class="px-10 pt-5"><i class="ti-more-alt"></i></a>
+										<div class="dropdown-menu dropdown-menu-end">
+										<a class="dropdown-item" href="#"><i class="ti-import"></i> Import</a>
+										<a class="dropdown-item" href="#"><i class="ti-export"></i> Export</a>
+										<a class="dropdown-item" href="#"><i class="ti-printer"></i> Print</a>
+										</div>
+									</li>
+									</ul>
+								</div>
+								<div class="box-body">
+									<div class="d-flex align-items-center mb-30">
+										<div class="me-15">
+											<img src="../images/avatar/avatar-1.png" class="avatar avatar-lg rounded10 bg-primary-light" alt="">
+										</div>
+										<div class="d-flex flex-column flex-grow-1 fw-500">
+											<a href="#" class="text-dark hover-primary mb-1 fs-16">Fiona Daniels</a>
+											<span class="text-fade">Senior associate</span>
+										</div>	
+										<div class="d-flex align-items-center">
+											<a href="#" class="waves-effect waves-light btn btn-xs btn-warning-light btn-circle mx-5"><i class="mdi mdi-phone"></i></a>
+											<a href="#" class="waves-effect waves-light btn btn-xs btn-success-light btn-circle mx-5"><i class="mdi mdi-comment"></i></a>
+										</div>
+									</div>
+									<div class="d-flex align-items-center mb-30">
+										<div class="me-15">
+											<img src="../images/avatar/avatar-2.png" class="avatar avatar-lg rounded10 bg-primary-light" alt="">
+										</div>
+										<div class="d-flex flex-column flex-grow-1 fw-500">
+											<a href="#" class="text-dark hover-danger mb-1 fs-16">Denise Johnson</a>
+											<span class="text-fade">Partners</span>
+										</div>	
+										<div class="d-flex align-items-center">
+											<a href="#" class="waves-effect waves-light btn btn-xs btn-warning-light btn-circle mx-5"><i class="mdi mdi-phone"></i></a>
+											<a href="#" class="waves-effect waves-light btn btn-xs btn-success-light btn-circle mx-5"><i class="mdi mdi-comment"></i></a>
+										</div>						
+									</div>
+									<div class="d-flex align-items-center">
+										<div class="me-15">
+											<img src="../images/avatar/avatar-3.png" class="avatar avatar-lg rounded10 bg-primary-light" alt="">
+										</div>
+										<div class="d-flex flex-column flex-grow-1 fw-500">
+											<a href="#" class="text-dark hover-success mb-1 fs-16">Charlotte Doe</a>
+											<span class="text-fade">Associate</span>
+										</div>
+										<div class="d-flex align-items-center">
+											<a href="#" class="waves-effect waves-light btn btn-xs btn-warning-light btn-circle mx-5"><i class="mdi mdi-phone"></i></a>
+											<a href="#" class="waves-effect waves-light btn btn-xs btn-success-light btn-circle mx-5"><i class="mdi mdi-comment"></i></a>
+										</div>								
+									</div>
+								</div>
+							</div>
+						</div> -->
+					</div>				
+				</section>
+				<!-- /.content -->
+			</div>
+		</div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
             <div class="pull-right d-none d-sm-inline-block">
